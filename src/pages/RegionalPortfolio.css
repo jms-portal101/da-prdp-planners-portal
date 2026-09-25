@@ -1,0 +1,757 @@
+/* =========================================
+   REGIONAL PORTFOLIO PAGE
+   ========================================= */
+
+.regional-portfolio-page {
+  min-height: 100vh;
+  background: #f6faf8;
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.regional-portfolio-hero {
+  padding: 145px 60px 70px;
+
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(200, 223, 145, 0.12),
+      transparent 30%
+    ),
+    #0d5d3d;
+
+  color: #ffffff;
+}
+
+.regional-portfolio-hero-inner {
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1.35fr 0.65fr;
+
+  align-items: end;
+
+  gap: 70px;
+}
+
+
+/* =========================================
+   HERO HEADING
+   ========================================= */
+
+.regional-portfolio-heading .section-eyebrow {
+  color: #c8df91;
+}
+
+.regional-portfolio-heading h1 {
+  margin: 10px 0 0;
+
+  font-size: clamp(38px, 4.5vw, 62px);
+
+  line-height: 1.03;
+
+  letter-spacing: -2px;
+
+  color: #ffffff;
+}
+
+.regional-portfolio-heading h1 span {
+  color: #c8df91;
+}
+
+.regional-portfolio-heading p {
+  max-width: 650px;
+
+  margin: 22px 0 0;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  color: #cfe2d9;
+}
+
+
+/* =========================================
+   HERO STATS
+   ========================================= */
+
+.regional-portfolio-stats {
+  display: flex;
+
+  flex-direction: column;
+
+  border-left: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.regional-stat {
+  padding: 16px 0 16px 24px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.regional-stat:last-child {
+  border-bottom: 0;
+}
+
+.regional-stat-icon {
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: rgba(255, 255, 255, 0.09);
+
+  color: #c8df91;
+
+  font-size: 16px;
+}
+
+.regional-stat div:last-child {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.regional-stat strong {
+  font-size: 27px;
+
+  line-height: 1;
+
+  color: #ffffff;
+}
+
+.regional-stat span {
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.2px;
+
+  color: #9fc2b1;
+}
+
+
+/* =========================================
+   EXPLORER
+   ========================================= */
+
+.regional-portfolio-explorer {
+  padding: 75px 60px 100px;
+
+  background: #f6faf8;
+}
+
+
+/* =========================================
+   EXPLORER HEADER
+   ========================================= */
+
+.regional-portfolio-explorer-header {
+  max-width: 1400px;
+
+  margin: 0 auto 30px;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 50px;
+}
+
+.regional-portfolio-explorer-header h2 {
+  margin: 8px 0 0;
+
+  font-size: clamp(30px, 3.5vw, 44px);
+
+  line-height: 1.08;
+
+  letter-spacing: -1.3px;
+
+  color: #18312a;
+}
+
+.regional-portfolio-explorer-header p {
+  max-width: 600px;
+
+  margin: 11px 0 0;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+
+  color: #6c7d75;
+}
+
+
+/* =========================================
+   SEARCH
+   ========================================= */
+
+.regional-search {
+  width: 310px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 11px 14px;
+
+  border: 1px solid #d9e5df;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #7c9086;
+
+  box-shadow:
+    0 4px 14px rgba(18, 107, 69, 0.04);
+}
+
+.regional-search:focus-within {
+  border-color: #9fc5b1;
+
+  box-shadow:
+    0 0 0 3px rgba(18, 107, 69, 0.06);
+}
+
+.regional-search input {
+  width: 100%;
+
+  border: 0;
+
+  outline: 0;
+
+  background: transparent;
+
+  font-family: inherit;
+
+  font-size: 11px;
+
+  color: #18312a;
+}
+
+.regional-search input::placeholder {
+  color: #9aa9a2;
+}
+
+
+/* =========================================
+   REGION GRID
+   ========================================= */
+
+.regional-portfolio-grid {
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 11px;
+}
+
+
+/* =========================================
+   REGION CARD
+   ========================================= */
+
+.regional-portfolio-card {
+  position: relative;
+
+  min-height: 205px;
+
+  padding: 17px 18px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  text-decoration: none;
+
+  border: 1px solid #dfe8e3;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease,
+    box-shadow 0.22s ease,
+    background 0.22s ease;
+}
+
+.regional-portfolio-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background: #126b45;
+
+  transform: scaleX(0);
+
+  transform-origin: left;
+
+  transition: transform 0.22s ease;
+}
+
+.regional-portfolio-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #a9cdbb;
+
+  background: #fbfdfc;
+
+  box-shadow:
+    0 12px 25px rgba(18, 107, 69, 0.08);
+}
+
+.regional-portfolio-card:hover::before {
+  transform: scaleX(1);
+}
+
+
+/* =========================================
+   CARD TOP
+   ========================================= */
+
+.regional-card-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.regional-card-number {
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.4px;
+
+  color: #9ab7aa;
+}
+
+.regional-card-arrow {
+  width: 27px;
+  height: 27px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #edf5f0;
+
+  color: #126b45;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.regional-portfolio-card:hover
+.regional-card-arrow {
+  background: #126b45;
+
+  color: #ffffff;
+
+  transform: translate(2px, -2px);
+}
+
+
+/* =========================================
+   REGION NAME
+   ========================================= */
+
+.regional-card-content {
+  margin-top: 20px;
+}
+
+.regional-card-content h3 {
+  margin: 0;
+
+  font-size: 22px;
+
+  line-height: 1.1;
+
+  letter-spacing: -0.4px;
+
+  color: #18312a;
+}
+
+.regional-card-content p {
+  max-width: 230px;
+
+  margin: 6px 0 0;
+
+  font-size: 10px;
+
+  line-height: 1.45;
+
+  color: #7b8b84;
+}
+
+
+/* =========================================
+   COMMODITY COUNT
+   ========================================= */
+
+.regional-card-bottom {
+  margin-top: auto;
+
+  padding-top: 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  border-top: 1px solid #edf2ef;
+}
+
+.regional-card-bottom span {
+  font-size: 7px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.1px;
+
+  color: #8ca198;
+}
+
+.regional-card-bottom strong {
+  font-size: 17px;
+
+  line-height: 1;
+
+  color: #126b45;
+}
+
+
+/* =========================================
+   ALL PRIORITY COMMODITIES
+   ========================================= */
+
+.regional-card-commodities {
+  margin-top: 9px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  gap: 4px;
+}
+
+
+/* =========================================
+   COMMODITY CHIP
+   ========================================= */
+
+.regional-card-commodity {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 4px;
+
+  padding: 4px 6px;
+
+  border-radius: 5px;
+
+  background: #f1f7f3;
+
+  font-size: 7.5px;
+
+  line-height: 1;
+
+  color: #60736a;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.regional-card-commodity:hover {
+  background: #e7f0eb;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================
+   COMMODITY ICON
+   ========================================= */
+
+.regional-card-commodity-icon {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 12px;
+
+  line-height: 1;
+}
+
+
+/* =========================================
+   NO RESULTS
+   ========================================= */
+
+.regional-no-results {
+  max-width: 1400px;
+
+  margin: 20px auto 0;
+
+  padding: 55px 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  border: 1px solid #dfe8e3;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  color: #8a9a93;
+}
+
+.regional-no-results h3 {
+  margin: 12px 0 4px;
+
+  font-size: 18px;
+
+  color: #18312a;
+}
+
+.regional-no-results p {
+  margin: 0;
+
+  font-size: 11px;
+
+  color: #7b8b84;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 1100px) {
+
+  .regional-portfolio-hero {
+    padding: 130px 40px 60px;
+  }
+
+  .regional-portfolio-hero-inner {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .regional-portfolio-stats {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    border-left: 0;
+  }
+
+  .regional-stat {
+    padding: 12px 18px;
+
+    border-bottom: 0;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .regional-stat:last-child {
+    border-right: 0;
+  }
+
+  .regional-portfolio-explorer {
+    padding: 65px 40px 85px;
+  }
+
+  .regional-portfolio-explorer-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 22px;
+  }
+
+  .regional-search {
+    width: 100%;
+  }
+
+  .regional-portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+  .regional-portfolio-hero {
+    padding: 90px 24px 50px;
+  }
+
+  .regional-portfolio-heading h1 {
+    font-size: 38px;
+
+    letter-spacing: -1.2px;
+  }
+
+  .regional-portfolio-heading p {
+    margin-top: 17px;
+
+    font-size: 12px;
+  }
+
+  .regional-portfolio-stats {
+    grid-template-columns: 1fr;
+
+    border-left: 1px solid rgba(255, 255, 255, 0.16);
+  }
+
+  .regional-stat {
+    padding: 13px 0 13px 18px;
+
+    border-right: 0;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .regional-stat:last-child {
+    border-bottom: 0;
+  }
+
+  .regional-portfolio-explorer {
+    padding: 55px 24px 70px;
+  }
+
+  .regional-portfolio-explorer-header {
+    margin-bottom: 24px;
+  }
+
+  .regional-portfolio-explorer-header h2 {
+    font-size: 31px;
+  }
+
+  .regional-portfolio-explorer-header p {
+    font-size: 11px;
+  }
+
+  .regional-search {
+    padding: 10px 12px;
+  }
+
+  .regional-portfolio-grid {
+    grid-template-columns: 1fr;
+
+    gap: 9px;
+  }
+
+  .regional-portfolio-card {
+    min-height: 190px;
+
+    padding: 16px;
+  }
+
+  .regional-card-content h3 {
+    font-size: 21px;
+  }
+
+  .regional-card-commodity {
+    font-size: 7.5px;
+
+    padding: 4px 6px;
+  }
+
+  .regional-card-commodity-icon {
+    font-size: 11px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 400px) {
+
+  .regional-portfolio-hero {
+    padding-left: 20px;
+
+    padding-right: 20px;
+  }
+
+  .regional-portfolio-explorer {
+    padding-left: 20px;
+
+    padding-right: 20px;
+  }
+
+}

@@ -1,0 +1,367 @@
+/* Planning Guidelines */
+
+.planning-guidelines {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 24px 0 70px;
+  color: #18312a;
+}
+
+.planning-guidelines-hero {
+  min-height: 365px;
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap: 36px;
+  align-items: center;
+  padding: 46px 48px;
+  border-radius: 26px;
+  background:
+    radial-gradient(circle at 82% 20%, rgba(255,255,255,.13), transparent 28%),
+    linear-gradient(135deg, #18312a 0%, #126b45 100%);
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.planning-guidelines-hero::after {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  right: -120px;
+  bottom: -170px;
+  border: 1px solid rgba(255,255,255,.13);
+  border-radius: 50%;
+}
+
+.planning-guidelines-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 680px;
+}
+
+.planning-guidelines .section-eyebrow {
+  display: inline-block;
+  margin-bottom: 13px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  color: #79c59d;
+}
+
+.planning-guidelines-hero .section-eyebrow {
+  color: #a7dfbd;
+}
+
+.planning-guidelines-hero h1 {
+  margin: 0 0 16px;
+  font-size: clamp(34px, 4vw, 54px);
+  line-height: 1.02;
+  letter-spacing: -.035em;
+  font-weight: 700;
+}
+
+.planning-guidelines-hero p {
+  max-width: 650px;
+  margin: 0;
+  color: rgba(255,255,255,.78);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.planning-guidelines-hero-actions {
+  margin-top: 25px;
+}
+
+.planning-guidelines-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 16px;
+  border-radius: 9px;
+  background: #fff;
+  color: #126b45;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.planning-guidelines-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0,0,0,.16);
+}
+
+.planning-guidelines-hero-visual {
+  min-height: 270px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.guideline-stack {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  transform: rotate(-5deg);
+}
+
+.guideline-sheet {
+  position: absolute;
+  width: 170px;
+  height: 215px;
+  border-radius: 8px;
+  background: #f4f8f5;
+  box-shadow: 0 20px 45px rgba(0,0,0,.18);
+}
+
+.guideline-sheet span {
+  display: block;
+  height: 5px;
+  margin: 13px 20px 0;
+  border-radius: 5px;
+  background: #dce8e0;
+}
+
+.sheet-back {
+  left: 20px;
+  top: 18px;
+  transform: rotate(-10deg);
+  opacity: .55;
+}
+
+.sheet-middle {
+  left: 50px;
+  top: 12px;
+  transform: rotate(7deg);
+  opacity: .75;
+}
+
+.sheet-front {
+  left: 42px;
+  top: 22px;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  transform: rotate(-1deg);
+}
+
+.sheet-front .sheet-icon {
+  width: 49px;
+  height: 49px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 17px;
+  border-radius: 12px;
+  background: #e1f1e7;
+  color: #126b45;
+}
+
+.sheet-front strong {
+  font-size: 18px;
+  letter-spacing: .08em;
+  color: #18312a;
+}
+
+.sheet-front > span {
+  margin: 5px 0 0;
+  height: auto;
+  background: transparent;
+  color: #668077;
+  font-size: 10px;
+}
+
+.planning-guidelines-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 40px;
+  padding: 62px 4px 28px;
+}
+
+.planning-guidelines-intro h2 {
+  margin: 0;
+  font-size: 27px;
+  letter-spacing: -.025em;
+}
+
+.planning-guidelines-intro p {
+  max-width: 560px;
+  margin: 0;
+  color: #6b7b75;
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+.planning-guidelines-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.planning-guideline-card {
+  min-height: 265px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #dfe9e3;
+  border-radius: 17px;
+  background: #fff;
+  box-shadow: 0 6px 22px rgba(24,49,42,.045);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.planning-guideline-card:hover {
+  transform: translateY(-4px);
+  border-color: #b9d8c6;
+  box-shadow: 0 15px 32px rgba(24,49,42,.10);
+}
+
+.planning-guideline-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.planning-guideline-icon {
+  width: 43px;
+  height: 43px;
+  display: grid;
+  place-items: center;
+  border-radius: 11px;
+  background: #edf7f0;
+  color: #126b45;
+}
+
+.planning-guideline-arrow {
+  width: 29px;
+  height: 29px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #e2ebe5;
+  border-radius: 50%;
+  color: #789087;
+}
+
+.planning-guideline-category {
+  margin-bottom: 7px;
+  color: #6e837a;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .14em;
+}
+
+.planning-guideline-card h3 {
+  margin: 0 0 9px;
+  font-size: 17px;
+  line-height: 1.25;
+  letter-spacing: -.015em;
+}
+
+.planning-guideline-card p {
+  margin: 0;
+  color: #6a7b74;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.planning-guideline-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 17px;
+  color: #126b45;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+
+.planning-guidelines-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  margin-top: 18px;
+  padding: 17px 19px;
+  border: 1px solid #dbe9df;
+  border-radius: 14px;
+  background: #f5faf6;
+}
+
+.planning-guidelines-note-icon {
+  flex: 0 0 auto;
+  color: #126b45;
+}
+
+.planning-guidelines-note strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 11px;
+}
+
+.planning-guidelines-note span {
+  display: block;
+  color: #71827b;
+  font-size: 10px;
+  line-height: 1.65;
+}
+
+@media (max-width: 900px) {
+  .planning-guidelines-hero {
+    grid-template-columns: 1fr;
+    padding: 38px 32px;
+  }
+
+  .planning-guidelines-hero-visual {
+    min-height: 235px;
+  }
+
+  .planning-guidelines-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .planning-guidelines-intro {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 620px) {
+  .planning-guidelines {
+    width: min(100% - 24px, 1180px);
+    padding-top: 12px;
+  }
+
+  .planning-guidelines-hero {
+    min-height: auto;
+    padding: 32px 24px;
+    border-radius: 20px;
+  }
+
+  .planning-guidelines-hero h1 {
+    font-size: 37px;
+  }
+
+  .planning-guidelines-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .planning-guideline-card {
+    min-height: 235px;
+  }
+
+  .planning-guidelines-intro {
+    padding-top: 45px;
+  }
+
+  .planning-guidelines-note {
+    padding: 15px;
+  }
+}

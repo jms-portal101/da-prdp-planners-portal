@@ -1,0 +1,380 @@
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+  width: 100%;
+  padding: 14px 60px;
+
+  background: #ffffff;
+  border-bottom: 1px solid #e5ece8;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 9999;
+}
+
+
+/* =========================================
+   NAVBAR INNER
+========================================= */
+
+.navbar-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 40px;
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+
+  padding: 0;
+
+  border: 0;
+  background: transparent;
+
+  white-space: nowrap;
+
+  font-family: inherit;
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   PRDP LOGO
+========================================= */
+
+.navbar-logo {
+  width: 52px;
+  height: 52px;
+
+  object-fit: contain;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================
+   BRAND TEXT
+========================================= */
+
+.navbar-brand-text {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 11px;
+
+  text-align: left;
+  line-height: 1.15;
+}
+
+.navbar-brand-text strong {
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+
+  color: #126b45;
+}
+
+.navbar-brand-text span {
+  margin-top: 4px;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.65px;
+
+  color: #18312a;
+}
+
+
+/* =========================================
+   NAVIGATION LINKS
+========================================= */
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+
+  gap: 28px;
+}
+
+.navbar-links a,
+.navbar-links button {
+  position: relative;
+
+  padding: 8px 0;
+
+  border: 0;
+  background: transparent;
+
+  color: #18312a;
+
+  text-decoration: none;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: color 0.2s ease;
+}
+
+
+/* =========================================
+   NAVIGATION HOVER
+========================================= */
+
+.navbar-links a:hover,
+.navbar-links button:hover {
+  color: #126b45;
+}
+
+
+/* =========================================
+   NAVIGATION UNDERLINE
+========================================= */
+
+.navbar-links a::after,
+.navbar-links button::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 2px;
+
+  background: #126b45;
+
+  transition: width 0.2s ease;
+}
+
+.navbar-links a:hover::after,
+.navbar-links button:hover::after {
+  width: 100%;
+}
+
+
+/* =========================================
+   MOBILE MENU BUTTON
+========================================= */
+
+.menu-toggle {
+  display: none;
+
+  width: 42px;
+  height: 42px;
+
+  padding: 9px;
+
+  border: 1px solid #dce8e2;
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  cursor: pointer;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+}
+
+.menu-toggle span {
+  width: 20px;
+  height: 2px;
+
+  background: #126b45;
+
+  border-radius: 2px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+  .navbar {
+    padding: 14px 40px;
+  }
+
+  .navbar-inner {
+    gap: 25px;
+  }
+
+  .navbar-links {
+    gap: 20px;
+  }
+
+  .navbar-links a,
+  .navbar-links button {
+    font-size: 13px;
+  }
+
+  .navbar-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .navbar-brand-text strong {
+    font-size: 18px;
+  }
+
+  .navbar-brand-text span {
+    font-size: 10px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+  .navbar {
+    position: sticky;
+
+    top: 0;
+
+    padding: 12px 24px;
+  }
+
+  .navbar-inner {
+    flex-wrap: wrap;
+
+    gap: 0;
+  }
+
+
+  /* BRAND */
+
+  .navbar-logo {
+    width: 44px;
+    height: 44px;
+  }
+
+  .navbar-brand-text {
+    margin-left: 9px;
+  }
+
+  .navbar-brand-text strong {
+    font-size: 17px;
+  }
+
+  .navbar-brand-text span {
+    font-size: 10px;
+    letter-spacing: 0.45px;
+  }
+
+
+  /* MENU BUTTON */
+
+  .menu-toggle {
+    display: flex;
+  }
+
+
+  /* NAVIGATION */
+
+  .navbar-links {
+    width: 100%;
+
+    margin-top: 16px;
+
+    display: none;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 0;
+
+    padding-top: 10px;
+
+    border-top: 1px solid #edf2ef;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+
+  /* MOBILE NAV LINKS */
+
+  .navbar-links a,
+  .navbar-links button {
+    width: 100%;
+
+    padding: 12px 0;
+
+    border: 0;
+    background: transparent;
+
+    font-family: inherit;
+
+    text-align: left;
+
+    font-size: 14px;
+  }
+
+
+  /* REMOVE UNDERLINE ON MOBILE */
+
+  .navbar-links a::after,
+  .navbar-links button::after {
+    display: none;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 11px 18px;
+  }
+
+  .navbar-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .navbar-brand-text {
+    margin-left: 8px;
+  }
+
+  .navbar-brand-text strong {
+    font-size: 16px;
+  }
+
+  .navbar-brand-text span {
+    font-size: 9px;
+    letter-spacing: 0.3px;
+  }
+
+  .menu-toggle {
+    width: 40px;
+    height: 40px;
+  }
+}

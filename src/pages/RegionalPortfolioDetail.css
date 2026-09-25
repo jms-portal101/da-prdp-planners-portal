@@ -1,0 +1,886 @@
+/* =========================================
+   REGIONAL PORTFOLIO DETAIL
+   ========================================= */
+
+.regional-detail-page {
+  min-height: 100vh;
+
+  background: #f6faf8;
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.regional-detail-hero {
+  padding: 130px 60px 70px;
+
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(200, 223, 145, 0.12),
+      transparent 30%
+    ),
+    #0d5d3d;
+
+  color: #ffffff;
+}
+
+.regional-detail-hero-inner {
+  position: relative;
+
+  max-width: 1400px;
+
+  margin: 0 auto;
+}
+
+.regional-detail-back {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 7px;
+
+  color: #cfe2d9;
+
+  text-decoration: none;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  transition: color 0.2s ease;
+}
+
+.regional-detail-back:hover {
+  color: #ffffff;
+}
+
+
+/* =========================================
+   HERO CONTENT
+   ========================================= */
+
+.regional-detail-hero-content {
+  max-width: 800px;
+
+  margin-top: 55px;
+}
+
+.regional-detail-code {
+  display: inline-block;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.7px;
+
+  color: #c8df91;
+}
+
+.regional-detail-hero h1 {
+  margin: 8px 0 0;
+
+  font-size: clamp(52px, 7vw, 92px);
+
+  line-height: 0.95;
+
+  letter-spacing: -4px;
+
+  color: #ffffff;
+}
+
+.regional-detail-hero h2 {
+  margin: 13px 0 0;
+
+  font-size: clamp(20px, 2.5vw, 30px);
+
+  font-weight: 500;
+
+  letter-spacing: -0.5px;
+
+  color: #c8df91;
+}
+
+.regional-detail-hero p {
+  max-width: 590px;
+
+  margin: 20px 0 0;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+
+  color: #cfe2d9;
+}
+
+
+/* =========================================
+   BACKGROUND REGION MARK
+   ========================================= */
+
+.regional-detail-hero-mark {
+  position: absolute;
+
+  right: 0;
+  bottom: -12px;
+
+  font-size: clamp(70px, 12vw, 160px);
+
+  font-weight: 800;
+
+  line-height: 0.8;
+
+  letter-spacing: -8px;
+
+  color: rgba(255, 255, 255, 0.035);
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   REGIONAL OVERVIEW
+   ========================================= */
+
+.regional-detail-overview {
+  padding: 70px 60px;
+
+  background: #ffffff;
+}
+
+.regional-detail-overview-inner {
+  max-width: 1400px;
+
+  margin: 0 auto;
+}
+
+.regional-detail-overview-header {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 60px;
+
+  margin-bottom: 30px;
+}
+
+.regional-detail-overview-header h2 {
+  margin: 7px 0 0;
+
+  font-size: clamp(30px, 3.5vw, 44px);
+
+  line-height: 1.05;
+
+  letter-spacing: -1.3px;
+
+  color: #18312a;
+}
+
+.regional-detail-overview-header p {
+  max-width: 420px;
+
+  margin: 0;
+
+  font-size: 12px;
+
+  line-height: 1.65;
+
+  color: #6d7e76;
+}
+
+
+/* =========================================
+   STATS
+   ========================================= */
+
+.regional-detail-stats {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  border: 1px solid #dfe8e3;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  background: #f8fbf9;
+}
+
+.regional-detail-stat {
+  min-height: 100px;
+
+  padding: 18px 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  border-right: 1px solid #dfe8e3;
+}
+
+.regional-detail-stat:last-child {
+  border-right: 0;
+}
+
+.regional-detail-stat-icon {
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: #eaf3ee;
+
+  color: #126b45;
+}
+
+.regional-detail-stat div:last-child {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.regional-detail-stat span {
+  font-size: 7px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.1px;
+
+  color: #8a9b93;
+}
+
+.regional-detail-stat strong {
+  font-size: 18px;
+
+  line-height: 1;
+
+  color: #18312a;
+}
+
+
+/* =========================================
+   PRIORITY COMMODITIES SECTION
+   ========================================= */
+
+.regional-detail-commodities {
+  padding: 75px 60px 90px;
+
+  background: #f6faf8;
+}
+
+.regional-detail-commodities-inner {
+  max-width: 1400px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   SECTION HEADER
+   ========================================= */
+
+.regional-detail-section-header {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 40px;
+
+  margin-bottom: 0;
+}
+
+.regional-detail-section-header h2 {
+  margin: 7px 0 0;
+
+  font-size: clamp(30px, 3.5vw, 44px);
+
+  line-height: 1.05;
+
+  letter-spacing: -1.3px;
+
+  color: #18312a;
+}
+
+.regional-detail-section-header p {
+  max-width: 380px;
+
+  margin: 0;
+
+  font-size: 11px;
+
+  line-height: 1.6;
+
+  color: #71827a;
+}
+
+
+/* =========================================
+   COMMODITY GRID
+   ========================================= */
+
+.regional-detail-commodity-grid {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 9px;
+
+  margin-top: 28px;
+}
+
+
+/* =========================================
+   COMMODITY CARD
+   ========================================= */
+
+.regional-detail-commodity {
+  min-width: 145px;
+
+  padding: 11px 15px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  border: 1px solid #dfe8e3;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.regional-detail-commodity:hover {
+  transform: translateY(-3px);
+
+  border-color: #a9cdbb;
+
+  background: #f8fbf9;
+
+  box-shadow:
+    0 7px 17px rgba(18, 107, 69, 0.07);
+}
+
+
+/* =========================================
+   COLORED AGRICULTURE ICON
+   ========================================= */
+
+.commodity-icon {
+  width: 30px;
+  height: 30px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 7px;
+
+  background: #f1f7f3;
+
+  font-size: 20px;
+
+  line-height: 1;
+}
+
+
+/* =========================================
+   COMMODITY NAME
+   ========================================= */
+
+.commodity-name {
+  font-size: 10px;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  color: #18312a;
+}
+
+
+/* =========================================
+   RAFIP SECTION
+   ========================================= */
+
+.regional-detail-rafip {
+  padding: 75px 60px 90px;
+
+  background: #ffffff;
+}
+
+.regional-detail-rafip-inner {
+  max-width: 1400px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   RAFIP HEADER
+   ========================================= */
+
+.regional-detail-rafip-header {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 40px;
+
+  margin-bottom: 25px;
+}
+
+.regional-detail-rafip-header h2 {
+  margin: 7px 0 0;
+
+  font-size: clamp(30px, 3.5vw, 44px);
+
+  line-height: 1.05;
+
+  letter-spacing: -1.3px;
+
+  color: #18312a;
+}
+
+.regional-detail-rafip-header p {
+  max-width: 520px;
+
+  margin: 11px 0 0;
+
+  font-size: 11px;
+
+  line-height: 1.6;
+
+  color: #71827a;
+}
+
+
+/* =========================================
+   OPEN RAFIP BUTTON
+   ========================================= */
+
+.rafip-open-button {
+  flex-shrink: 0;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  min-height: 40px;
+
+  padding: 0 15px;
+
+  border-radius: 7px;
+
+  background: #126b45;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.rafip-open-button:hover {
+  background: #0b4f35;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   RAFIP FLIPBOOK
+   ========================================= */
+
+.regional-detail-flipbook {
+  width: 100%;
+
+  height: 720px;
+
+  overflow: hidden;
+
+  border: 1px solid #dfe8e3;
+
+  border-radius: 10px;
+
+  background: #f6faf8;
+
+  box-shadow:
+    0 10px 30px rgba(18, 107, 69, 0.05);
+}
+
+.regional-detail-flipbook iframe {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  border: 0;
+}
+
+
+/* =========================================
+   FOOTER NAVIGATION
+   ========================================= */
+
+.regional-detail-footer {
+  padding: 45px 60px 70px;
+
+  display: flex;
+
+  justify-content: center;
+
+  background: #f6faf8;
+}
+
+.regional-detail-footer-button,
+.regional-back-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 10px 15px;
+
+  border: 1px solid #cfded6;
+
+  border-radius: 7px;
+
+  background: #ffffff;
+
+  color: #126b45;
+
+  text-decoration: none;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.regional-detail-footer-button:hover,
+.regional-back-button:hover {
+  background: #f1f7f3;
+
+  border-color: #a9cdbb;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   NOT FOUND
+   ========================================= */
+
+.regional-detail-not-found {
+  max-width: 700px;
+
+  min-height: 80vh;
+
+  margin: 0 auto;
+
+  padding: 150px 30px 60px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+}
+
+.regional-detail-not-found h1 {
+  margin: 10px 0 0;
+
+  font-size: 40px;
+
+  color: #18312a;
+}
+
+.regional-detail-not-found p {
+  margin: 10px 0 25px;
+
+  font-size: 13px;
+
+  color: #71827a;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 1100px) {
+
+  .regional-detail-hero {
+    padding: 125px 40px 60px;
+  }
+
+  .regional-detail-overview {
+    padding: 65px 40px;
+  }
+
+  .regional-detail-commodities {
+    padding: 65px 40px 80px;
+  }
+
+  .regional-detail-rafip {
+    padding: 65px 40px 80px;
+  }
+
+  .regional-detail-footer {
+    padding-left: 40px;
+
+    padding-right: 40px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+  .regional-detail-hero {
+    padding: 90px 24px 50px;
+  }
+
+  .regional-detail-hero-content {
+    margin-top: 40px;
+  }
+
+  .regional-detail-hero h1 {
+    font-size: 58px;
+
+    letter-spacing: -3px;
+  }
+
+  .regional-detail-hero h2 {
+    font-size: 20px;
+  }
+
+  .regional-detail-hero p {
+    font-size: 11px;
+  }
+
+  .regional-detail-hero-mark {
+    display: none;
+  }
+
+
+  /* OVERVIEW */
+
+  .regional-detail-overview {
+    padding: 55px 24px;
+  }
+
+  .regional-detail-overview-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    margin-bottom: 22px;
+  }
+
+  .regional-detail-overview-header h2 {
+    font-size: 32px;
+  }
+
+  .regional-detail-overview-header p {
+    font-size: 11px;
+  }
+
+
+  /* STATS */
+
+  .regional-detail-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .regional-detail-stat {
+    border-right: 0;
+
+    border-bottom: 1px solid #dfe8e3;
+  }
+
+  .regional-detail-stat:last-child {
+    border-bottom: 0;
+  }
+
+
+  /* COMMODITIES */
+
+  .regional-detail-commodities {
+    padding: 55px 24px 70px;
+  }
+
+  .regional-detail-section-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+  .regional-detail-section-header h2 {
+    font-size: 32px;
+  }
+
+  .regional-detail-commodity-grid {
+    justify-content: center;
+
+    gap: 7px;
+
+    margin-top: 22px;
+  }
+
+  .regional-detail-commodity {
+    min-width: 0;
+
+    flex: 1 1 calc(50% - 4px);
+
+    padding: 9px 10px;
+  }
+
+  .commodity-icon {
+    width: 28px;
+
+    height: 28px;
+
+    font-size: 18px;
+  }
+
+  .commodity-name {
+    font-size: 9px;
+  }
+
+
+  /* RAFIP */
+
+  .regional-detail-rafip {
+    padding: 55px 24px 70px;
+  }
+
+  .regional-detail-rafip-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 18px;
+  }
+
+  .regional-detail-rafip-header h2 {
+    font-size: 32px;
+  }
+
+  .rafip-open-button {
+    width: 100%;
+  }
+
+  .regional-detail-flipbook {
+    height: 550px;
+  }
+
+
+  /* FOOTER */
+
+  .regional-detail-footer {
+    padding: 35px 24px 55px;
+  }
+
+  .regional-detail-footer-button {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 400px) {
+
+  .regional-detail-hero {
+    padding-left: 20px;
+
+    padding-right: 20px;
+  }
+
+  .regional-detail-overview {
+    padding-left: 20px;
+
+    padding-right: 20px;
+  }
+
+  .regional-detail-commodities {
+    padding-left: 20px;
+
+    padding-right: 20px;
+  }
+
+  .regional-detail-rafip {
+    padding-left: 20px;
+
+    padding-right: 20px;
+  }
+
+}

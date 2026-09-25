@@ -1,0 +1,277 @@
+/* =========================================
+   QUICK ACCESS
+   ========================================= */
+
+.quick-access {
+  padding: 60px 60px;
+  background: #f6faf8;
+}
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.quick-access-header {
+  max-width: 680px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.section-eyebrow {
+  display: inline-block;
+  margin-bottom: 7px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  color: #126b45;
+}
+
+.quick-access-header h2 {
+  margin: 0;
+  font-size: clamp(30px, 3.3vw, 42px);
+  line-height: 1.08;
+  letter-spacing: -1.2px;
+  color: #18312a;
+}
+
+.quick-access-header p {
+  max-width: 570px;
+  margin: 10px auto 0;
+  font-size: 13px;
+  line-height: 1.55;
+  color: #64756e;
+}
+
+/* =========================================
+   GRID
+   ========================================= */
+
+.quick-access-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* =========================================
+   CARD
+   ========================================= */
+
+.access-card {
+  position: relative;
+  min-height: 155px;
+  padding: 14px 17px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  background: #ffffff;
+  border: 1px solid #dfe8e3;
+  border-radius: 9px;
+  overflow: hidden;
+
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease,
+    box-shadow 0.22s ease,
+    background 0.22s ease;
+}
+
+.access-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #126b45;
+
+  transform: scaleX(0);
+  transform-origin: left;
+
+  transition: transform 0.22s ease;
+}
+
+.access-card:hover {
+  transform: translateY(-3px);
+  border-color: #a9cdbb;
+  background: #fbfdfc;
+
+  box-shadow:
+    0 8px 20px rgba(18, 107, 69, 0.07);
+}
+
+.access-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* =========================================
+   TOP ROW
+   ========================================= */
+
+.access-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.access-number {
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  color: #9ab7aa;
+}
+
+/* =========================================
+   ICON
+   ========================================= */
+
+.access-icon {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 7px;
+  background: #edf5f0;
+  color: #126b45;
+
+  transition:
+    background 0.22s ease,
+    color 0.22s ease,
+    transform 0.22s ease;
+}
+
+.access-card:hover .access-icon {
+  background: #126b45;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   CONTENT
+   ========================================= */
+
+.access-content {
+  margin-top: 11px;
+  padding-right: 25px;
+}
+
+.access-card h3 {
+  margin: 0 0 4px;
+
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: -0.15px;
+
+  color: #18312a;
+}
+
+.access-card p {
+  max-width: 410px;
+  margin: 0;
+
+  font-size: 10.5px;
+  line-height: 1.45;
+
+  color: #6a7b74;
+}
+
+/* =========================================
+   ARROW
+   ========================================= */
+
+.access-arrow {
+  position: absolute;
+  right: 13px;
+  bottom: 13px;
+
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #edf5f0;
+  color: #126b45;
+
+  font-size: 13px;
+
+  transition:
+    background 0.22s ease,
+    color 0.22s ease,
+    transform 0.22s ease;
+}
+
+.access-card:hover .access-arrow {
+  background: #126b45;
+  color: #ffffff;
+  transform: translateX(3px);
+}
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 1000px) {
+  .quick-access {
+    padding: 55px 40px;
+  }
+
+  .quick-access-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+  .quick-access {
+    padding: 50px 24px;
+  }
+
+  .quick-access-header {
+    margin-bottom: 24px;
+  }
+
+  .quick-access-header h2 {
+    font-size: 32px;
+  }
+
+  .quick-access-header p {
+    font-size: 12.5px;
+  }
+
+  .quick-access-grid {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+
+  .access-card {
+    min-height: 145px;
+    padding: 13px 16px;
+  }
+
+  .access-content {
+    margin-top: 9px;
+  }
+
+  .access-card h3 {
+    font-size: 15px;
+  }
+
+  .access-card p {
+    font-size: 10px;
+  }
+
+  .access-icon {
+    width: 28px;
+    height: 28px;
+  }
+}

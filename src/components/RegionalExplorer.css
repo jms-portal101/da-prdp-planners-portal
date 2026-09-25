@@ -1,0 +1,487 @@
+/* =========================================
+   REGIONAL EXPLORER
+   ========================================= */
+
+.regional-explorer {
+  padding: 105px 60px;
+  background: #f6faf8;
+}
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.regional-header {
+  max-width: 1400px;
+  margin: 0 auto 45px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.regional-header h2 {
+  margin: 0;
+  font-size: clamp(36px, 4vw, 52px);
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  color: #18312a;
+}
+
+.regional-header p {
+  max-width: 430px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #64756e;
+}
+
+/* =========================================
+   REGION GRID
+   ========================================= */
+
+.regional-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+/* =========================================
+   REGION CARD
+   ========================================= */
+
+.region-card {
+  position: relative;
+  width: 100%;
+  min-height: 205px;
+  padding: 22px 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  font-family: inherit;
+  text-align: left;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  background: #ffffff;
+  border: 1px solid #dfe8e3;
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+/* TOP ACCENT */
+
+.region-card::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background: #126b45;
+
+  transform: scaleX(0);
+  transform-origin: left;
+
+  transition: transform 0.25s ease;
+}
+
+/* HOVER */
+
+.region-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #a9cdbb;
+  background: #fbfdfc;
+
+  box-shadow:
+    0 10px 24px rgba(18, 107, 69, 0.08);
+}
+
+.region-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* =========================================
+   REGION NUMBER
+   ========================================= */
+
+.region-number {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #9ab7aa;
+}
+
+/* =========================================
+   REGION NAME
+   ========================================= */
+
+.region-card > div {
+  margin-top: 12px;
+}
+
+.region-card h3 {
+  margin: 0;
+
+  font-size: 21px;
+  line-height: 1.2;
+  letter-spacing: -0.3px;
+
+  color: #18312a;
+}
+
+.region-full-name {
+  margin: 5px 0 0;
+
+  font-size: 11px;
+  line-height: 1.45;
+
+  color: #7a8b84;
+}
+
+/* =========================================
+   PRIORITY COMMODITIES
+   ========================================= */
+
+.card-commodities {
+  margin-top: 13px;
+  padding-right: 30px;
+}
+
+.card-commodities-label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+
+  color: #126b45;
+}
+
+.commodity-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 5px 10px;
+}
+
+.commodity-item {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 3px;
+
+  font-size: 10.5px;
+  line-height: 1.4;
+
+  color: #687a72;
+}
+
+.commodity-icon {
+  font-size: 13px;
+  line-height: 1;
+}
+
+/* =========================================
+   ARROW
+   ========================================= */
+
+.region-arrow {
+  position: absolute;
+
+  right: 18px;
+  bottom: 18px;
+
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #edf5f0;
+  color: #126b45;
+
+  font-size: 16px;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.region-card:hover .region-arrow {
+  background: #126b45;
+  color: #ffffff;
+
+  transform: translateX(4px);
+}
+
+/* =========================================
+   SELECTED REGION CARD
+   ========================================= */
+
+.region-card.selected {
+  border-color: #126b45;
+
+  background: #f1f7f3;
+
+  box-shadow:
+    0 8px 22px rgba(18, 107, 69, 0.10);
+}
+
+.region-card.selected::before {
+  transform: scaleX(1);
+}
+
+.region-card.selected .region-arrow {
+  background: #126b45;
+  color: #ffffff;
+}
+
+/* =========================================
+   SELECTED REGION PANEL
+   ========================================= */
+
+.selected-region {
+  max-width: 1400px;
+
+  margin: 30px auto 0;
+  padding: 28px 32px;
+
+  border-left: 4px solid #126b45;
+
+  border-top: 1px solid #e2ebe6;
+  border-right: 1px solid #e2ebe6;
+  border-bottom: 1px solid #e2ebe6;
+
+  border-radius: 14px;
+
+  background: #ffffff;
+}
+
+/* =========================================
+   FLIPBOOK HEADER
+   ========================================= */
+
+.regional-flipbook-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 18px;
+}
+
+.regional-flipbook-header h3 {
+  margin: 0;
+
+  font-size: 26px;
+  line-height: 1.3;
+  letter-spacing: -0.4px;
+
+  color: #18312a;
+}
+
+/* =========================================
+   FULLSCREEN BUTTON
+   ========================================= */
+
+.flipbook-open-button {
+  flex-shrink: 0;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 42px;
+
+  padding: 0 16px;
+
+  border-radius: 8px;
+
+  background: #126b45;
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.flipbook-open-button:hover {
+  background: #0b4f35;
+
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   FLIPBOOK
+   ========================================= */
+
+.flipbook-frame {
+  width: 100%;
+  height: 700px;
+
+  overflow: hidden;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  border: 1px solid #dfe9e4;
+}
+
+.flipbook-frame iframe {
+  width: 100%;
+  height: 100%;
+
+  border: 0;
+
+  display: block;
+}
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 1100px) {
+
+  .regional-explorer {
+    padding: 90px 40px;
+  }
+
+  .regional-header {
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 20px;
+
+    margin-bottom: 40px;
+  }
+
+  .regional-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .region-card {
+    min-height: 205px;
+  }
+
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+  .regional-explorer {
+    padding: 70px 24px;
+  }
+
+  .regional-header {
+    margin-bottom: 35px;
+  }
+
+  .regional-header h2 {
+    font-size: 38px;
+    letter-spacing: -1.2px;
+  }
+
+  .regional-header p {
+    font-size: 15px;
+  }
+
+  .regional-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .region-card {
+    min-height: 185px;
+    padding: 20px;
+  }
+
+  .region-card h3 {
+    font-size: 20px;
+  }
+
+  .region-full-name {
+    font-size: 11px;
+  }
+
+  .card-commodities {
+    margin-top: 12px;
+    padding-right: 20px;
+  }
+
+  .commodity-item {
+    font-size: 10.5px;
+  }
+
+  .commodity-icon {
+    font-size: 13px;
+  }
+
+  .region-arrow {
+    right: 17px;
+    bottom: 17px;
+  }
+
+}
+
+/* =========================================
+   SELECTED REGION — MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+  .selected-region {
+    padding: 22px;
+  }
+
+  .regional-flipbook-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .regional-flipbook-header h3 {
+    font-size: 22px;
+  }
+
+  .flipbook-open-button {
+    width: 100%;
+  }
+
+  .flipbook-frame {
+    height: 550px;
+  }
+
+}

@@ -1,0 +1,898 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.geoagri-page {
+  min-height: 100vh;
+  background: #f6faf7;
+  color: #18312a;
+}
+
+.geoagri-container {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+/* HERO */
+
+.geoagri-hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 84% 20%, rgba(45, 139, 94, 0.15), transparent 32%),
+    linear-gradient(135deg, #f7fbf8 0%, #edf7f0 55%, #e4f1e8 100%);
+  border-bottom: 1px solid #dce9df;
+}
+
+.geoagri-hero::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  right: -160px;
+  top: -190px;
+  border: 1px solid rgba(18, 107, 69, 0.12);
+  border-radius: 50%;
+}
+
+.geoagri-hero::after {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  right: -250px;
+  top: -280px;
+  border: 1px solid rgba(18, 107, 69, 0.07);
+  border-radius: 50%;
+}
+
+.geoagri-hero-grid {
+  position: relative;
+  z-index: 1;
+  min-height: 650px;
+  display: grid;
+  grid-template-columns: 1.03fr 0.97fr;
+  gap: 72px;
+  align-items: center;
+  padding: 78px 0 74px;
+}
+
+.geoagri-eyebrow,
+.geoagri-section-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #126b45;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.geoagri-eyebrow {
+  margin-bottom: 20px;
+}
+
+.geoagri-hero h1 {
+  margin: 0;
+  font-size: clamp(64px, 8vw, 112px);
+  line-height: 0.82;
+  letter-spacing: -0.075em;
+  font-weight: 900;
+  color: #18312a;
+}
+
+.geoagri-hero h1 span {
+  color: #168051;
+}
+
+.geoagri-hero-title {
+  max-width: 650px;
+  margin: 26px 0 0;
+  color: #29483c;
+  font-size: clamp(20px, 2.3vw, 28px);
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.geoagri-hero-description {
+  max-width: 620px;
+  margin: 18px 0 0;
+  color: #61766c;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.geoagri-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+  margin-top: 30px;
+}
+
+.geoagri-primary-button,
+.geoagri-secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 44px;
+  padding: 0 17px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 800;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.geoagri-primary-button {
+  color: #ffffff;
+  background: #126b45;
+  box-shadow: 0 8px 22px rgba(18, 107, 69, 0.18);
+}
+
+.geoagri-primary-button:hover {
+  transform: translateY(-2px);
+  background: #0d5c3b;
+  box-shadow: 0 12px 28px rgba(18, 107, 69, 0.24);
+}
+
+.geoagri-secondary-button {
+  color: #245041;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid #d3e3d8;
+}
+
+.geoagri-secondary-button:hover {
+  transform: translateY(-2px);
+  background: #ffffff;
+}
+
+.geoagri-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 27px;
+  color: #6b7f75;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.geoagri-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.geoagri-meta svg {
+  color: #2b9b69;
+}
+
+/* HERO VISUAL */
+
+.geoagri-hero-visual {
+  position: relative;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(188, 211, 198, 0.8);
+  border-radius: 22px;
+  box-shadow: 0 25px 70px rgba(30, 71, 53, 0.12);
+  backdrop-filter: blur(10px);
+}
+
+.geoagri-visual-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 5px 13px;
+  color: #6a7e74;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.geoagri-visual-top svg {
+  color: #126b45;
+}
+
+.geoagri-map-art {
+  position: relative;
+  height: 390px;
+  overflow: hidden;
+  border-radius: 15px;
+  background:
+    linear-gradient(25deg, transparent 48%, rgba(58, 133, 93, 0.12) 49%, rgba(58, 133, 93, 0.12) 51%, transparent 52%),
+    linear-gradient(145deg, transparent 48%, rgba(58, 133, 93, 0.09) 49%, rgba(58, 133, 93, 0.09) 51%, transparent 52%),
+    #e8f2eb;
+}
+
+.geoagri-map-grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.55;
+  background-image:
+    linear-gradient(rgba(46, 105, 76, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(46, 105, 76, 0.08) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+.geoagri-map-route {
+  position: absolute;
+  height: 5px;
+  border-radius: 999px;
+  background: #2c9868;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.72);
+  transform-origin: left center;
+}
+
+.route-one {
+  width: 300px;
+  left: 30px;
+  top: 255px;
+  transform: rotate(-18deg);
+}
+
+.route-two {
+  width: 270px;
+  left: 115px;
+  top: 120px;
+  transform: rotate(38deg);
+}
+
+.route-three {
+  width: 210px;
+  left: 215px;
+  top: 285px;
+  transform: rotate(22deg);
+}
+
+.geoagri-map-point {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #126b45;
+  border: 3px solid #ffffff;
+  box-shadow: 0 4px 12px rgba(18, 107, 69, 0.24);
+}
+
+.point-one {
+  left: 88px;
+  top: 228px;
+}
+
+.point-two {
+  left: 272px;
+  top: 166px;
+}
+
+.point-three {
+  right: 100px;
+  top: 276px;
+}
+
+.point-four {
+  right: 178px;
+  top: 102px;
+}
+
+.geoagri-map-label {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 9px;
+  color: #24483a;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(194, 214, 201, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(33, 72, 54, 0.08);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.label-one {
+  left: 48px;
+  top: 180px;
+}
+
+.label-two {
+  right: 45px;
+  top: 120px;
+}
+
+.geoagri-visual-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.geoagri-visual-footer > div {
+  padding: 12px 13px;
+  background: #f7faf8;
+  border: 1px solid #e0ebe4;
+  border-radius: 10px;
+}
+
+.geoagri-visual-footer strong,
+.geoagri-visual-footer span {
+  display: block;
+}
+
+.geoagri-visual-footer strong {
+  color: #24483a;
+  font-size: 12px;
+}
+
+.geoagri-visual-footer span {
+  margin-top: 3px;
+  color: #82938b;
+  font-size: 10px;
+}
+
+/* SECTIONS */
+
+.geoagri-overview {
+  padding: 94px 0 100px;
+  background: #ffffff;
+}
+
+.geoagri-section-heading {
+  display: grid;
+  grid-template-columns: 1fr 0.82fr;
+  gap: 70px;
+  align-items: end;
+  margin-bottom: 42px;
+}
+
+.geoagri-section-heading h2,
+.geoagri-scope h2,
+.geoagri-fmr h2,
+.geoagri-connection h2,
+.geoagri-footer-cta h2 {
+  margin: 9px 0 0;
+  color: #18312a;
+  font-size: clamp(29px, 3.2vw, 43px);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+
+.geoagri-section-heading p,
+.geoagri-scope p,
+.geoagri-fmr p,
+.geoagri-connection p {
+  margin: 0;
+  color: #6a7c73;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.geoagri-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.geoagri-feature-card {
+  min-height: 235px;
+  padding: 25px 23px;
+  background: #f7faf8;
+  border: 1px solid #e0e9e3;
+  border-radius: 14px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.geoagri-feature-card:hover {
+  transform: translateY(-4px);
+  border-color: #c7ddd0;
+  box-shadow: 0 15px 35px rgba(31, 72, 53, 0.08);
+}
+
+.geoagri-feature-icon {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  color: #126b45;
+  background: #e4f2e9;
+  border-radius: 10px;
+}
+
+.geoagri-feature-card h3 {
+  margin: 25px 0 9px;
+  color: #25453a;
+  font-size: 17px;
+  letter-spacing: -0.02em;
+}
+
+.geoagri-feature-card p {
+  margin: 0;
+  color: #71837a;
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+/* SCOPE */
+
+.geoagri-scope {
+  padding: 92px 0;
+  background: #edf6f0;
+  border-top: 1px solid #deebe1;
+  border-bottom: 1px solid #deebe1;
+}
+
+.geoagri-scope-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.geoagri-scope-card {
+  padding: 26px;
+  background: #ffffff;
+  border: 1px solid #dce8df;
+  border-radius: 15px;
+  box-shadow: 0 16px 40px rgba(32, 70, 51, 0.07);
+}
+
+.geoagri-scope-card-head {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding-bottom: 16px;
+  color: #126b45;
+  border-bottom: 1px solid #e7eee9;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.geoagri-scope-card ul {
+  display: grid;
+  gap: 14px;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.geoagri-scope-card li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #536c60;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.geoagri-scope-card li svg {
+  flex: 0 0 auto;
+  margin-top: 2px;
+  color: #2d9b69;
+}
+
+/* FMR */
+
+.geoagri-fmr {
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+.geoagri-fmr-card {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 25px;
+  align-items: center;
+  padding: 34px;
+  background: #18312a;
+  border-radius: 18px;
+  box-shadow: 0 20px 55px rgba(24, 49, 42, 0.16);
+}
+
+.geoagri-fmr-icon {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  color: #b9e2c9;
+  background: rgba(126, 203, 158, 0.12);
+  border: 1px solid rgba(173, 226, 193, 0.18);
+  border-radius: 13px;
+}
+
+.geoagri-fmr-copy .geoagri-section-kicker {
+  color: #8dd0a5;
+}
+
+.geoagri-fmr h2 {
+  max-width: 700px;
+  color: #ffffff;
+  font-size: clamp(25px, 3vw, 36px);
+}
+
+.geoagri-fmr p {
+  max-width: 720px;
+  margin-top: 13px;
+  color: #b7c9c0;
+}
+
+.geoagri-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+  color: #bce4ca;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.geoagri-text-link:hover {
+  color: #ffffff;
+}
+
+/* WORKFLOW */
+
+.geoagri-workflow {
+  padding: 94px 0;
+  background: #f7faf8;
+}
+
+.geoagri-heading-centered {
+  grid-template-columns: 1fr 0.72fr;
+}
+
+.geoagri-workflow-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.geoagri-workflow-card {
+  position: relative;
+  min-height: 205px;
+  padding: 27px;
+  background: #ffffff;
+  border: 1px solid #e0e9e3;
+  border-radius: 14px;
+}
+
+.geoagri-workflow-card > span {
+  display: inline-block;
+  color: #126b45;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+}
+
+.geoagri-workflow-card h3 {
+  margin: 35px 0 9px;
+  color: #24453a;
+  font-size: 22px;
+}
+
+.geoagri-workflow-card p {
+  margin: 0;
+  color: #72847b;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* CONNECTION */
+
+.geoagri-connection {
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+.geoagri-connection-card {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 25px;
+  align-items: center;
+  padding: 38px;
+  background: #eaf5ee;
+  border: 1px solid #d3e7d9;
+  border-radius: 18px;
+}
+
+.geoagri-connection-icon {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  color: #126b45;
+  background: #ffffff;
+  border: 1px solid #d5e7db;
+  border-radius: 13px;
+}
+
+.geoagri-connection h2 {
+  font-size: clamp(24px, 2.7vw, 34px);
+}
+
+.geoagri-connection p {
+  max-width: 710px;
+  margin-top: 11px;
+}
+
+/* REFERENCES */
+
+.geoagri-references {
+  padding: 84px 0 92px;
+  background: #f7faf8;
+  border-top: 1px solid #e0eae3;
+}
+
+.geoagri-reference-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.geoagri-reference-header h2 {
+  margin: 8px 0 0;
+  color: #18312a;
+  font-size: 30px;
+  letter-spacing: -0.04em;
+}
+
+.geoagri-reference-header > svg {
+  color: #789187;
+}
+
+.geoagri-reference-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.geoagri-reference-card {
+  position: relative;
+  display: block;
+  min-height: 225px;
+  padding: 26px;
+  color: inherit;
+  text-decoration: none;
+  background: #ffffff;
+  border: 1px solid #e0e9e3;
+  border-radius: 14px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.geoagri-reference-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(28, 66, 49, 0.08);
+}
+
+.geoagri-reference-card > div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #126b45;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.geoagri-reference-card h3 {
+  max-width: 480px;
+  margin: 26px 0 10px;
+  color: #24453a;
+  font-size: 19px;
+}
+
+.geoagri-reference-card p {
+  max-width: 500px;
+  margin: 0;
+  color: #74857d;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.geoagri-reference-card > svg {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  color: #80948a;
+}
+
+/* FOOTER CTA */
+
+.geoagri-footer-cta {
+  padding: 70px 0 32px;
+  background: #18312a;
+}
+
+.geoagri-footer-cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.geoagri-footer-cta-inner > div > span {
+  color: #8dd0a5;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+.geoagri-footer-cta h2 {
+  margin-top: 8px;
+  color: #ffffff;
+  font-size: clamp(26px, 3vw, 38px);
+}
+
+.geoagri-footer-cta .geoagri-primary-button {
+  flex: 0 0 auto;
+  color: #18312a;
+  background: #d8f0df;
+  box-shadow: none;
+}
+
+.geoagri-footer-cta .geoagri-primary-button:hover {
+  background: #ffffff;
+}
+
+.geoagri-source-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 48px;
+  padding-top: 18px;
+  color: #82968c;
+  border-top: 1px solid rgba(222, 239, 228, 0.12);
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.geoagri-source-note svg {
+  flex: 0 0 auto;
+  margin-top: 1px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 980px) {
+  .geoagri-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    padding-top: 62px;
+  }
+
+  .geoagri-hero-visual {
+    max-width: 700px;
+  }
+
+  .geoagri-section-heading,
+  .geoagri-scope-grid,
+  .geoagri-heading-centered {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .geoagri-feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .geoagri-fmr-card,
+  .geoagri-connection-card {
+    grid-template-columns: auto 1fr;
+  }
+
+  .geoagri-fmr-card .geoagri-text-link,
+  .geoagri-connection-card .geoagri-primary-button {
+    grid-column: 2;
+    justify-self: start;
+  }
+}
+
+@media (max-width: 700px) {
+  .geoagri-container {
+    width: min(100% - 28px, 1180px);
+  }
+
+  .geoagri-hero-grid {
+    min-height: auto;
+    padding: 50px 0 55px;
+  }
+
+  .geoagri-hero h1 {
+    font-size: 70px;
+  }
+
+  .geoagri-meta {
+    gap: 10px 14px;
+  }
+
+  .geoagri-map-art {
+    height: 300px;
+  }
+
+  .geoagri-overview,
+  .geoagri-scope,
+  .geoagri-fmr,
+  .geoagri-workflow,
+  .geoagri-connection,
+  .geoagri-references {
+    padding: 68px 0;
+  }
+
+  .geoagri-feature-grid,
+  .geoagri-workflow-grid,
+  .geoagri-reference-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .geoagri-feature-card {
+    min-height: auto;
+  }
+
+  .geoagri-fmr-card,
+  .geoagri-connection-card {
+    grid-template-columns: 1fr;
+    padding: 28px;
+  }
+
+  .geoagri-fmr-card .geoagri-text-link,
+  .geoagri-connection-card .geoagri-primary-button {
+    grid-column: auto;
+  }
+
+  .geoagri-footer-cta-inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .geoagri-hero-actions {
+    flex-direction: column;
+  }
+
+  .geoagri-primary-button,
+  .geoagri-secondary-button {
+    width: 100%;
+  }
+
+  .geoagri-hero h1 {
+    font-size: 58px;
+  }
+
+  .geoagri-hero-title {
+    font-size: 19px;
+  }
+
+  .geoagri-map-art {
+    height: 250px;
+  }
+
+  .route-one {
+    width: 220px;
+  }
+
+  .route-two {
+    width: 200px;
+  }
+
+  .route-three {
+    width: 165px;
+  }
+
+  .geoagri-visual-footer {
+    grid-template-columns: 1fr;
+  }
+}

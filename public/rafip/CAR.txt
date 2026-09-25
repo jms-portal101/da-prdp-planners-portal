@@ -1,0 +1,747 @@
+﻿CORDILLERA ADMINISTRATIVE REGION (CAR) 2025 EDITION
+I-PLAN Component Cordillera Administrative Region Regional Agriculture and Fisheries Investment Portfolio (2025 Edition)
+Section I: Cordillera Administrative Region (CAR) at a Glance
+Overview of the Region
+The Cordillera Administrative Region (CAR) is a landlocked, mountainous region in Northern Luzon, bordered by the Ilocos Region and Cagayan Valley. It comprises six provinces and the city of Baguio, with terrain dominated by the Cordillera Mountain Range and rich watersheds.
+Regional Political Map & Profile:
+* 6 Provinces
+* 2 Cities
+* 75 Municipalities
+* 1,178 Barangays
+Topography & Environment:
+* Topography: Elevations ranging from 1,000 to 2,500 meters above sea level. Generally steep and uneven terrain, with numerous valleys and ridges.
+* Climate Type (PAGASA):
+   * Type I - Abra, Benguet
+   * Type III - Apayao, Mt. Province, Ifugao, Kalinga
+* Ave. Annual Rainfall: 1,800 mm minimum (Abra) to 3,800 mm maximum in the rest of CAR
+* Ave. Typhoon Occurrence: 20 tropical cyclones annually
+* Soil Type: Mountain soils (53%), clay loam (17%), clay (9%), loam (4%), other soils (17%)
+* Agro-Ecological Constraints: Soil Degradation, Climate vulnerability, Flood and soil erosion, Drought, Market access
+* Sources: Planners Portal, RCES Environmental Report, PSA 2025, Land Resources Information Management System, FAO
+SAFDZ Map Profile:
+In the Cordillera Administrative Region (CAR), integrated crop-livestock-fishery zones are located in the low to mid-elevation areas of Abra, Apayao, Ifugao, Kalinga, and Mountain Province, where diversified farming systems are most viable. Agroforestry zones, found in the higher elevations across all six provinces, support sustainable land use and watershed conservation. The region’s major water sources—the Chico, Abra, Agno, and Amburayan Rivers—provide essential supply for irrigation, domestic use, and ecological services. Strategic livestock sub-development zones are concentrated in Kalinga, Mountain Province, and Apayao.
+Economic Context & Agri-fishery Performance
+* Gross Regional Domestic Product Growth Rate (2021-2024) at Constant 2018 Prices:
+   * The GRDP of the Cordillera region contracted from 9% in 2021-2022 to 5% in 2023-2024; however, Agriculture, Forestry and Fishing grew by 1.1 percent. The CAR region contributed 8% to national GRDP.
+   * Agriculture, forestry, and fishing growth: -2.1 (2021-2022), -1.3 (2022-2023), 1.1 (2023-2024)
+   * Industry growth: 7.0 (2021-2022), 4.2 (2022-2023), 0.3 (2023-2024)
+   * Services growth: 10.9 (2021-2022), 8.9 (2022-2023), 6.8 (2023-2024)
+* Share of Major Industries to the Regional Economy (2021-2024):
+   * While the contribution of the agri-fishery sector in CAR to economic development is modest, approximately 64.2% of the population in the Cordillera Administrative Region (CAR) is engaged in agriculture and this reflects the region's strong reliance on agriculture for livelihood and economic activity.
+   * Services: 65.5% (2021), 66.8% (2022), 68.1% (2023), 69.4% (2024)
+Agri-Fisheries Situationer:
+* Total land area: 1,829,368 ha
+* Agriculture land area: 222,496 hectares
+* Aquaculture/marine area: 674.6 hectares
+* Registered Farmers: 294,320 (RSBSA)
+* Registered Fisherfolk (aquaculture): 34,196 (Philippine Fisheries Profile 2022, PSA 2024)
+* Poverty Incidence: 7% Region-wide (Poverty incidence among families)
+Section II: CAR's Prime Commodities
+Overview of the Prime Commodities
+The six provinces of the Cordillera Administrative Region (CAR) prioritized six commodity groups for development: high-value crops, rice, corn, cassava, livestock, and fisheries. From within these groups, eight commodities were selected for targeted investment—highland vegetables, coffee, heirloom rice, hogs, commercial rice, corn, cardava banana, and mango. These commodities were chosen for their strong potential to grow into robust industries, strengthen food sufficiency, and increase farmer incomes.
+Commodity 1. Highland Vegetables
+Industry Profile
+Highland vegetables refer to crops cultivated in elevated areas, typically above 800 meters above sea level where cooler temperatures, distinct microclimates, and shorter growing seasons shape agricultural practices. These vegetables thrive in the mountainous region of the Cordillera. Common highland vegetables include cabbage, carrots, cauliflower, broccoli, snap beans, sweet peas, lettuce and bell pepper. Along with white potatoes, these crops are a major contributor to the Cordillera region’s agricultural economy, grown by smallholder farmers and marketed both locally and nationally. The major producers of highland vegetables are the provinces of Benguet, Mountain Province and Ifugao.
+Highland Vegetable Industry Situationer (2024):
+* Total Vol. of Production: 1.3M MT (80% share to National Production; Rank 1st)
+* Total area harvested: 25,825 ha (48% share to National area harvested; Rank 4th)
+* Demand Level: 5.8 MT
+* Sufficiency Level: 100 %
+* Surplus: 1.3M MT
+* Vegetable production per province ('000 MT) in 2024:
+   * Abra: 0
+   * Apayao: 0
+   * Benguet: 1,103
+   * Ifugao: 127
+   * Kalinga: 2
+   * Mountain Province: 87
+Competitiveness Vision: To leverage the unique semi-temperate climate and dedicated workforce of the Cordillera region for excellence in vegetable production. By adopting good agricultural practices, the region aims to enhance productivity through proper postharvest management and improved product quality, thus enabling the industry to meet market demand and ensure better incomes for all stakeholders in the vegetable industry.
+Priority Constraints of the Highland Vegetables Industry
+1. Poor Market System and Information: Without up-to-date market information, the vegetable farmers in CAR cannot predict the demand. Prices swing unpredictably, making it hard to earn steady profits. This also leads to reduced bargaining power of farmers and reduced farmer income.
+2. High Cost of Inputs for Highland Vegetable Production: The production of highland vegetables remains costly due to expensive inputs such as seeds, synthetic fertilizers, machinery, fuel, and labor. As a result, many small-scale farmers struggle to maintain profitability, especially when market prices fluctuate or yields are affected by unpredictable climate conditions.
+3. High Post-harvest Losses: The vegetable industry in CAR faces significant post-harvest losses as a result of poor harvesting techniques, inefficient transport systems, and substandard operations in packing facilities. These issues compromise product quality and reduce marketable yield, undermining farm profitability.
+Priority Investments for Highland Vegetables
+* Establishment of Highland Vegetable Consolidation and Marketing Enterprise
+   * Components: Consolidation facility, Pre-cooling facility, Manpower (FCA-managed), Hauling vehicles/refrigerated vehicle, Processing facility, Market services (link to markets), Continuing training of FCA on enterprise development, Advocacy for national policies that support vegetable growers.
+   * Estimated Cost: 500 million
+   * Coverage: Provincewide
+   * Proposed Location: Benguet / Mountain Province / Ifugao
+   * Implementation Period: 2026-2028
+* Continuous Trainings for Farmers on Post-Production and Handling Systems
+   * Components: Venue and logistics, Training materials and visual tools, Facilitator’s fee and honoraria, Demonstration & practice tools, Monitoring, evaluation and follow-up.
+   * Estimated Cost: 5 - 10 million/province
+   * Coverage: Regionwide
+   * Proposed Location: Benguet / Mountain Province / Ifugao
+   * Implementation Period: 2026-2028
+* Establishment of Processing Facility for Highland Vegetables
+   * Components: Pre-processing area, Processing line, Packaging Section, Waste management system, Support infrastructure.
+   * Requirements: Building & utilities, equipment, cold storage units, waste management system, training & compliance setup.
+   * Estimated Cost: 12-20 Million
+   * Coverage: Regionwide
+   * Proposed Location: Benguet / Mountain Province / Ifugao
+   * Implementation Period: 2026-2028
+* Construction of Tramlines
+   * Components: Structural towers and pylons, Cable system, Motor and drive assembly, Loading/unloading platforms, Control system, Civil works, Installation.
+   * Estimated Cost: 3-8 Million
+   * Coverage: Regionwide
+   * Proposed Location: Benguet / Mountain Province / Ifugao
+   * Implementation Period: 2026-2028
+* Construction of Footbridges
+   * Components: Foundation works, Superstructure, Approaches, handrails, guardrails, Mobilization & equipment, Permits & compliance.
+   * Estimated Cost: 10 Million/SP
+   * Coverage: Regionwide
+   * Proposed Location: Benguet / Mountain Province / Ifugao
+   * Implementation Period: 2026-2028
+Summary of Proposed Partnerships and Support Actions for Highland Vegetables
+RAFIP Proposed Project
+	Key Partners
+	Support/Action Needed
+	Establishment of Highland Vegetable Consolidation & Marketing Enterprise
+	DA (PhilMech, AMAD, RFO, ATI, PRDP), LGU(s) of Benguet/Ifugao/Mountain Province, FCAs, NGOs/SUCs/other NGAs
+	Design location-specific equipment; market linkage; technical assistance; funding. Provide land and local counterpart support; enabling environment for FCAs. Operate postharvest complexes; maintain equipment; ensure quality control.
+	Continuous Training for Farmers on Post-Production and Handling Systems
+	DA-RFO, Agricultural Training Institute, DA-PhilMech, DA-HVCDP, DTI/DOST, LGUs of Benguet, Ifugao and Mountain Province, FCAs, Private Farm Machinery Suppliers
+	DA funds and organizes trainings on GAP & POT, sorting, grading, packaging, cold chain, and logistics management. Partner with LGUs/SUCs to localize modules. Private suppliers offer machinery and after-sales service.
+	Establishment of Processing Facility for Highland Vegetables
+	Agricultural Training Institute, DA-PhilMech, DA-HVCDP, DTI/DOST, LGUs, FCAs
+	Provide equipment, layout designs, and training modules; support vegetable and fruit processing hubs for MSMEs. Equipment grants for packaging, labeling, nutrient analysis, and drying. Facilitate LTO processing.
+	Construction of Tramlines
+	DA (RFO, BAFE, PRDP), LGU(s) of Benguet/Ifugao/Mountain Province, FCAs
+	Planning, geo-mapping, and implementation. BAFE sets technical standards and engineering compliance. LGUs allocate land and counterpart funding. FCAs manage operations.
+	Construction of Footbridges
+	DA-RFO, LGUs of Benguet, Ifugao and Mountain Province, FCAs, DPWH
+	DPWH designs and builds footbridges for pedestrian safety and access, included in Annual Maintenance Program (AMP). LGUs allocate counterpart funding and land; manage facilities.
+	Commodity 2. Coffee
+Industry Profile
+Coffee is a tropical evergreen shrub from the genus Coffea, cultivated for its beans, which are roasted and brewed into one of the world’s most beloved beverages. The Cordillera’s cool climate, high elevation (1,000–1,800 meters), and volcanic loam soils make it ideal for growing high-quality coffee. Farmers in the CAR cultivate Arabica, Robusta, Excelsa and Liberica coffee where these are most suited based on elevation and climate.
+Regional Coffee Industry Situationer (2024):
+* Total Vol. of GCB Production: 983 MT (3% share to National Production; Rank 5th)
+* Total area harvested: 5,160 ha (4% share to National area harvested; Rank 4th)
+* Bearing trees: 3.4M (4% share to National; Rank 4th)
+* Demand Level: 1,447 MT
+* Sufficiency Level: 68 %
+* Production of GCB per province in 2024 (MT):
+   * Abra: 17.17
+   * Apayao: 8.80
+   * Benguet: 118.24
+   * Ifugao: 210.77
+   * Kalinga: 590.08
+   * Mountain Province: 38.37
+Competitiveness Vision: An industry that is cost-competitive, aligned with global quality standards, resilient, sustainable, and environment-friendly; and provides continuous benefits to farmers, processors, traders, manufacturers, and exporters.
+Priority Constraints of the Coffee Industry
+1. Limited Accredited Nurseries: The limited number of accredited coffee nurseries in CAR is a major constraint (only 15 existing nurseries for Arabica and none for Robusta), limiting farmers’ access to high-quality, disease-resistant seedlings essential for boosting yields and improving bean quality. Without certified sources, expansion efforts stall.
+2. High Cost of Inputs: Many smallholder growers struggle to afford quality inputs which leads to lower yields, poor bean quality, and increased vulnerability to pests and diseases. Without targeted support, coffee production remains economically unsustainable for many growers.
+3. Low Productivity Because of Poor Cultural Management: As trees age, they produce fewer beans, become more susceptible to pests and diseases, and require more maintenance. High labor costs and an inadequate workforce reduce income. Coffee areas in remote areas have limited access to water, further affecting productivity.
+Priority Investments for Coffee
+* Establishment/Improvement & Accreditation of Private and Government Managed Coffee Nurseries
+   * Components: Certified seedlings/mother plants (Robusta & Arabica), Nursery shed and shade net, Potting bags and soil media, Tools and irrigation, Labor and training of FCAs, Fencing and site preparation, Technical support (TESDA), Documentation and accreditation.
+   * Estimated Cost: 50-90 K (for 1,000 seedling capacity)
+   * Coverage: Regionwide
+   * Proposed Location: Coffee-growing areas in the 6 provinces of CAR
+   * Implementation Period: 2026-2028
+* Establishment of Small-Scale Composting Facilities (SSCF)
+   * Components: Biomass shredder, African Night Crawlers (ANCs), Vermicompost tea brewer, Vermi beds with shed, Site preparation and fencing, Training and technical support (including Balanced Fertilization Strategies - BFS).
+   * Products: Vermicast, vermicompost, and vermi-tea.
+   * Estimated Cost: 160-230K
+   * Coverage: Regionwide
+   * Proposed Location: Coffee-producing barangays
+   * Implementation Period: 2026-2028
+* Establishment of Coffee-Based Agroforestry System
+   * Components: Shade trees, Coffee plants, Intercrops, Tools and equipment, Soil conservation structures, Fertilizer inputs, Water management (rainwater catchment, irrigation, etc.), Biodiversity buffers, Training on POT (seed to GCB), Community-based management.
+   * Estimated Cost: 150-250 K per hectare
+   * Coverage: Regionwide
+   * Proposed Location: 6 provinces of CAR
+   * Implementation Period: 2026-2028
+* Construction/Rehabilitation of Irrigation Systems to Support Coffee Expansion Areas
+   * Components: Water Source Development, Pump System, Distribution Network, Irrigation Method Setup, Storage & Catchment, Site Preparation & Trenching, Labor & Installation, Training & Technical Support.
+   * Estimated Cost: 175-375K / Ha
+   * Coverage: Regionwide
+   * Proposed Location: Coffee expansion areas
+   * Implementation Period: 2026-2028
+Summary of Proposed Partnerships and Support Actions for Coffee
+RAFIP Proposed Project
+	Key Partners
+	Support/Action Needed
+	Establishment/Improvement & Accreditation of Coffee Nurseries
+	DA RFO CAR, Bureau of Plant Industry (BPI), private accredited nurseries, DAR, SUCs, LGUs
+	Fund nursery establishment and shade structures. BPI certifies mother trees to ensure seedlings are true-to-type and disease-free, conducts site visits, grants official accreditation, and monitors adherence.
+	Establishment of Small-Scale Composting Facilities (SSCF)
+	DA-BSWM, DA Soils Laboratory, DA Special Projects, DAR
+	Fund composting facilities. BSWM guides setup and trains operators on soil fertility management.
+	Establishment of Coffee-based Agroforestry System
+	DA RFO CAR, DAR, SOCODEVI, VISTA, Cooperatives, ACPC, LGUs, BSWM
+	Supply certified planting materials for coffee and intercrops (banana, cacao, fruit trees). Provide training on agroforestry design, soil fertility, and climate-smart farming.
+	Construction/Rehabilitation of Irrigation Systems for Coffee Expansion
+	DA-RFO CAR, LGUs, NIA
+	Provide small-scale irrigation systems (SSIPs) including drip setups, water pumps, and rainwater catchments. NIA conducts Feasibility Studies, engineering works, spring development, solar/diesel pumps, pipelines, and training.
+	Commodity 3. Heirloom Rice
+Industry Profile
+Heirloom rice in the Cordillera Administrative Region is a diverse collection of traditional varieties cultivated for generations in the region’s rice terraces. Known for their unique flavors, colors, and resilience, these organically grown grains—like tinawon, balatinaw, and gilgilang—are deeply tied to indigenous farming practices and cultural rituals. Heirloom rice supports biodiversity, food security, and offers premium market potential, making it both an agricultural and cultural treasure.
+Regional Heirloom Rice Industry Situationer (2024/2025):
+* Total Vol. of Production: 30,000 MT
+* Total area harvested: 13,178 ha
+* Demand Level: 18,090 MT
+* Sufficiency Level: 166%
+* Share in National area planted to specialty rice: 28%
+* Heirloom Rice production (MT) per province in 2025 (incl. upland rice of Abra and Apayao):
+   * Abra: 4,637
+   * Apayao: 13,985
+   * Benguet: 507
+   * Ifugao: 7,740
+   * Kalinga: 320
+   * Mountain Province: 12,155
+Competitiveness Vision: To evolve into an industry where smallholders consistently produce enough rice to fulfill household needs and commercial/surplus production is substantially increased. Within the next five years, the industry hopes to develop a commercially driven production, milling, processing, and marketing capacity that can deliver sufficient volume for export marketing that is cost and quality-competitive without compromising local food security.
+Priority Constraints of the Heirloom Rice Industry
+1. Water Scarcity and Poor Irrigation Infrastructure: Reduces yields, compromises grain quality, and limits planting cycles. Traditional varieties depend on specific water regimes, and without reliable irrigation, farmers face higher costs and climate vulnerabilities.
+2. Limited Sources of High Quality Seed: Without access to accredited seed centers or formal conservation systems, varietal purity and consistent yields are difficult to maintain. This limits organic certification and scaling up for premium markets.
+3. Inadequate Postharvest Infrastructure: Lack of milling, storage, drying, and collection facilities hampers quality and marketability. Without centralized modern equipment, farmers struggle to meet quality standards for premium markets.
+Priority Investments for Heirloom Rice
+* Repair/Upgrading of Communal Irrigation Systems (CIS)
+   * Components: Water Source Development, Pump System, Distribution Network, Irrigation Method Setup, Storage & Catchment, Labor, Training & Technical Support to Irrigation Associations (IAs).
+   * Estimated Cost: 175-375K / Ha
+   * Coverage: Regionwide
+   * Proposed Location: Heirloom rice production sites
+   * Implementation Period: 2026-2028
+* Establishment of Small-Scale Irrigation Projects (SSIP)
+   * Components: SWIP, SFR, STW pump installation, open source pump irrigation, Spring Development, Ram pump, Wind pump, Solar Powered Irrigation System (SPIS), Diversion Dam, Training & Technical Support to FCA operators.
+   * Estimated Cost: 1.5 - 5 Million
+   * Coverage: Regionwide
+   * Proposed Location: Mt. Province (9), Kalinga (5), Ifugao (7), Benguet (5)
+   * Implementation Period: 2026-2028
+* Community-Based Extension Model for Heirloom Rice Production
+   * Components: Demo plots for sustainable/climate-smart technologies, Farmer Field School, peer-to-peer learning, inventory & characterization of rice seeds, seed conservation, monitoring, documentation, technical support.
+   * Estimated Cost: 3M - 5M (3-year duration)
+   * Coverage: Regionwide
+   * Proposed Location: Mt. Province (9), Kalinga (5), Ifugao (7), Benguet
+   * Implementation Period: 2026-2028
+* Establishment of Post Harvest Facility
+   * Components: Warehouse receipt system, milling, drying and packaging equipment (solar bubble dryer/mechanical bin dryer), color sorters, polishers, vacuum packaging, storage, quality control laboratory, branding/export-grade packaging, hauling vehicle, standard threshers, mini-rice panicle thresher.
+   * Estimated Cost: 25M + / SP
+   * Coverage: Province-wide
+   * Proposed Location: Mt. Province (9), Kalinga (5), Ifugao (7), Benguet (5)
+   * Implementation Period: 2026-2028
+Summary of Proposed Partnerships and Support Actions for Heirloom Rice
+RAFIP Proposed Project
+	Key Partners
+	Support/Action Needed
+	Repair/Upgrading of Communal Irrigation Systems & SSIP
+	NIA, DA, LGUs, Farmer Cooperatives and Associations (FCAs)
+	Technical support and funding. Operation and maintenance of CIS and SSIPs (SWIPs, STW, pumps, spring development).
+	Establishment of Post Harvest Facility
+	DA, PhilMech, IPOPHIL, PhilRice, IRRI, PLGU/MLGU, FCAs, SUCs, Private Tech Providers
+	Funding and policy alignment via RCEF/commodity programs; establishment of Rice Processing Systems (RPS). Technical expertise in quality, postharvest, Geographic Indication (GI). Site selection and long-term management.
+	Community-Based Extension Model for Heirloom Rice Production
+	ATI CAR, DA RFO CAR, IRRI, IP-led Farmer Groups & Women's Cooperatives, SUCs
+	Farmer training, experiential learning tours, Learning Sites for Agriculture (LSAs). Link producers to markets. Varietal characterization, postharvest innovation, grounding in indigenous knowledge and gender equity.
+	Commodity 4. Hogs
+Industry Profile
+A hog (Sus domesticus) is typically defined as a domesticated pig weighing over 120 pounds. In CAR, hog production is primarily driven by backyard or smallholder systems raising native pigs and commercial breeds (Large White, Landrace, Duroc) suited to the terrain. Hogs make up over 75% of the region’s total livestock output, underscoring their importance to local food systems.
+Regional Hogs Industry Situationer (2024):
+* Inventory: 117,118 heads (Oct 2024) or 7,613 MT dressed meat produced in 2024
+* Share to National Production: 1 % (Rank 14th)
+* Demand Level for dressed meat: 25,760 MT
+* Sufficiency Level for dressed meat: 30%
+* Hog inventory (heads) per province as of October 2024:
+   * Abra: 48,869
+   * Apayao: 34,399
+   * Benguet: 30,297
+   * Ifugao: 27,133
+   * Kalinga: 19,210
+   * Mountain Province: 17,210
+Competitiveness Vision: Following the African Swine Fever (ASF) outbreak in the country, the industry seeks to recover and rebuild by revitalizing hog production, replenishing swine stocks, and restoring market confidence in pork products.
+Priority Constraints of the Hog Industry
+1. Production Hampered by Disease Outbreaks: Outbreaks like ASF lead to high mortality, forced culling, and movement restrictions. Backyard growers are vulnerable due to limited access to veterinary services, biosecurity, and surveillance.
+2. Inadequate Capital to Establish Hog Production Enterprises: Steep expenses for feed, veterinary supplies, housing, and biosecurity upgrades. Smallholders face limited credit access and minimal government support.
+3. Insufficient Hog Processing Facilities: Lack of accredited processing plants limits value addition. Most hogs are sold liveweight or processed in small slaughterhouses that cannot meet food safety standards.
+Priority Investments for Hogs
+* Upgrading of Existing or Establishment of New Breeder-Multiplier Farms
+   * Components: Breeder Module (10 gilts + 1 boar), Housing and facilities, Potable Water System (PWS), Disease diagnostic services, Biosecurity infrastructure, Quarantine checkpoint strengthening, Training, Admin Services.
+   * Estimated Cost: 3.7 - 5.7M / farm
+   * Coverage: Provincewide
+   * Proposed Location: All provinces
+   * Implementation Period: 2026-2028
+* Establishment of Smallhold Feed Mill Facilities
+   * Components: Basic Feed Mill Equipment, Civil works, Power & water system, Raw material storage, Packaging & weighing equipment, Working capital/raw materials, Labor, Training, Permits.
+   * Estimated Cost: 5.3 - 9M
+   * Coverage: Provincewide
+   * Proposed Location: Ifugao / Mountain Province / Apayao / Kalinga / Benguet / Abra
+   * Implementation Period: 2026-2028
+* Establishment of Community-Scale Meat Processing Facility
+   * Components: Building and civil works, Meat processing equipment, Cold storage and freezers, Water and power systems, NMIS certification, Training, Packaging & labeling equipment.
+   * Estimated Cost: 3.6 - 25M
+   * Coverage: Provincewide
+   * Proposed Location: Selected municipalities in the 6 provinces
+   * Implementation Period: 2026-2028
+* Construction of AA Slaughterhouse
+   * Components: Building & civil works, Equipment & machinery, Site development, Compliance & certification, Project management, Staff capacity building, Operational staffing cost/year.
+   * Estimated Cost: 35 - 58M
+   * Coverage: Municipalwide
+   * Proposed Location: Ifugao / Mountain Province / Apayao / Kalinga / Benguet / Abra
+   * Implementation Period: 2026-2028
+* Swine Production and Marketing Enterprise
+   * Components: Sanitary housing, Breeder stock, Feed supply/storage, Veterinary & biosecurity requirements, Processing & slaughtering facility, Marketing/distribution, Training, Admin & permits.
+   * Estimated Cost: 18 - 29 million
+   * Coverage: Municipalwide
+   * Proposed Location: Ifugao / Mountain Province / Apayao
+   * Implementation Period: 2026-2028
+Summary of Proposed Partnerships and Support Actions for Hogs
+RAFIP Proposed Project
+	Key Partners
+	Support/Action Needed
+	Breeder-Multiplier Farms Upgrading / Establishment
+	DA RFO CAR, BAI, PLGU, MLGU (PVET), FCAs
+	Funding, technical support, livestock inputs. Regulatory support, counterpart funding, community engagement. FCAs act as operators.
+	Small-Hold Feed Mill Facility
+	DA RFO CAR, PhilMech, LGUs, PVET, FCAs, PAFMI, VSM Construction & Mill Dev Corp
+	Planning, funding, equipment grants, technical training. Feed formulation, quality control, turn-key solutions, project management.
+	Community-Scale Meat Processing Facility
+	DA RFO CAR, NMIS-CAR, LGU, FCAs
+	INSPIRE and PRDP Scale-Up planning/funding. NMIS ensures compliance, Class A/AA/AAA accreditation, and technical audits. LGUs/PVET assist with protocols.
+	Construction of AA Slaughterhouse
+	PAMPI, DA RFO CAR, NMIS-CAR, LGU, FCAs, Private Contractors
+	Structural/operational assessment, AA accreditation, counterpart funding, site development, construction, and equipment installation.
+	Swine Production and Marketing Enterprise
+	BAI, NMIS-CAR, PVET, C/MLGU, Private sector players
+	Technical support on genetics, biosecurity, disease control. Meat safety and marketing compliance. Veterinary and slaughterhouse operations services.
+	Commodity 5. Rice
+Industry Profile
+Commercial rice (Oryza sativa L.) is primarily grown in lowland and rainfed areas, especially in Kalinga and Apayao. It serves as a staple food and key source of household income. Commercial rice output has declined in recent years, highlighting the need for targeted support to improve productivity and market competitiveness.
+Regional Rice Industry Situationer (2024):
+* Total Vol. of Production: 299.4K MT (2% share to National Production; Rank 16th)
+* Total area harvested: 93,509 ha (2% share to National area harvested; Rank 15th)
+* Demand Level: 246 K MT
+* Sufficiency Level: 122%
+* Surplus: 53.4K MT
+* Palay production per province in 2024 (MT):
+   * Abra: 68,864.60
+   * Apayao: 69,794.06
+   * Benguet: 12,690.47
+   * Ifugao: 28,337.25
+   * Kalinga: 101,309.84
+   * Mountain Province: 18,403.90
+Competitiveness Vision: To move from fragmented and subsidy-dependent farming systems to integrated, market-driven, and innovation-enabled agri-enterprises. Upgrading production efficiency and output quality, modernizing processes, and strengthening value chain linkages through governance, empowered FCAs, and infrastructure.
+Priority Constraints of the Rice Industry
+1. High Cost of Inputs and Limited Access to Finance: High burden from fertilizers, pesticides, seeds, labor, and water costs. Subsidy/loan programs suffer from insufficient coverage, untimely distribution, and low awareness.
+2. Low Palay Prices and Unstable Market Conditions: Prices dictated by traders and influx of cheap rice imports depress farmgate prices, reducing profitability.
+3. Inadequate Post-harvest Facilities: Reliance on traditional sun drying leads to crop loss, low grain quality, contamination, and reduced market value.
+Priority Investments for Rice
+* Cordillera Rice Input and Credit Integration Project (CRICIP)
+   * Components: Input subsidy package, Mechanization support, Community credit fund, Financial literacy & enterprise training, Monitoring & reporting tools, Project coordination.
+   * Estimated Cost: 5.3 - 5.6M / cropping cycle
+   * Coverage: Municipalwide
+   * Proposed Location: Rice-producing municipalities
+   * Implementation Period: 2026-2028
+* Establishment of Municipal Rice Hub
+   * Components: Aggregation & postharvest facility, Packaging & branding support, Digital & physical market linkage, LGU-managed buffer fund to buy palay at fair prices, Training for FCA/IP groups on enterprise/quality/marketing, Admin support.
+   * Estimated Cost: 7 Million
+   * Coverage: Regionwide
+   * Proposed Location: Selected rice-producing municipalities
+   * Implementation Period: 2026-2028
+* Repair/Upgrading of Communal Irrigation Systems (CIS)
+   * Components: Water source development, pump system, distribution network, storage & catchment, training to IAs.
+   * Estimated Cost: 175-375K / Ha
+   * Coverage: Regionwide
+   * Proposed Location: Rice production sites
+   * Implementation Period: 2026-2028
+* Establishment of Small-Scale Irrigation Projects (SSIP)
+   * Components: SWIP, SFR, STW pumps, open source pumps, spring development, ram/wind pumps, SPIS, diversion dams.
+   * Estimated Cost: 1.5 - 5 Million
+   * Coverage: Regionwide
+   * Proposed Location: Rice producing municipalities
+   * Implementation Period: 2026-2028
+Summary of Proposed Partnerships and Support Actions for Rice
+RAFIP Proposed Project
+	Key Partners
+	Support/Action Needed
+	CRICIP
+	DA, ACPC, Landbank, DBP, PhilMech, PhilRice, PCIC, ATI, BSWM, NIA, FCAs, IAs, LGU
+	Loans for inputs/machinery; certified seeds, dryers, transplanters; crop insurance; climate-smart capability building.
+	Municipal Rice Hub
+	LGU, FCAs, PhilMech, DTI, DA-AMAS, DBP/Landbank
+	LGU buys palay at fair price; FCAs aggregate supply; DTI/AMAS aid in packaging, market linkage, KADIWA platform.
+	Community Irrigation Systems & SSIP Repair
+	NIA, DA, LGUs, FCAs
+	Technical support, funding, and operation/maintenance of CIS and SSIPs (SWIPs, DDs, STW, spring development).
+	Commodity 6. Corn
+Industry Profile
+Corn (Zea mays) is a vital crop in CAR. Yellow corn dominates with over 90% share (for feed/industrial use), while white corn is grown for human consumption. Ifugao has the largest cultivated area (34%), while Kalinga leads in total volume (average yields: 3.5 MT/ha yellow, 2.49 MT/ha white). Techno-demo farms show hybrid yields up to 9 MT/ha.
+Regional Corn Industry Situationer (2024):
+* Total Vol. of Production: 162K MT (2% share to National Production; Rank 11th)
+* Total area harvested: 51,004 ha (2% share to National area harvested; Rank 11th)
+* Demand Level: 45,225 MT
+* Sufficiency Level: 358%
+* Surplus: 117K MT
+* Corn production (MT) per province in 2024:
+   * Abra: 16,003.81
+   * Apayao: 13,880.99
+   * Benguet: 377.25
+   * Ifugao: 54,469.96
+   * Kalinga: 55,549.00
+   * Mountain Province: 21,416.01
+Competitiveness Vision: To transform CAR's corn industry into a competitive and profitable sector characterized by high-yielding, diversified farming systems, cost-effective production, minimal post-harvest losses, and enhanced value-added products, while preserving traditional white corn in the highlands.
+Priority Constraints of the Corn Industry
+1. Lack of Value Addition: Absence of processing facilities forces farmers to sell corn raw at low prices, missing opportunities for animal feed, grits, or corn flour.
+2. High Post-harvest Losses & Low Mechanization: Inadequate drying/storage, manual harvesting, terrain constraints on mechanization, and unpredictable weather cause grain damage and spoilage.
+3. High Input Cost and Low Yield in Major Areas: Production on fragile hilly slopes, extensive use of low-yielding F2 seeds, and extreme monsoon weather affect productivity.
+Priority Investments for Corn
+* Establishment of Feed Mill
+   * Components: Building facility, mechanical dryer, hauling trucks, forklifts, pallets, packaging equipment, corn mill, pelletizer, pulverizer, mixer, storage bins, weighing scales.
+   * Estimated Cost: 150 Million
+   * Coverage: Provincewide
+   * Proposed Location: Ifugao
+   * Implementation Period: 2026-2028
+* Establishment of Cornick and Other Corn-By Products Processing Center
+   * Components: Building facility, grain cleaning/sorting machine, soaking vats, boiling/steaming equipment, deep fryer, oil filtration, oil spinner/centrifuge, seasoning mixer, cooling trays, vacuum/sealing machine, packaging.
+   * Estimated Cost: 50 Million
+   * Coverage: Provincewide
+   * Proposed Location: Abra
+   * Implementation Period: 2026-2028
+* Corn Mechanization and Post Harvest Losses Reduction Project
+   * Components: Four-wheel drive corn tractors (3M/unit), corn planters (500K/unit), combine harvesters (2.1M/unit), recirculating dryers (3.5M/unit), warehouses (3M/unit), hauling trucks (7M/unit), mechanical corn sheller-husker (600K/unit).
+   * Estimated Cost: 100 Million
+   * Coverage: Regionwide
+   * Proposed Location: Apayao, Ifugao, Kalinga, Paracelis (Mountain Province)
+   * Implementation Period: 2026-2028
+* Provision of Corn Inputs and Other Production Support
+   * Components: Input subsidy (high-yielding seeds, fertilizers, pesticides, herbicides - 80K/ha), model farms/techno demo sites for sloping areas (1.5M/site), irrigation systems (open source pumps - 100K/unit; SDP - 1M/unit; SPIS - 3M/unit).
+   * Estimated Cost: 50 Million
+   * Coverage: Regionwide
+   * Proposed Location: Apayao, Ifugao, Kalinga, Paracelis (Mountain Province)
+   * Implementation Period: 2026-2028
+Summary of Proposed Partnerships and Support Actions for Corn
+RAFIP Proposed Project
+	Key Partners
+	Support/Action Needed
+	Establishment of Feed Mill
+	DA-RFO CAR, BAI, ATI, PhilMech, LGUs, FCAs, PAFMI
+	BAI guidance on feed formulation & sanitation; ATI/PhilMech training on mill operation; PAFMI gives technical expertise on design, SOPs, pricing, and market links.
+	Cornick & Corn By-Products Processing Center
+	DA-RFO CAR, ATI, BPI, LGUs, FCAs
+	Funding, policy, varietal selection guidance, permits/clearances, site validation, and FCA organizational management.
+	Corn Mechanization & Post Harvest Reduction
+	DA-RFO CAR, PhilMech, ATI, TESDA, LGUs, FCAs
+	Provision of heavy equipment, operations & maintenance training, field verification, equipment management by FCAs.
+	Provision of Corn Inputs & Production Support
+	DA-RFO CAR, ATI, BSWM, LGUs, FCAs
+	Sustainable Land Management (SLM) training for sloping corn lands, input subsidies, model farm demos, and adoption of viable high-yielding technologies.
+	Commodity 7. Cardava Banana
+Industry Profile
+Cardava banana (Musa acuminata × Musa balbisiana, ABB group) is a cooking banana grown in mid-elevation zones of CAR in backyard or mixed farms. It holds value for food security, local dishes, and small-scale processing like banana chips.
+Regional Banana Industry Situationer (2024/2025):
+* Total Vol. of Production: 7,374 MT (0.30% share to National Production; Rank 16th)
+* Total Area planted: 906 Ha (0.48% share to National Area; Rank 16th)
+* Demand Level: 75,400 MT
+* Sufficiency Level: 10%
+* Volume of Cardava banana per province in 2025 (MT):
+   * Abra: 2,038.01
+   * Apayao: 1,869.50
+   * Benguet: 631.10
+   * Ifugao: 1,305.76
+   * Kalinga: 1,112.76
+   * Mountain Province: 417.32
+Competitiveness Vision: To develop Cardava Banana into a resilient, value-added commodity that supports smallholder livelihoods through climate-adapted production, improved postharvest quality, and expanded processing (especially banana chips), while strengthening market access and branding.
+Priority Constraints of the Cardava Banana Industry
+1. Poor Accessibility to and from Production Areas: Steep terrain and lack of feeder roads/tramlines force manual hauling, causing high spoilage, fruit bruising, and reduced market value.
+2. Limited Supply of Quality Planting Materials: Lack of disease-free, high-yielding suckers or tissue-cultured seedlings leads to poor genetic stock, uneven fruit size, low starch, and disease susceptibility.
+3. Poor Post-harvest Practices and Facilities: Post-harvest losses reach up to 15% from rough handling and cuts. Absence of ripening chambers, ethylene scrubbers, and packing sheds leads to premature ripening, blackening, fungal infections, and shortened shelf life.
+Priority Investments for Cardava Banana
+* Establishment of a Tissue Culture Laboratory for Disease-Free Cardava Banana Plantlets
+   * Components: Laboratory infrastructure, equipment & instruments, culture media, starter plant material, nursery & hardening facility, capacity building, QA, project management.
+   * Estimated Cost: 7 - 8 Million
+   * Coverage: Regionwide
+   * Proposed Location: Apayao, Ifugao, Mt. Province
+   * Implementation Period: 2026-2028
+* Establishment of Cardava Banana Consolidation, Processing & Marketing Facility
+   * Components: Upgrading existing facility to include processing center, equipment & tools, raw material procurement, packaging & labeling, branding, market linkage, training.
+   * Coverage: Provincewide
+   * Proposed Location: Apayao, Ifugao, Kalinga, Mt. Province
+   * Implementation Period: 2026-2028
+* Improvement of FMR and Alternative Transport Systems
+   * Components & Estimated Costs: Farm-to-Market Roads (25M/km), Tramline (6M/installation), Footbridge (500k/meter), Footpath (1M/km).
+   * Coverage: Province-wide
+   * Proposed Location: Cardava banana production sites in Apayao & Kalinga
+   * Implementation Period: 2026-2028
+Summary of Proposed Partnerships and Support Actions for Cardava Banana
+RAFIP Proposed Project
+	Key Partners
+	Support/Action Needed
+	Tissue Culture Laboratory
+	SUCs, BPI, LGUs, Private Sector, NGOs
+	Technical expertise on tissue culture; BPI certifies plantlets and monitors nursery; LGUs allocate land and infrastructure.
+	Consolidation, Processing & Marketing Facility
+	DA RFO CAR, DTI, ATI, DOST, SUCs, FCAs
+	DTI/DOST assist in market promotion, branding, processing technology, and product prototypes. ATI/DA provide postharvest & packaging training. FCAs operate facilities.
+	Improvement of FMR & Transport Systems
+	DA, DPWH, LGUs, BAFE
+	DPWH and DA provide design/construction for FMRs and transport systems; BAFE provides technical support for agricultural transport systems; LGUs allocate counterpart resources.
+	
+
+COMMODITY 8: Mango
+Industry Profile & Priority Investment Packages
+Commodity 8. Mango
+Mango (Mangifera indica) is one of the major fruit crops of the Cordillera Region. The variety grown is the Carabao mango, prized for its sweetness and export potential. Mango thrives in lower-elevation areas of CAR, such as Abra and Kalinga where dry seasons align with flowering and fruiting cycles.
+Regional Mango Industry Situationer
+* Total Vol. of Production (2024): 2,238 MT
+* Total area harvested (2024): 816 ha
+* Share to National Production (2024): 0.3%
+* Share to National area harvested (2024): 0.5%
+* Rank in National Production (2024): Rank 15th
+* Rank in National area harvested (2024): Rank 16th
+* Demand Level (2024): 11,000 MT
+* Sufficiency Level (2024): 21%
+Mango Production per Province in 2024 (MT) (Figure 15)
+* Abra: 921.98 MT
+* Apayao: 548.49 MT
+* Benguet: 336.42 MT
+* Ifugao: 322.60 MT
+* Kalinga: 95.78 MT
+* Mountain Province: 13.59 MT
+Source: (PSA, 2025)
+Competitiveness Vision: The mango industry in CAR envisions becoming a resilient and globally competitive sector by elevating fruit quality through geographic branding, strengthening inclusive value chains with contract growing and investing in postharvest infrastructure like cold storage and ripening chambers. It also aims to adopt climate-smart practices and pest-resistant varieties to boost sustainability, while leveraging digital tools and market intelligence to align with national mango development goals.
+Mango Regional Commodity Map (Figure 16)
+Sources: PSA, PRDP Planners Portal
+Priority Constraints of the Mango Industry
+The mango industry in CAR faces several key constraints, including erratic climate conditions that disrupt flowering, aging and poorly managed trees, and widespread pest and disease issues like fruit flies and anthracnose. Farmers often lack access to quality planting materials and post-harvest facilities, leading to low yields and high spoilage. Market access is limited, with smallholders relying on middlemen and facing unstable prices.
+1. Low Production of High Quality Mango for the Local and Export Market
+
+   * Low mango yields in CAR especially for the export-favored Carabao variety (Mangifera indica) are caused by aging orchards, poor pruning practices, pest damage from cecid flies and anthracnose and inadequate irrigation facilities. These factors result in inconsistent fruit quality and reduced harvest volumes, making it difficult for farmers to meet both local demand and export-grade standards.
+   2. High Post-harvest Losses
+
+      * In CAR, many farmers still use traditional methods of harvesting and have limited access to ripening chambers, proper packaging materials, and market-linked logistics. These losses not only reduce income but also weaken the region’s competitiveness in fresh and processed mango markets.
+      3. Limited Business and Market Development Skills among Farmers
+
+         * Many mango farmers in CAR have limited business and market development skills, which restrict their ability to take advantage of the mango commodity as a source of additional income, analyze market trends, and negotiate fair prices. This gap hinders their capacity to scale operations, access higher-value markets, and diversify income through processing or direct sales.
+Priority Investments for Mango
+1. ESTABLISHMENT OF VILLAGE LEVEL POSTHARVEST & PROCESSING CENTER
+         * Components:
+         * Postharvest and consolidation facilities
+         * Processing facility with complete equipment
+         * GAP training for farmers: (1) seedling production/propagation; (2) cultural management, (3) post-harvest management, (4) grading standards and (5) pest and disease management for adoption of farmers
+         * Training on mango processing
+         * Post-harvest equipment and materials including hauling/delivery trucks
+         * Estimated Cost: 100 Million
+         * Coverage: Provincewide
+         * Reference: DA RFO CAR
+         * Proposed Location: Bangued, Lagangilang, Dolores, Pilar
+         * Implementation Period: 2026-2028
+2. ESTABLISHMENT OF IRRIGATION SYSTEMS/OTHER WATER FACILITIES
+         * Types and Unit cost:
+         * Community Irrigation System (CIS)
+         * SWIP
+         * STW
+         * Pump irrigation (open source)
+         * Spring Development
+         * Ram pump system
+         * Wind pump system
+         * Solar powered irrigation system
+         * Estimated Cost: 50 Million (Based on PCIP requirement)
+         * Coverage: Provincewide
+         * Proposed Location: Bangued, Lagangilang, Dolores, Pilar
+         * Implementation Period: 2026-2028
+Proposed Support Actions for Mango
+Table 8. Summary of Proposed Partnerships and Support Actions for Mango
+RAFIP Proposed Project
+	Key Partners
+	Support/Action Needed
+	Establishment of Village-Level Postharvest and Processing Center
+	DA RFO CAR, LGUs, NGOs
+
+
+FDA
+
+
+DOST/DTI
+
+
+FCA
+	Funding for the establishment of postharvest and processing centers, procurement of machineries and packaging materials, training on GAP
+
+
+License to Operate (LTO)
+
+
+Packaging and labelling materials, Training on postharvest practices, nutrient analysis
+
+
+Operation and management of the enterprise
+	Establishment of Irrigation Systems/Other Water Facilities
+	DA RFO CAR, LGUs, NGOs, NIA
+
+
+FCA
+	Provision of irrigation facilities, equipment, rehabilitation of existing irrigation facilities
+
+
+Operation and maintenance of the facilities
+	SECTION III: Multi-Commodity Interventions
+Multi-Commodity Interventions Across Regional Prime Commodities
+These proposed multi-commodity interventions are designed to create an enabling environment for investments that cut across all eight prime commodities of the region. They focus on policies, capacity-building, market systems, and risk management solutions that unlock the full potential of previously identified packaged interventions. By strengthening value chains through knowledge, skills, and regulatory support, these initiatives aim to reduce investment risks, improve productivity, and expand market access, creating attractive opportunities for public, private, and development sector participation.
+Policy Development
+         * Institutionalize ASF-free zoning and compartmentalization in swine-producing provinces
+         * Streamline GAP/GMP certification for highland vegetables, banana, mango, rice, corn and coffee;
+         * Streamline Balance Fertilization Strategy (BFS) in support to soil fertility management;
+         * Provide local tax incentives for agri-processing enterprises handling heirloom rice, coffee, banana, mango; and
+         * Streamline registration process of local inventions to allow local agri-equipment suppliers to provide farm machinery that is suited to the terrain of smallhold farms of the Cordillera.
+Regulatory Service
+         * Introduce biosecurity compliance certification for swine farms linked to financing and program eligibility;
+         * Expedite movement permits for biosecure-certified farms; and
+         * Establish a Regional Animal Health and Biosecurity Council to coordinate livestock disease prevention and rapid response.
+Research Facility / Study
+         * Conduct adaptive R&D for climate-resilient production of highland vegetable, heirloom rice, coffee, mango, cardava banana rice and corn;
+         * Develop postharvest technologies and value addition for vegetables, coffee quality improvement, and rice milling efficiency; and
+         * Advance biosecurity-enhancing technologies for swine farms.
+Enterprise Development
+         * Expand cooperative-led enterprises for highland vegetables, coffee, heirloom rice, pork, cardava banana, mango, rice, corn;
+         * Mentor FCAs in product diversification for highland vegetables, processed cardava banana, mango, corn feeds and rice-based goods; and
+         * Develop premium market-ready brands across commodities.
+Market Linkage
+         * Organize buyer-seller matching for mango processors, highland vegetable, heirloom rice, coffee, corn, and cardava banana cooperatives;
+         * Facilitate banana, mango, and coffee producers’ participation in global trade fairs;
+         * Develop a regional digital marketplace for all prime commodities;
+         * Launch a sustained regional campaign promoting coffee, mango and cardava banana in domestic and export markets; and
+         * Conduct commodity-themed investment forums targeting agri-tourism and specialty markets.
+Mapping
+         * Create a regional digital database for farm locations, production volumes, and postharvest assets across all commodities; and
+         * Integrate disease surveillance mapping for swine into the agri-data platform.
+Certification & Accreditation
+         * Deliver TESDA-accredited training for coffee barista skills, mango processing, and banana product development;
+         * Certify skilled workers in biosecurity management for swine farms;
+         * Facilitate GAP certification for vegetables, mango, rice, corn, and banana producers; and
+         * Facilitate GAHP certification for swine raisers.
+Capacity Building & Support Service
+         * Train FCAs on cooperative governance, quality control, and market negotiation;
+         * Develop technical skills in postharvest management for vegetables, coffee, cardava banana and mango; and
+         * Conduct leadership and enterprise management training for multi-commodity cooperatives.
+Environmental Conservation
+         * Promote climate-smart agriculture for rice, corn, vegetable, coffee, and banana production clusters;
+         * Integrate agroforestry in coffee, mango, and banana areas; and
+         * Implement soil and water conservation practices in sloping lands.
+SECTION IV: Commodity Investment Plans
+Section IV: Commodity Investment Plans
+Provincial Commodity Investment Plans of Cordillera Administrative Region
+For more detailed information, interested stakeholders may access the region’s Provincial Commodity Investment Plans (PCIPs).
+(Figure 17. Updated CIPs of CAR Region as of 2025)
+The full PCIPs reports may be accessed through the following link or scan the QR code:
+bit.ly/4nd1THw
+SECTION V: Partner Directory
+Partner Directory
+NATIONAL GOVERNMENT AGENCIES - REGIONAL OFFICES
+         * DEPARTMENT OF AGRICULTURE CAR
+
+            * BPI Compound, Guisad, Baguio City
+            * ored@car.da.gov.ph
+            * (074) 445-4973 / (074) 443-4621
+            * DEPARTMENT OF TRADE AND INDUSTRY
+
+               * 3rd Floor, R.E.E.F Building, Military Cutoff Rd 30101 Baguio City
+               * car@dti.gov.ph
+               * (074) 620-5542
+               * AGRICULTURAL TRAINING INSTITUTE
+
+                  * Benguet State University Compound, Km. 5, Balili, La Trinidad, Benguet
+                  * rtccar.dcc@ati.da.gov.ph
+                  * (074) 422-2375
+                  * NATIONAL IRRIGATION ADMINISTRATION
+
+                     * Wangal, La Trinidad, Benguet
+                     * niaregioncar@yahoo.com.ph
+                     * (074) 422-5064, (074) 422-2435
+                     * PHILIPPINE STATISTICS OFFICE
+
+                        * Barangay, 141 Abanao Ext, Baguio City
+                        * benguet@psa.gov.ph
+                        * (074) 443-7763
+                        * DEPARTMENT OF AGRARIAN REFORM
+
+                           * #55 Bokawkan, Corner Easter Road, Baguio City, Philippines
+                           * records.car@dar.gov.ph
+                           * (074) 422 5873
+                           * DEPARTMENT OF TOURISM
+
+                              * Baguio Tourism Complex, Gov. Pack Rd, Baguio
+                              * dotcar@tourism.gov.ph
+                              * (074) 442 7014
+                              * DEPARTMENT OF SCIENCE AND TECHNOLOGY
+
+                                 * Governor Pack Road, Baguio City
+                                 * pstc-benguet@car.dost.gov.ph
+                                 * (074) 620-6376
+                                 * DEPARTMENT OF PUBLIC WORKS AND HIGHWAYS
+
+                                    * Engineer's Hill, Baguio City
+                                    * dpwh_car@dpwh.gov.ph
+                                    * (074) 442 5968
+                                    * DEPARTMENT OF ENVIRONMENTAL AND NATURAL RESOURCES
+
+                                       * DENR Compound, Gibraltar Road, Baguio City
+                                       * car@denr.gov.ph
+                                       * (074) 442-4531
+Contact Us
+PRDP REGIONAL PROJECT COORDINATION OFFICE CAR
+                                       * Address: DA-PRDP Office, BPI Compound, Guisad, Baguio City
+                                       * Email: prdpcar@gmail.com
+                                       * Phone: (074) 661 4408
+                                       * PROJECT DIRECTOR’S OFFICE: ored@car.da.gov.ph | (074) 445 4973 / (074) 443 4621
+                                       * DEPUTY PROJECT DIRECTOR’S OFFICE: dacar.ortd@gmail.com | (074) 445 9092
+                                       * I-REAP COMPONENT: ireapscaleupcar@gmail.com | (074) 445 8822
+                                       * I-BUILD COMPONENT: prdpcaribuildscaleup@gmail.com | (074) 661 4408
+                                       * I-PLAN COMPONENT: iplan.prdp.car@gmail.com | (074) 661 4408
+FARMER COOPERATIVES AND ASSOCIATIONS
+The list of Proponent Groups (Farmer Cooperatives and Associations) may be accessed through the following link or scan the QR code:
+bit.ly/3HHpWQ5
+PRDP NATIONAL PROJECT COORDINATION OFFICE (NPCO)
+                                       * Address: 4th Floor DA New Building, Department of Agriculture Elliptical Road, Diliman, Quezon City, Philippines
+                                       * Email: prdpnpco@gmail.com
+                                       * Phone: (02) 8928 8762 loc. 2866
+                                       * IPLAN COMPONENT: prdpiplan2@gmail.com | (02) 8273 - 2474 loc. 2870
+                                       * IBUILD COMPONENT: npcoibuild2@gmail.com | (02) 8273 - 2474 loc. 2866
+                                       * IREAP COMPONENT: ireapnpco2@gmail.com | (02) 8273 - 2474 loc. 2871
+                                       * ISUPPORT COMPONENT: npco.component4@gmail.com | (02) 8273 - 2474 loc. 2865
+PRDP PROJECT SUPPORT OFFICE (PSO) - NORTH LUZON
+                                       * Address: 1st Floor, PRDP-PSO, Regulatory Division, Sto. Niño, City of San Fernando, Pampanga, Philippines
+                                       * Email: psoluzonaadmn@gmail.com
+                                       * Phone: (045) 625-2850 local 209
+                                       * IPLAN COMPONENT: iplanluzona@gmail.com
+                                       * IBUILD COMPONENT: ibuildpsonl@gmail.com
+                                       * IREAP COMPONENT: ireapnorthluzon@gmail.com
+                                       * ISUPPORT COMPONENT: psoluzonaadmn@gmail.com
+PROVINCIAL PROJECT MANAGEMENT AND IMPLEMENTING UNITS
+                                       * ABRA:
+                                       * Abra Provincial Capitol, Bangued, Abra
+                                       * officeofthegovernor.abra@gmail.com
+                                       * (074) 752-8442
+                                       * APAYAO:
+                                       * Apayao Provincial Capitol, Luna, Apayao
+                                       * govbutzy.apayao22@gmail.com
+                                       * 0938-630-4233 / 0965-768-3434
+                                       * BENGUET:
+                                       * Benguet Provincial Capitol, La Trinidad, Benguet
+                                       * ppdo@benguet.gov.ph | benguet.governor@gmail.com
+                                       * (074) 422-2004
+                                       * IFUGAO:
+                                       * Ifugao Provincial Capitol, Lagawe, Ifugao
+                                       * pgocapitol2019@gmail.com
+                                       * (074) 382 2129
+                                       * KALINGA:
+                                       * Tabuk City, Kalinga
+                                       * kalingapgo@gmail.com | opaskalinga21@gmail.com | oaskalinga@yahoo.com
+                                       * 0929 449 7719
+                                       * MOUNTAIN PROVINCE:
+                                       * Mountain Province Provincial Capitol, Bontoc, Mountain Province
+                                       * mpgov@yahoo.com | ppdo_mountainprovince@yahoo.com
+                                       * 074 462 4310
+SECTION VI: Annexes
+Value Chain Maps & Summary of Opportunities & Constraints
+Annex 1. Highland Vegetables
+Value Chain Map of Highland Vegetables in CAR (Figure 17)
+Source: Highland Vegetables VCA
+Text Inside the Annex 1 Textbox / Diagram:
+1. PRODUCTION
+                                       * Strengths / Support: Loans from various institutions, protective facilities, production programming, Government and NGO support, GAP and climate-smart farming, pest monitoring and new vegetable varieties.
+                                       * Constraints: Lack of loan collateral, unstable prices, seasonality of production, low adoption of modern technologies, pest and disease, unsuitable crop varieties.
+                                       * Key Provinces: Benguet, Ifugao, Mountain Province.
+2. POST-HARVEST / PROCESSING
+                                       * Strengths / Support: Training on proper handling, availability of post-harvest facilities and cold storage, product sorting, better FMRs, better government support.
+                                       * Constraints: High post-harvest losses due to improper transportation and packaging, inadequate facilities, lack of market for graded products, poor access.
+3. MARKETING / TRADING
+                                       * Strengths / Support: Stabilize prices through implementation of planting calendar and crop zoning, strengthen FCAs for fair price negotiations and market linkages, establish FMAs to reduce transport cost.

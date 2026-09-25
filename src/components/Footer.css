@@ -1,0 +1,182 @@
+/* =========================================
+   FOOTER CONTAINER
+   ========================================= */
+
+.footer {
+  width: 100%;
+  padding: 80px 48px 32px;
+  box-sizing: border-box;
+  background-color: #063d2e; /* Deep Professional Forest Green */
+  color: #ffffff;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* =========================================
+   MAIN FOOTER GRID
+   ========================================= */
+
+.footer-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2.2fr 1fr 1fr 1fr;
+  gap: 56px;
+}
+
+/* =========================================
+   BRANDING SECTION
+   ========================================= */
+
+.footer-brand {
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo strong {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.6px;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.footer-logo span {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.725rem;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  color: #a7f3d0; /* Soft Mint Accent */
+}
+
+.footer-brand p {
+  margin: 20px 0 0;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: #cbd5e1;
+  opacity: 0.88;
+}
+
+/* =========================================
+   FOOTER COLUMNS & LINKS
+   ========================================= */
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column h4 {
+  margin: 0 0 22px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #6ee7b7; /* Light Emerald */
+}
+
+.footer-column a {
+  width: fit-content;
+  margin-bottom: 12px;
+  color: #e2e8f0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-column a:hover {
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+/* Small Indicator Dot on Hover */
+.footer-column a::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%) scale(0);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #34d399;
+  transition: transform 0.2s ease;
+}
+
+.footer-column a:hover::before {
+  transform: translateY(-50%) scale(1);
+}
+
+/* =========================================
+   BOTTOM BAR / COPYRIGHT
+   ========================================= */
+
+.footer-bottom {
+  max-width: 1400px;
+  margin: 64px auto 0;
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: #94a3b8;
+  font-size: 0.825rem;
+  line-height: 1.5;
+}
+
+.footer-bottom span {
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN (TABLET)
+   ========================================= */
+
+@media (max-width: 1024px) {
+  .footer {
+    padding: 64px 32px 28px;
+  }
+
+  .footer-inner {
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+    max-width: 550px;
+  }
+}
+
+/* =========================================
+   RESPONSIVE DESIGN (MOBILE)
+   ========================================= */
+
+@media (max-width: 640px) {
+  .footer {
+    padding: 48px 20px 24px;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .footer-bottom {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
