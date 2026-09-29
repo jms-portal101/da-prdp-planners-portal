@@ -1,146 +1,273 @@
-/* =========================================================
+/* =========================================
    PLANNING SECTION
-   Value Chain Development Flow
-   ========================================================= */
+   DA-PRDP RAFIP BRANDING
+========================================= */
 
 .planning-section {
+  background:
+    linear-gradient(
+      180deg,
+      #f7faf8 0%,
+      #f5f8f6 100%
+    );
+
+  padding: 88px 0 96px;
+
   position: relative;
-  width: 100%;
-  padding: 84px 0 92px;
-
-  background: #f8faf9;
-
-  border-top: 1px solid #e6eee9;
-
   overflow: hidden;
 }
 
-.planning-inner {
-  width: min(1400px, calc(100% - 120px));
-  margin: 0 auto;
+
+/* =========================================
+   SUBTLE BACKGROUND ACCENTS
+========================================= */
+
+.planning-section::before {
+  content: "";
+
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  top: -230px;
+  right: -170px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(0, 143, 76, 0.07),
+      transparent 68%
+    );
+
+  pointer-events: none;
 }
 
 
-/* =========================================================
+.planning-section::after {
+  content: "";
+
+  position: absolute;
+
+  width: 320px;
+  height: 320px;
+
+  left: -190px;
+  bottom: -180px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(36, 75, 147, 0.055),
+      transparent 68%
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   INNER
+========================================= */
+
+.planning-inner {
+  width: min(1400px, calc(100% - 80px));
+
+  margin: 0 auto;
+
+  position: relative;
+
+  z-index: 1;
+}
+
+
+/* =========================================
    HEADER
-   ========================================================= */
+========================================= */
 
 .planning-header {
   display: flex;
-  align-items: flex-end;
+
   justify-content: space-between;
+  align-items: flex-end;
 
-  gap: 40px;
+  gap: 50px;
 
-  margin-bottom: 44px;
+  margin-bottom: 54px;
 }
+
 
 .planning-heading {
-  max-width: 720px;
+  max-width: 850px;
 }
+
+
+/* =========================================
+   EYEBROW
+========================================= */
 
 .planning-eyebrow {
-  display: inline-block;
+  display: inline-flex;
 
-  margin-bottom: 10px;
+  align-items: center;
 
-  color: #059669;
+  gap: 10px;
 
-  font-size: 9px;
-  font-weight: 700;
+  color: #008f4c;
 
-  line-height: 1;
+  font-size: 12px;
 
-  letter-spacing: 0.14em;
+  font-weight: 800;
 
-  text-transform: uppercase;
+  letter-spacing: 0.16em;
+
+  margin-bottom: 14px;
 }
+
+
+.planning-eyebrow::before {
+  content: "";
+
+  width: 28px;
+  height: 2px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #008f4c,
+      #008b87
+    );
+
+  border-radius: 4px;
+}
+
+
+/* =========================================
+   MAIN HEADING
+========================================= */
 
 .planning-heading h2 {
   margin: 0;
 
-  color: #064e3b;
+  color: #18312a;
 
-  font-size: clamp(30px, 3vw, 40px);
+  font-size: clamp(34px, 4vw, 52px);
 
-  font-weight: 700;
+  line-height: 1.08;
 
-  line-height: 1.12;
+  font-weight: 750;
 
   letter-spacing: -0.035em;
 }
 
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
 .planning-heading p {
-  max-width: 650px;
+  margin: 20px 0 0;
 
-  margin: 14px 0 0;
+  max-width: 760px;
 
-  color: #5f6f68;
+  color: #607268;
 
-  font-size: 13px;
+  font-size: 16px;
 
-  font-weight: 400;
-
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
 
-/* =========================================================
-   09 STAGE METRIC
-   ========================================================= */
+/* =========================================
+   HEADER METRIC
+========================================= */
 
 .planning-header-note {
+  min-width: 245px;
+
   display: flex;
+
   align-items: center;
 
-  gap: 15px;
+  gap: 18px;
 
-  flex-shrink: 0;
+  padding: 18px 22px;
 
-  padding: 14px 20px;
+  border-left: 3px solid #008f4c;
 
   background: #ffffff;
 
-  border: 1px solid #e2e8e5;
-
-  border-radius: 12px;
-
   box-shadow:
-    0 4px 12px rgba(6, 78, 59, 0.035);
+    0 12px 35px rgba(24, 49, 42, 0.08);
+
+  border-radius: 0 12px 12px 0;
+
+  position: relative;
+
+  overflow: hidden;
 }
 
-.planning-header-note > span {
-  color: #047857;
 
-  font-size: 34px;
+/* subtle blue accent */
 
-  font-weight: 800;
+.planning-header-note::after {
+  content: "";
+
+  position: absolute;
+
+  width: 90px;
+  height: 90px;
+
+  right: -45px;
+  top: -45px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(36, 75, 147, 0.10);
+}
+
+
+.planning-header-note span {
+  color: #008f4c;
+
+  font-size: 42px;
 
   line-height: 1;
 
-  letter-spacing: -0.04em;
+  font-weight: 800;
+
+  position: relative;
+
+  z-index: 1;
 }
+
 
 .planning-header-note p {
   margin: 0;
 
-  color: #6b7280;
+  color: #607268;
 
-  font-size: 8px;
+  font-size: 10px;
 
-  font-weight: 700;
+  line-height: 1.55;
 
-  line-height: 1.4;
+  font-weight: 800;
 
-  letter-spacing: 0.09em;
+  letter-spacing: 0.11em;
 
-  text-transform: uppercase;
+  position: relative;
+
+  z-index: 1;
 }
 
 
-/* =========================================================
-   STAGE FLOW
-   ========================================================= */
+/* =========================================
+   PLANNING FLOW
+========================================= */
 
 .planning-flow {
   position: relative;
@@ -150,75 +277,188 @@
   grid-template-columns:
     repeat(9, minmax(0, 1fr));
 
-  width: 100%;
-
-  margin-bottom: 30px;
-
-  border-top: 1px solid #d8e5df;
+  gap: 14px;
 }
+
+
+/* =========================================
+   CONTINUOUS HORIZONTAL LINE
+========================================= */
+
+.planning-flow::before {
+  content: "";
+
+  position: absolute;
+
+  top: 29px;
+
+  left: 42px;
+  right: 42px;
+
+  height: 2px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #b8d9c8 0%,
+      #008f4c 22%,
+      #008b87 52%,
+      #244b93 78%,
+      #b8d9c8 100%
+    );
+
+  z-index: 0;
+
+  opacity: 0.8;
+}
+
+
+/* =========================================
+   INDIVIDUAL FLOW ITEM
+========================================= */
 
 .planning-flow-item {
   position: relative;
 
-  min-width: 0;
+  z-index: 1;
 
-  display: flex;
-  align-items: stretch;
+  min-width: 0;
 }
 
 
-/* =========================================================
+/* =========================================
+   NODE ON CONNECTION LINE
+========================================= */
+
+.planning-flow-item::before {
+  content: "";
+
+  position: absolute;
+
+  top: 23px;
+  left: 50%;
+
+  width: 13px;
+  height: 13px;
+
+  transform: translateX(-50%);
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  border: 3px solid #008f4c;
+
+  box-shadow:
+    0 0 0 5px rgba(0, 143, 76, 0.08);
+
+  z-index: 3;
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+/* =========================================
    STAGE CARD
-   ========================================================= */
+========================================= */
 
 .planning-stage {
   position: relative;
 
-  width: 100%;
+  min-height: 225px;
 
-  min-width: 0;
+  margin-top: 52px;
 
-  min-height: 178px;
-
-  padding: 20px 15px 17px;
+  padding: 22px 18px 24px;
 
   background: #ffffff;
 
-  border: 1px solid #e2e8e5;
+  border: 1px solid #dce7e1;
 
-  border-top: 0;
-
-  border-radius: 0 0 10px 10px;
+  border-radius: 14px;
 
   box-shadow:
-    0 3px 10px rgba(6, 78, 59, 0.025);
-
-  overflow: hidden;
+    0 8px 24px rgba(24, 49, 42, 0.06);
 
   transition:
     transform 0.25s ease,
-    border-color 0.25s ease,
     box-shadow 0.25s ease,
-    background 0.25s ease;
+    border-color 0.25s ease;
 }
+
+
+/* =========================================
+   TOP CARD ACCENT
+========================================= */
+
+.planning-stage::before {
+  content: "";
+
+  position: absolute;
+
+  top: -1px;
+
+  left: 18px;
+  right: 18px;
+
+  height: 3px;
+
+  border-radius: 0 0 4px 4px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #008f4c,
+      #008b87,
+      #244b93
+    );
+
+  transform: scaleX(0);
+
+  transform-origin: center;
+
+  transition:
+    transform 0.25s ease;
+}
+
+
+/* =========================================
+   CARD HOVER
+========================================= */
 
 .planning-stage:hover {
-  transform: translateY(-5px);
+  transform: translateY(-7px);
 
-  border-color: #a7d8c4;
-
-  background: #ffffff;
+  border-color: #a9cec0;
 
   box-shadow:
-    0 12px 24px -8px rgba(6, 78, 59, 0.12);
-
-  z-index: 4;
+    0 18px 38px rgba(24, 49, 42, 0.13);
 }
 
 
-/* =========================================================
-   STAGE TOP
-   ========================================================= */
+.planning-stage:hover::before {
+  transform: scaleX(1);
+}
+
+
+.planning-flow-item:hover::before {
+  border-color: #244b93;
+
+  box-shadow:
+    0 0 0 5px rgba(36, 75, 147, 0.09);
+
+  transform:
+    translateX(-50%)
+    scale(1.08);
+}
+
+
+/* =========================================
+   TOP ROW
+========================================= */
 
 .planning-stage-top {
   display: flex;
@@ -227,177 +467,189 @@
 
   justify-content: space-between;
 
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
+
+
+/* =========================================
+   STAGE NUMBER
+========================================= */
 
 .planning-stage-number {
-  display: inline-flex;
-
-  align-items: center;
-  justify-content: center;
-
-  min-width: 34px;
-
-  padding: 5px 9px;
-
-  color: #059669;
-
-  background: #ecfdf5;
-
-  border-radius: 20px;
-
-  font-size: 10px;
-
-  font-weight: 800;
-
-  line-height: 1;
-
-  letter-spacing: 0.03em;
-}
-
-
-/* =========================================================
-   ICON
-   ========================================================= */
-
-.planning-stage-icon {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
 
   display: flex;
 
   align-items: center;
   justify-content: center;
 
-  color: #047857;
+  border-radius: 11px;
 
-  background: #f0fdf8;
+  background:
+    linear-gradient(
+      135deg,
+      #008f4c 0%,
+      #008b87 52%,
+      #244b93 100%
+    );
 
-  border: 1px solid #d7eee3;
+  color: #ffffff;
 
-  border-radius: 8px;
+  font-size: 13px;
 
-  flex-shrink: 0;
+  font-weight: 800;
+
+  letter-spacing: 0.04em;
+
+  box-shadow:
+    0 8px 18px rgba(0, 143, 76, 0.18);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.planning-stage:hover .planning-stage-number {
+  transform: scale(1.08);
+
+  box-shadow:
+    0 10px 22px rgba(36, 75, 147, 0.20);
+}
+
+
+/* =========================================
+   STAGE ICON
+========================================= */
+
+.planning-stage-icon {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #edf8f2,
+      #eef8f7
+    );
+
+  color: #008f4c;
 
   transition:
     background 0.25s ease,
-    border-color 0.25s ease,
+    color 0.25s ease,
     transform 0.25s ease;
 }
 
+
 .planning-stage:hover .planning-stage-icon {
-  background: #ecfdf5;
+  background:
+    linear-gradient(
+      135deg,
+      #008f4c,
+      #008b87
+    );
 
-  border-color: #b7dfcd;
+  color: #ffffff;
 
-  transform: scale(1.04);
+  transform: translateY(-2px);
 }
 
 
-/* =========================================================
+/* =========================================
    STAGE CONTENT
-   ========================================================= */
+========================================= */
 
 .planning-stage-content {
   display: flex;
 
   flex-direction: column;
-
-  gap: 7px;
-
-  margin-top: 0;
 }
+
+
+/* =========================================
+   STAGE CATEGORY
+========================================= */
 
 .planning-stage-label {
   display: block;
 
-  margin: 0;
+  margin-bottom: 10px;
 
-  color: #9ca3af;
+  color: #008f4c;
 
-  font-size: 7.5px;
+  font-size: 9px;
 
-  font-weight: 700;
+  line-height: 1.4;
 
-  line-height: 1.3;
+  font-weight: 800;
 
-  letter-spacing: 0.85px;
+  letter-spacing: 0.12em;
 
-  text-transform: uppercase;
-}
-
-.planning-stage h3 {
-  margin: 0;
-
-  color: #1f2937;
-
-  font-size: 10.5px;
-
-  font-weight: 700;
-
-  line-height: 1.42;
-
-  letter-spacing: -0.005em;
+  transition:
+    color 0.25s ease;
 }
 
 
-/* =========================================================
-   FLOW CONNECTORS
-   ========================================================= */
+.planning-stage:hover .planning-stage-label {
+  color: #008b87;
+}
+
+
+/* =========================================
+   STAGE TITLE
+========================================= */
+
+.planning-stage-content h3 {
+  margin: 0;
+
+  color: #214536;
+
+  font-size: 14px;
+
+  line-height: 1.38;
+
+  font-weight: 650;
+
+  letter-spacing: -0.015em;
+
+  overflow-wrap: break-word;
+
+  word-break: normal;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.planning-stage:hover .planning-stage-content h3 {
+  color: #244b93;
+
+  transform: translateX(2px);
+}
+
+
+/* =========================================
+   OLD CONNECTORS
+========================================= */
 
 .planning-flow-connector {
-  position: absolute;
-
-  top: 39px;
-
-  right: -7px;
-
-  width: 14px;
-
-  height: 1px;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  background: #b9d5c8;
-
-  color: #7fae98;
-
-  z-index: 5;
-
-  pointer-events: none;
-}
-
-.planning-flow-connector::after {
-  content: '';
-
-  position: absolute;
-
-  right: 0;
-
-  width: 5px;
-  height: 5px;
-
-  border-top: 1px solid #7fae98;
-  border-right: 1px solid #7fae98;
-
-  transform: rotate(45deg);
-}
-
-.planning-flow-connector svg {
   display: none;
 }
 
-.planning-flow-item:hover .planning-flow-connector {
-  background: #7fae98;
-}
 
-
-/* =========================================================
-   CTA BANNER
-   ========================================================= */
+/* =========================================
+   PLANNING CTA
+========================================= */
 
 .planning-cta {
   position: relative;
@@ -408,117 +660,146 @@
 
   justify-content: space-between;
 
-  gap: 35px;
+  gap: 40px;
 
-  padding: 31px 36px;
+  margin-top: 48px;
 
-  background:
-    linear-gradient(
-      135deg,
-      #064e3b 0%,
-      #18312a 58%,
-      #123a2d 100%
-    );
+  padding: 34px 38px;
 
-  border-radius: 14px;
-
-  color: #ffffff;
-
-  box-shadow:
-    0 16px 28px rgba(6, 78, 59, 0.13);
+  border-radius: 18px;
 
   overflow: hidden;
-}
-
-.planning-cta::after {
-  content: '';
-
-  position: absolute;
-
-  width: 360px;
-  height: 360px;
-
-  right: -160px;
-  top: -190px;
 
   background:
     radial-gradient(
-      circle,
-      rgba(82, 179, 132, 0.13) 0%,
-      rgba(82, 179, 132, 0) 70%
+      circle at 86% 18%,
+      rgba(244, 180, 0, 0.13),
+      transparent 20%
+    ),
+    radial-gradient(
+      circle at 78% 100%,
+      rgba(0, 139, 135, 0.28),
+      transparent 35%
+    ),
+    linear-gradient(
+      120deg,
+      #0b5838 0%,
+      #008f4c 35%,
+      #008b87 68%,
+      #244b93 100%
     );
 
-  pointer-events: none;
+  box-shadow:
+    0 18px 45px rgba(24, 49, 42, 0.18);
 }
 
 
-/* =========================================================
+/* =========================================
+   CTA DECORATIVE CIRCLE
+========================================= */
+
+.planning-cta::after {
+  content: "";
+
+  position: absolute;
+
+  width: 280px;
+  height: 280px;
+
+  right: -110px;
+  bottom: -160px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+
+/* second subtle circle */
+
+.planning-cta::before {
+  content: "";
+
+  position: absolute;
+
+  width: 120px;
+  height: 120px;
+
+  right: 100px;
+  top: -75px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+
+/* =========================================
    CTA COPY
-   ========================================================= */
+========================================= */
 
 .planning-cta-copy {
   position: relative;
 
   z-index: 1;
 
-  max-width: 720px;
+  max-width: 760px;
 }
+
 
 .planning-cta-copy > span {
   display: block;
 
-  margin-bottom: 7px;
+  margin-bottom: 9px;
 
-  color: #6ee7b7;
+  color: #f8d76b;
 
-  font-size: 8px;
+  font-size: 10px;
 
-  font-weight: 700;
+  font-weight: 800;
 
-  line-height: 1;
-
-  letter-spacing: 0.12em;
-
-  text-transform: uppercase;
+  letter-spacing: 0.15em;
 }
+
 
 .planning-cta-copy h3 {
   margin: 0;
 
   color: #ffffff;
 
-  font-size: 18px;
+  font-size: clamp(22px, 2.5vw, 30px);
+
+  line-height: 1.2;
 
   font-weight: 700;
 
-  line-height: 1.25;
-
-  letter-spacing: -0.015em;
+  letter-spacing: -0.02em;
 }
+
 
 .planning-cta-copy p {
+  margin: 10px 0 0;
+
   max-width: 650px;
 
-  margin: 8px 0 0;
+  color: rgba(255, 255, 255, 0.76);
 
-  color: #b8c9c1;
+  font-size: 14px;
 
-  font-size: 11px;
-
-  font-weight: 400;
-
-  line-height: 1.55;
+  line-height: 1.65;
 }
 
 
-/* =========================================================
+/* =========================================
    CTA BUTTON
-   ========================================================= */
+========================================= */
 
 .planning-cta-button {
   position: relative;
 
-  z-index: 2;
+  z-index: 1;
+
+  flex-shrink: 0;
 
   display: inline-flex;
 
@@ -526,238 +807,237 @@
 
   justify-content: center;
 
-  gap: 9px;
+  gap: 10px;
 
-  flex-shrink: 0;
+  min-height: 46px;
 
-  padding: 12px 17px;
+  padding: 0 20px;
 
-  color: #064e3b;
+  border: 1px solid rgba(255, 255, 255, 0.30);
 
-  background: #ffffff;
+  border-radius: 10px;
 
-  border: 1px solid #ffffff;
+  background: rgba(255, 255, 255, 0.10);
 
-  border-radius: 7px;
+  color: #ffffff;
 
   text-decoration: none;
 
-  font-size: 10px;
+  font-size: 13px;
 
   font-weight: 700;
 
-  line-height: 1;
-
-  white-space: nowrap;
+  backdrop-filter: blur(8px);
 
   transition:
-    background 0.2s ease,
-    border-color 0.2s ease,
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+    background 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
 }
+
+
+/* =========================================
+   CTA HOVER
+========================================= */
 
 .planning-cta-button:hover {
-  background: #ecfdf5;
+  background: #ffffff;
 
-  border-color: #ecfdf5;
+  border-color: #f4b400;
+
+  color: #244b93;
 
   transform: translateY(-2px);
-
-  box-shadow:
-    0 8px 16px rgba(0, 0, 0, 0.12);
 }
 
 
-/* =========================================================
+/* =========================================
    TABLET
-   ========================================================= */
+========================================= */
 
 @media (max-width: 1200px) {
 
   .planning-inner {
-    width: min(100% - 70px, 1100px);
+    width: min(
+      1100px,
+      calc(100% - 48px)
+    );
   }
+
 
   .planning-flow {
     grid-template-columns:
       repeat(3, minmax(0, 1fr));
 
-    gap: 12px;
-
-    border-top: 0;
+    gap: 18px;
   }
 
-  .planning-flow-item {
-    border-top: 1px solid #d8e5df;
+
+  .planning-flow::before {
+    display: none;
   }
+
+
+  .planning-flow-item::before {
+    display: none;
+  }
+
 
   .planning-stage {
-    min-height: 155px;
-
-    border-top: 0;
-
-    border-radius: 0 0 10px 10px;
-  }
-
-  .planning-flow-connector {
-    display: none;
+    margin-top: 0;
   }
 }
 
 
-/* =========================================================
-   MOBILE / TABLET
-   ========================================================= */
+/* =========================================
+   MOBILE
+========================================= */
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
 
   .planning-section {
-    padding: 72px 0 76px;
+    padding: 65px 0 70px;
   }
+
 
   .planning-inner {
-    width: min(100% - 48px, 760px);
+    width: min(
+      calc(100% - 32px),
+      560px
+    );
   }
+
+
+  /* -----------------------------------------
+     HEADER
+  ----------------------------------------- */
 
   .planning-header {
+    flex-direction: column;
+
     align-items: flex-start;
 
-    gap: 24px;
+    gap: 28px;
 
-    margin-bottom: 34px;
+    margin-bottom: 38px;
   }
+
 
   .planning-header-note {
-    padding: 13px 17px;
+    width: 100%;
+
+    box-sizing: border-box;
   }
+
+
+  /* -----------------------------------------
+     FLOW
+  ----------------------------------------- */
+
+  .planning-flow {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+
+    padding-left: 18px;
+  }
+
+
+  .planning-flow::before {
+    display: block;
+
+    top: 0;
+    bottom: 0;
+
+    left: 25px;
+    right: auto;
+
+    width: 2px;
+    height: auto;
+
+    background:
+      linear-gradient(
+        180deg,
+        #b8d9c8,
+        #008f4c,
+        #008b87,
+        #244b93
+      );
+  }
+
+
+  .planning-flow-item {
+    padding-left: 20px;
+  }
+
+
+  .planning-flow-item::before {
+    display: block;
+
+    top: 30px;
+
+    left: 7px;
+
+    width: 12px;
+    height: 12px;
+  }
+
+
+  /* -----------------------------------------
+     STAGE
+  ----------------------------------------- */
+
+  .planning-stage {
+    min-height: auto;
+
+    padding: 20px;
+  }
+
+
+  .planning-stage-top {
+    margin-bottom: 20px;
+  }
+
+
+  /* -----------------------------------------
+     CTA
+  ----------------------------------------- */
 
   .planning-cta {
     flex-direction: column;
 
     align-items: flex-start;
 
-    gap: 20px;
+    padding: 28px 24px;
 
-    padding: 27px 28px;
+    margin-top: 34px;
   }
 
-  .planning-cta-button {
-    align-self: flex-start;
-  }
-}
-
-
-/* =========================================================
-   SMALL MOBILE
-   ========================================================= */
-
-@media (max-width: 600px) {
-
-  .planning-section {
-    padding: 60px 0 64px;
-  }
-
-  .planning-inner {
-    width: calc(100% - 28px);
-  }
-
-  .planning-header {
-    display: block;
-
-    margin-bottom: 28px;
-  }
-
-  .planning-heading h2 {
-    font-size: 28px;
-  }
-
-  .planning-heading p {
-    font-size: 12px;
-
-    line-height: 1.65;
-  }
-
-  .planning-header-note {
-    display: none;
-  }
-
-  .planning-flow {
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
-
-    gap: 10px;
-  }
-
-  .planning-flow-item {
-    border-top: 1px solid #d8e5df;
-  }
-
-  .planning-stage {
-    min-height: 145px;
-
-    padding: 17px 12px 13px;
-  }
-
-  .planning-stage-number {
-    min-width: 31px;
-
-    padding: 5px 8px;
-
-    font-size: 9px;
-  }
-
-  .planning-stage-icon {
-    width: 29px;
-    height: 29px;
-  }
-
-  .planning-stage h3 {
-    font-size: 10px;
-
-    line-height: 1.4;
-  }
-
-  .planning-stage-label {
-    font-size: 6.8px;
-  }
-
-  .planning-cta {
-    margin-top: 20px;
-
-    padding: 23px 19px;
-
-    border-radius: 11px;
-  }
-
-  .planning-cta-copy h3 {
-    font-size: 16px;
-  }
-
-  .planning-cta-copy p {
-    font-size: 10px;
-  }
 
   .planning-cta-button {
     width: 100%;
-
-    min-height: 40px;
   }
 }
 
 
-/* =========================================================
-   EXTRA SMALL
-   ========================================================= */
+/* =========================================
+   SMALL MOBILE
+========================================= */
 
-@media (max-width: 380px) {
+@media (max-width: 420px) {
 
-  .planning-flow {
-    grid-template-columns:
-      1fr;
+  .planning-heading h2 {
+    font-size: 32px;
   }
 
-  .planning-stage {
-    min-height: 130px;
+
+  .planning-stage-content h3 {
+    font-size: 14px;
   }
-}   
+
+
+  .planning-header-note span {
+    font-size: 36px;
+  }
+}

@@ -1,15 +1,46 @@
 /* =========================================
-   FOOTER CONTAINER
+   RAFIP / DA-PRDP FOOTER
+   Color system matched to RAFIP cover:
+   Agriculture Green → Teal → PRDP Blue
+   Gold used as a restrained accent.
    ========================================= */
 
 .footer {
   width: 100%;
   padding: 80px 48px 32px;
   box-sizing: border-box;
-  background-color: #063d2e; /* Deep Professional Forest Green */
+  background:
+    linear-gradient(135deg, #0F6938 0%, #186073 48%, #254181 100%);
   color: #ffffff;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-family: 'Poppins', 'Inter', system-ui, -apple-system, sans-serif;
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle RAFIP-style decorative glow */
+.footer::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  top: -190px;
+  right: -80px;
+  border-radius: 50%;
+  border: 2px solid rgba(229, 159, 11, 0.18);
+  pointer-events: none;
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  bottom: -120px;
+  left: -70px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.035);
+  pointer-events: none;
 }
 
 /* =========================================
@@ -22,6 +53,8 @@
   display: grid;
   grid-template-columns: 2.2fr 1fr 1fr 1fr;
   gap: 56px;
+  position: relative;
+  z-index: 1;
 }
 
 /* =========================================
@@ -45,19 +78,29 @@
 
 .footer-logo span {
   display: block;
-  margin-top: 6px;
+  margin-top: 7px;
   font-size: 0.725rem;
   font-weight: 700;
   letter-spacing: 1.8px;
-  color: #a7f3d0; /* Soft Mint Accent */
+  color: #E59F0B;
 }
 
 .footer-brand p {
   margin: 20px 0 0;
   font-size: 0.9rem;
   line-height: 1.65;
-  color: #cbd5e1;
-  opacity: 0.88;
+  color: #E6F0ED;
+  opacity: 0.9;
+}
+
+/* Small brand accent */
+.footer-brand::after {
+  content: "";
+  width: 42px;
+  height: 3px;
+  margin-top: 22px;
+  border-radius: 3px;
+  background: #E59F0B;
 }
 
 /* =========================================
@@ -75,13 +118,13 @@
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
-  color: #6ee7b7; /* Light Emerald */
+  color: #E59F0B;
 }
 
 .footer-column a {
   width: fit-content;
   margin-bottom: 12px;
-  color: #e2e8f0;
+  color: #E7EFED;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
@@ -95,7 +138,7 @@
   transform: translateX(4px);
 }
 
-/* Small Indicator Dot on Hover */
+/* Small gold indicator dot on hover */
 .footer-column a::before {
   content: "";
   position: absolute;
@@ -105,7 +148,7 @@
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: #34d399;
+  background-color: #E59F0B;
   transition: transform 0.2s ease;
 }
 
@@ -124,15 +167,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-  color: #94a3b8;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  color: #C8D6D1;
   font-size: 0.825rem;
   line-height: 1.5;
+  position: relative;
+  z-index: 1;
 }
 
 .footer-bottom span {
   font-weight: 400;
   letter-spacing: 0.2px;
+}
+
+/* Gold divider detail */
+.footer-bottom::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 72px;
+  height: 2px;
+  background: #E59F0B;
 }
 
 /* =========================================

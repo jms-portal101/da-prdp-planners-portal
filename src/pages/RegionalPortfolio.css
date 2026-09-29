@@ -302,7 +302,7 @@
 .regional-investment-overview {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 90px 60px 70px;
+  padding: 20px 60px 70px;
 }
 
 .portfolio-section-heading {
@@ -2136,5 +2136,663 @@
   .regional-portfolio-source {
     width: calc(100% - 36px);
     padding-bottom: 28px;
+  }
+}
+
+/* =========================================================
+   RAFIP VISUAL THEME — INSPIRED BY THE PROVIDED COVER
+   Palette: Green + Teal + Deep Blue + Warm Orange
+========================================================= */
+
+:root {
+  --rafip-green: #078750;
+  --rafip-green-dark: #0f6938;
+  --rafip-teal: #1a7962;
+  --rafip-blue: #254181;
+  --rafip-blue-deep: #1b4f7c;
+  --rafip-orange: #ffb000;
+  --rafip-orange-soft: #fff4d6;
+  --rafip-bg: #f3f4f7;
+  --rafip-surface: #ffffff;
+  --rafip-text: #263b73;
+  --rafip-text-dark: #24344f;
+  --rafip-muted: #657184;
+  --rafip-border: #dfe4ea;
+  --rafip-soft-green: #e9f5ef;
+  --rafip-soft-blue: #eef1f8;
+  --rafip-soft-teal: #e9f4f2;
+  --rafip-shadow: 0 14px 35px rgba(37, 65, 129, 0.08);
+}
+
+/* Base */
+.regional-portfolio-page {
+  background: var(--rafip-bg);
+  color: var(--rafip-text-dark);
+}
+
+.section-eyebrow {
+  color: var(--rafip-green);
+}
+
+/* =========================================================
+   HERO — WHITE EDITORIAL LAYOUT + GRADIENT SHAPE
+========================================================= */
+
+.regional-portfolio-hero {
+  position: relative;
+  min-height: 560px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.regional-portfolio-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -7%;
+  width: 58%;
+  height: 100%;
+  min-height: 560px;
+  border-radius: 180px 0 0 180px;
+  background: linear-gradient(
+    135deg,
+    var(--rafip-green) 0%,
+    var(--rafip-teal) 48%,
+    var(--rafip-blue) 100%
+  );
+}
+
+.regional-portfolio-hero::after {
+  content: "";
+  position: absolute;
+  top: 32px;
+  right: 44px;
+  width: 36px;
+  height: 36px;
+  border: 4px solid var(--rafip-orange);
+  border-radius: 50%;
+  background: transparent;
+  z-index: 3;
+}
+
+.regional-portfolio-hero-overlay {
+  display: none;
+}
+
+.regional-portfolio-hero-inner {
+  min-height: 560px;
+  padding: 72px 60px 70px;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.9fr);
+  gap: 45px;
+}
+
+.regional-portfolio-hero-content {
+  position: relative;
+  z-index: 4;
+  max-width: 680px;
+}
+
+.hero-eyebrow {
+  color: var(--rafip-green);
+  margin-bottom: 14px;
+}
+
+.regional-portfolio-hero h1 {
+  color: var(--rafip-blue);
+  font-size: clamp(42px, 5vw, 66px);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+}
+
+.regional-portfolio-hero h1 span {
+  color: var(--rafip-green);
+}
+
+.regional-portfolio-hero-description {
+  color: #5f6d82;
+  max-width: 600px;
+}
+
+.regional-primary-button {
+  background: var(--rafip-green);
+  color: #ffffff;
+  border-color: var(--rafip-green);
+  box-shadow: 0 8px 20px rgba(7, 135, 80, 0.18);
+}
+
+.regional-primary-button:hover {
+  background: var(--rafip-green-dark);
+  border-color: var(--rafip-green-dark);
+}
+
+.regional-video-button {
+  border-color: var(--rafip-orange);
+  background: #ffffff;
+  color: var(--rafip-blue);
+  backdrop-filter: none;
+}
+
+.regional-video-button:hover {
+  background: var(--rafip-orange-soft);
+  border-color: var(--rafip-orange);
+}
+
+/* Decorative collage becomes cleaner and more aligned with the cover */
+.regional-hero-collage {
+  position: relative;
+  z-index: 4;
+  max-width: 500px;
+}
+
+.collage-tile {
+  border-color: rgba(255, 255, 255, 0.24);
+  border-radius: 20px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.18),
+    rgba(255, 255, 255, 0.04)
+  );
+  box-shadow: 0 18px 50px rgba(20, 42, 83, 0.14);
+}
+
+/* =========================================================
+   GLOBAL SURFACES / CARDS
+========================================================= */
+
+.regional-stat-card,
+.investment-panel,
+.selected-regional-portfolio,
+.national-portfolio-message,
+.regional-portfolio-card,
+.regional-rafip-flipbook-section,
+.regional-video-modal {
+  border-color: var(--rafip-border);
+  background: var(--rafip-surface);
+  box-shadow: var(--rafip-shadow);
+}
+
+.regional-stat-card strong,
+.investment-total strong,
+.regional-card-bottom strong,
+.regional-card-investment strong,
+.package-preview > strong {
+  color: var(--rafip-green);
+}
+
+.regional-stat-card span,
+.portfolio-section-heading p,
+.investment-panel-header p,
+.regional-portfolio-explorer-header p,
+.regional-search,
+.package-sort-note,
+.regional-portfolio-source {
+  color: var(--rafip-muted);
+}
+
+.portfolio-section-heading h2,
+.investment-panel-header h3,
+.selected-regional-header h2,
+.regional-details-body h3,
+.regional-portfolio-explorer-header h2,
+.regional-card-content h3,
+.regional-no-results h3,
+.regional-video-modal h3,
+.regional-rafip-flipbook-header h3 {
+  color: var(--rafip-text);
+}
+
+/* =========================================================
+   STAT ICONS — GREEN / TEAL / ORANGE / BLUE
+========================================================= */
+
+.regional-stat-icon.green {
+  color: var(--rafip-green);
+  background: var(--rafip-soft-green);
+}
+
+.regional-stat-icon.leaf {
+  color: var(--rafip-teal);
+  background: var(--rafip-soft-teal);
+}
+
+.regional-stat-icon.gold {
+  color: #c98600;
+  background: var(--rafip-orange-soft);
+}
+
+.regional-stat-icon.blue {
+  color: var(--rafip-blue);
+  background: var(--rafip-soft-blue);
+}
+
+/* =========================================================
+   FORMS / FILTERS
+========================================================= */
+
+.investment-inline-filters select,
+.investment-reset-button,
+.regional-search,
+.search-clear {
+  border-color: var(--rafip-border);
+}
+
+.investment-inline-filters select {
+  background: #ffffff;
+  color: var(--rafip-text-dark);
+}
+
+.investment-inline-filters select:focus,
+.regional-search:focus-within {
+  border-color: var(--rafip-green);
+  box-shadow: 0 0 0 3px rgba(7, 135, 80, 0.10);
+}
+
+.investment-reset-button {
+  background: var(--rafip-soft-green);
+  color: var(--rafip-green);
+}
+
+.investment-reset-button:hover {
+  border-color: var(--rafip-green);
+  background: #dff1e8;
+}
+
+/* =========================================================
+   TOTAL / PROGRESS
+========================================================= */
+
+.investment-total {
+  border-color: #cfe4da;
+  background: linear-gradient(135deg, #eef8f3, #f5f7fb);
+}
+
+.regional-bar-track,
+.intervention-track {
+  background: #e6e9ef;
+}
+
+.regional-bar-fill {
+  background: linear-gradient(
+    90deg,
+    var(--rafip-green),
+    var(--rafip-teal),
+    var(--rafip-blue)
+  );
+}
+
+.regional-bar-row:hover .regional-bar-fill,
+.regional-bar-row.active .regional-bar-fill {
+  background: var(--rafip-blue);
+}
+
+.regional-bar-row.active .regional-bar-label span,
+.regional-bar-row.active .regional-bar-label strong {
+  color: var(--rafip-blue);
+}
+
+.intervention-fill {
+  background: linear-gradient(
+    90deg,
+    var(--rafip-teal),
+    var(--rafip-blue)
+  );
+}
+
+/* =========================================================
+   COMMODITIES
+========================================================= */
+
+.commodity-icon {
+  background: var(--rafip-soft-green);
+}
+
+.commodity-name {
+  color: var(--rafip-text-dark);
+}
+
+.commodity-percentage {
+  color: var(--rafip-green);
+}
+
+/* =========================================================
+   SELECTED REGION / DETAILS
+========================================================= */
+
+.selected-regional-header {
+  border-bottom-color: var(--rafip-border);
+}
+
+.regional-details-stats > div {
+  border-color: #d8e4ea;
+  background: linear-gradient(135deg, #f3f8f5, #f3f5fa);
+}
+
+.regional-details-stats strong {
+  color: var(--rafip-blue);
+}
+
+.details-close-button {
+  border-color: var(--rafip-border);
+  background: #f8f9fb;
+  color: var(--rafip-blue);
+}
+
+.details-close-button:hover {
+  border-color: var(--rafip-green);
+  background: var(--rafip-soft-green);
+  color: var(--rafip-green);
+}
+
+.details-all-commodities-button {
+  border-color: #b9d8c9;
+  background: var(--rafip-soft-green);
+  color: var(--rafip-green);
+}
+
+.details-all-commodities-button:hover {
+  border-color: var(--rafip-green);
+  background: #dff1e8;
+}
+
+.details-commodity {
+  border-color: var(--rafip-border);
+  background: #f8f9fb;
+  color: var(--rafip-text-dark);
+}
+
+.details-commodity:hover {
+  border-color: #9ccbb5;
+  background: var(--rafip-soft-green);
+  color: var(--rafip-green);
+}
+
+.details-commodity.active {
+  border-color: var(--rafip-blue);
+  background: linear-gradient(
+    135deg,
+    var(--rafip-green),
+    var(--rafip-teal),
+    var(--rafip-blue)
+  );
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(37, 65, 129, 0.18);
+}
+
+/* =========================================================
+   PACKAGE CARDS
+========================================================= */
+
+.package-preview {
+  border-color: var(--rafip-border);
+  background: #fbfcfd;
+}
+
+.package-preview:hover {
+  border-color: #b7cedd;
+  background: #f5f7fb;
+}
+
+.package-commodity {
+  color: var(--rafip-green);
+}
+
+/* =========================================================
+   REGION EXPLORER
+========================================================= */
+
+.regional-search {
+  background: #ffffff;
+}
+
+.search-clear {
+  background: var(--rafip-soft-blue);
+  color: var(--rafip-blue);
+}
+
+.search-clear:hover {
+  background: #e2e7f3;
+  color: var(--rafip-green);
+}
+
+.regional-portfolio-card {
+  border-color: var(--rafip-border);
+  background: #ffffff;
+}
+
+.regional-portfolio-card:hover {
+  border-color: #b6c9dc;
+  box-shadow: 0 16px 34px rgba(37, 65, 129, 0.10);
+}
+
+.regional-portfolio-card:focus-visible {
+  outline-color: rgba(37, 65, 129, 0.22);
+}
+
+.regional-card-number {
+  color: #8994a5;
+}
+
+.regional-card-arrow {
+  border-color: var(--rafip-border);
+  background: #f7f8fb;
+  color: var(--rafip-blue);
+}
+
+.regional-portfolio-card:hover .regional-card-arrow {
+  border-color: var(--rafip-blue);
+  background: var(--rafip-soft-blue);
+}
+
+.regional-card-code,
+.regional-card-explore {
+  color: var(--rafip-green);
+}
+
+.regional-card-bottom,
+.regional-card-investment {
+  border-top-color: #e9edf2;
+}
+
+.regional-card-commodity {
+  border-color: #e0e5eb;
+  background: #f7f9fb;
+  color: #59677a;
+}
+
+.regional-card-more-button {
+  border-color: #9fcdb8;
+  background: var(--rafip-soft-green);
+  color: var(--rafip-green);
+}
+
+.regional-card-more-button:hover {
+  background: #dff1e8;
+}
+
+/* =========================================================
+   WARNING / EMPTY STATES
+========================================================= */
+
+.regional-data-warning {
+  border-color: #f0d18a;
+  background: var(--rafip-orange-soft);
+  color: #9b6b00;
+}
+
+.regional-no-results {
+  border-color: #cbd5e1;
+  background: #ffffff;
+  color: var(--rafip-muted);
+}
+
+.details-empty {
+  border-color: #cbd5e1;
+  color: var(--rafip-muted);
+}
+
+/* =========================================================
+   NATIONAL MESSAGE
+========================================================= */
+
+.national-message-icon {
+  background: var(--rafip-soft-green);
+  color: var(--rafip-green);
+}
+
+/* =========================================================
+   RAFIP FLIPBOOK
+========================================================= */
+
+.regional-rafip-flipbook-section {
+  border-radius: 18px;
+}
+
+.rafip-fullscreen-button,
+.regional-video-ok {
+  border-color: var(--rafip-green);
+  background: var(--rafip-green);
+}
+
+.rafip-fullscreen-button:hover,
+.regional-video-ok:hover {
+  background: var(--rafip-green-dark);
+}
+
+.rafip-open-button {
+  border-color: var(--rafip-border);
+  background: #f7f8fb;
+  color: var(--rafip-blue);
+}
+
+.rafip-open-button:hover {
+  background: var(--rafip-soft-blue);
+}
+
+.regional-rafip-flipbook-frame {
+  border-color: var(--rafip-border);
+  background: #f1f3f7;
+}
+
+.regional-rafip-flipbook-empty {
+  border-color: #c9d8d2;
+  background: linear-gradient(135deg, #f5faf7, #f7f8fb);
+}
+
+.regional-rafip-empty-icon {
+  background: var(--rafip-soft-green);
+  color: var(--rafip-green);
+}
+
+/* =========================================================
+   FULLSCREEN VIEWER
+========================================================= */
+
+.rafip-fullscreen-backdrop {
+  background: rgba(20, 31, 55, 0.94);
+}
+
+.rafip-fullscreen-header {
+  background: var(--rafip-blue);
+}
+
+.rafip-fullscreen-viewer {
+  background: #eef1f5;
+}
+
+/* =========================================================
+   SOURCE
+========================================================= */
+
+.regional-portfolio-source span {
+  color: var(--rafip-blue);
+}
+
+/* =========================================================
+   DECORATIVE ORANGE ACCENTS
+========================================================= */
+
+.regional-portfolio-page::selection {
+  background: rgba(255, 176, 0, 0.25);
+  color: var(--rafip-blue);
+}
+
+/* Add small orange visual accents without changing the markup */
+.portfolio-section-heading::before,
+.regional-portfolio-explorer-header::before {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 3px;
+  margin-bottom: 10px;
+  border-radius: 999px;
+  background: var(--rafip-orange);
+}
+
+/* =========================================================
+   RESPONSIVE HERO
+========================================================= */
+
+@media (max-width: 900px) {
+  .regional-portfolio-hero::before {
+    top: auto;
+    right: -12%;
+    bottom: -90px;
+    width: 125%;
+    height: 54%;
+    min-height: 330px;
+    border-radius: 150px 0 0 0;
+  }
+
+  .regional-portfolio-hero::after {
+    right: 24px;
+    top: 24px;
+  }
+
+  .regional-portfolio-hero-inner {
+    padding-top: 65px;
+    padding-bottom: 120px;
+  }
+
+  .regional-portfolio-hero-content {
+    max-width: 720px;
+  }
+
+  .regional-hero-collage {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .regional-portfolio-hero {
+    min-height: 700px;
+  }
+
+  .regional-portfolio-hero::before {
+    right: -35%;
+    bottom: -45px;
+    width: 145%;
+    height: 46%;
+    min-height: 300px;
+    border-radius: 120px 0 0 0;
+  }
+
+  .regional-portfolio-hero::after {
+    width: 27px;
+    height: 27px;
+    border-width: 3px;
+    right: 18px;
+    top: 18px;
+  }
+
+  .regional-portfolio-hero-inner {
+    padding: 55px 22px 115px;
+  }
+
+  .regional-portfolio-hero h1 {
+    font-size: 38px;
+  }
+
+  .regional-portfolio-hero-description {
+    color: #5f6d82;
   }
 }

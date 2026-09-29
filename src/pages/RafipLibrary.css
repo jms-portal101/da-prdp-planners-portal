@@ -1,0 +1,564 @@
+/* =========================================================
+   RAFIP LIBRARY
+   Visual direction: green / teal / deep blue / orange
+========================================================= */
+
+.rafip-library-page {
+  --green: #078750;
+  --green-dark: #0b6f43;
+  --teal: #16856a;
+  --blue: #254181;
+  --blue-dark: #17346f;
+  --orange: #ffb000;
+  --bg: #e8f0ea;
+  --text: #24344f;
+  --muted: #66758a;
+  --border: #d7e1dc;
+
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 10% 15%, rgba(7,135,80,.08), transparent 25%),
+    linear-gradient(180deg, #edf3ef 0%, var(--bg) 100%);
+  color: var(--text);
+}
+
+.rafip-library-container {
+  width: min(1480px, calc(100% - 64px));
+  margin: 0 auto;
+}
+
+/* HERO */
+
+.rafip-library-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 340px;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+}
+
+.rafip-library-hero::before {
+  content: "";
+  position: absolute;
+  right: -8%;
+  top: -55%;
+  width: 67%;
+  height: 150%;
+  border-radius: 48% 0 0 48%;
+  background: linear-gradient(135deg, var(--green), var(--teal) 45%, var(--blue));
+}
+
+.rafip-library-hero::after {
+  content: "";
+  position: absolute;
+  top: 32px;
+  right: 48px;
+  width: 34px;
+  height: 34px;
+  border: 4px solid var(--orange);
+  border-radius: 50%;
+}
+
+.rafip-library-hero-pattern {
+  position: absolute;
+  z-index: 2;
+  width: 44px;
+  height: 44px;
+  border: 2px solid var(--orange);
+  transform: rotate(60deg);
+}
+
+.rafip-library-hero-pattern-left {
+  left: 28px;
+  bottom: 42px;
+}
+
+.rafip-library-hero-pattern-right {
+  right: 29%;
+  bottom: 34px;
+  width: 28px;
+  height: 28px;
+}
+
+.rafip-library-hero .rafip-library-container {
+  position: relative;
+  z-index: 3;
+  min-height: 340px;
+  padding: 30px 0 48px;
+}
+
+.rafip-library-back-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  z-index: 10; /* Mas mataas na z-index para hindi matakpan ng kahit ano */
+  margin-bottom: 20px; /* Dagdag na espasyo sa ibaba */
+}
+
+.rafip-library-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.85); /* Optional: semi-transparent background para malinaw basahin */
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.rafip-library-back:hover {
+  color: var(--green);
+  background: #fff;
+}
+
+.rafip-library-eyebrow,
+.rafip-library-section-label {
+  display: block;
+  color: var(--green);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .12em;
+}
+
+.rafip-library-hero-copy h1 {
+  margin: 10px 0 13px;
+  color: var(--blue);
+  font-size: clamp(42px, 6vw, 70px);
+  font-weight: 900;
+  line-height: .98;
+  letter-spacing: -.055em;
+}
+
+.rafip-library-hero-copy h1 span {
+  display: block;
+  color: var(--green);
+  font-size: .62em;
+  line-height: 1.1;
+  letter-spacing: -.035em;
+}
+
+.rafip-library-hero-copy p {
+  max-width: 650px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.rafip-library-hero-badge {
+  position: absolute;
+  right: 7%;
+  bottom: 42px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+}
+
+.rafip-library-hero-badge svg {
+  color: var(--orange);
+}
+
+.rafip-library-hero-badge strong,
+.rafip-library-hero-badge span {
+  display: block;
+}
+
+.rafip-library-hero-badge strong {
+  font-size: 15px;
+}
+
+.rafip-library-hero-badge span {
+  margin-top: 2px;
+  color: rgba(255,255,255,.82);
+  font-size: 11px;
+}
+
+/* CONTENT */
+
+.rafip-library-content {
+  padding: 52px 0 78px;
+}
+
+.rafip-library-toolbar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 34px;
+}
+
+.rafip-library-toolbar h2 {
+  max-width: 850px;
+  margin: 7px 0;
+  color: var(--blue);
+  font-size: clamp(27px, 3vw, 40px);
+  line-height: 1.08;
+  letter-spacing: -.035em;
+}
+
+.rafip-library-toolbar p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.rafip-library-search {
+  width: min(320px, 100%);
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  padding: 0 15px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(37,65,129,.05);
+  color: var(--blue);
+}
+
+.rafip-library-search input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: 13px;
+}
+
+/* GRID */
+
+.rafip-library-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 52px 34px;
+}
+
+.rafip-library-card {
+  min-width: 0;
+}
+
+.rafip-library-cover-wrap {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 0.93 / 1;
+  background: #fff;
+  box-shadow: 0 9px 24px rgba(28,55,73,.12);
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+
+.rafip-library-card:hover .rafip-library-cover-wrap {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 35px rgba(37,65,129,.18);
+}
+
+.rafip-library-cover {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rafip-library-cover-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, rgba(7,135,80,.02), rgba(23,52,111,.78));
+  opacity: 0;
+  transition: opacity .22s ease;
+}
+
+.rafip-library-card:hover .rafip-library-cover-overlay {
+  opacity: 1;
+}
+
+.rafip-library-cover-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 42px;
+  padding: 0 15px;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 900;
+  text-decoration: none;
+  box-shadow: 0 8px 22px rgba(0,0,0,.15);
+}
+
+.rafip-library-card-body {
+  padding-top: 13px;
+}
+
+.rafip-library-card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.rafip-library-card-meta span {
+  color: var(--green);
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.rafip-library-card-meta strong {
+  color: #758297;
+  font-size: 8px;
+  letter-spacing: .06em;
+}
+
+.rafip-library-card h3 {
+  min-height: 34px;
+  margin: 0 0 12px;
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 850;
+  line-height: 1.25;
+}
+
+.rafip-library-button {
+  width: 100%;
+  min-height: 43px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid #18536a;
+  border-radius: 6px;
+  background: #18536a;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+}
+
+.rafip-library-button:hover {
+  transform: translateY(-1px);
+  background: var(--blue);
+  box-shadow: 0 8px 18px rgba(37,65,129,.18);
+}
+
+/* EMPTY */
+
+.rafip-library-empty {
+  padding: 70px 20px;
+  border: 1px dashed #bfcfc7;
+  border-radius: 18px;
+  background: #fff;
+  text-align: center;
+  color: var(--muted);
+}
+
+.rafip-library-empty svg {
+  color: var(--green);
+}
+
+.rafip-library-empty h3 {
+  margin: 12px 0 6px;
+  color: var(--blue);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1250px) {
+  .rafip-library-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1000px) {
+  .rafip-library-container {
+    width: min(100% - 40px, 900px);
+  }
+
+  .rafip-library-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 38px 24px;
+  }
+}
+
+@media (max-width: 760px) {
+  .rafip-library-hero {
+    min-height: 430px;
+  }
+
+  .rafip-library-hero::before {
+    top: auto;
+    bottom: -8%;
+    right: -20%;
+    width: 85%;
+    height: 58%;
+    border-radius: 120px 0 0 0;
+  }
+
+  .rafip-library-hero .rafip-library-container {
+    min-height: 430px;
+  }
+
+  .rafip-library-hero-copy {
+    margin-top: 20px;
+  }
+
+  .rafip-library-hero-copy h1 {
+    font-size: 48px;
+  }
+
+  .rafip-library-hero-badge {
+    left: 0;
+    right: auto;
+    bottom: 30px;
+  }
+
+  .rafip-library-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .rafip-library-search {
+    width: 100%;
+  }
+
+  .rafip-library-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 540px) {
+  .rafip-library-container {
+    width: calc(100% - 28px);
+  }
+
+  .rafip-library-content {
+    padding-top: 34px;
+  }
+
+  .rafip-library-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px 16px;
+  }
+
+  .rafip-library-card h3 {
+    min-height: auto;
+    font-size: 12px;
+  }
+
+  .rafip-library-button {
+    min-height: 40px;
+    font-size: 11px;
+  }
+
+  .rafip-library-cover-overlay {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .rafip-library-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   HERO NAVIGATION
+   ========================================================= */
+
+.rafip-library-navigation {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 34px;
+  flex-wrap: wrap;
+}
+
+.rafip-library-portfolio-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.08);
+  transition: all 0.2s ease;
+}
+
+.rafip-library-portfolio-link:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.45);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 640px) {
+  .rafip-library-navigation {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+/* =========================================================
+   REGIONAL PORTFOLIO BUTTON
+   ========================================================= */
+
+.rafip-library-regional-button {
+  position: relative;
+  z-index: 10;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 24px;
+  padding: 11px 18px;
+
+  border: 1px solid #18536a;
+  border-radius: 8px;
+
+  background: #18536a;
+  color: #ffffff;
+
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+
+  opacity: 1;
+  visibility: visible;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.rafip-library-regional-button:hover {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(37, 65, 129, 0.22);
+}
+
+.rafip-library-regional-button svg {
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.rafip-library-regional-button:hover svg {
+  transform: translateX(-3px);
+}

@@ -1,19 +1,56 @@
 /* =========================================
    NAVBAR
+   DA-PRDP RAFIP BRANDING
 ========================================= */
 
 .navbar {
   width: 100%;
-  padding: 14px 60px;
+  padding: 12px 60px;
 
-  background: #ffffff;
-  border-bottom: 1px solid #e5ece8;
+  background: rgba(255, 255, 255, 0.97);
+
+  border-bottom: 1px solid #e4ebe8;
 
   position: fixed;
   top: 0;
   left: 0;
 
   z-index: 9999;
+
+  box-shadow:
+    0 2px 10px rgba(24, 49, 42, 0.04);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  transition:
+    background 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+/* =========================================
+   TOP BRAND ACCENT
+========================================= */
+
+.navbar::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background: linear-gradient(
+    90deg,
+    #008f4c 0%,
+    #008b87 48%,
+    #244b93 100%
+  );
 }
 
 
@@ -52,6 +89,8 @@
   text-decoration: none;
 
   cursor: pointer;
+
+  position: relative;
 }
 
 
@@ -66,6 +105,22 @@
   object-fit: contain;
 
   flex-shrink: 0;
+
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease;
+}
+
+
+/* =========================================
+   BRAND LOGO HOVER
+========================================= */
+
+.navbar-brand:hover .navbar-logo {
+  transform: translateY(-1px);
+
+  filter:
+    drop-shadow(0 3px 5px rgba(0, 143, 76, 0.16));
 }
 
 
@@ -80,25 +135,51 @@
   margin-left: 11px;
 
   text-align: left;
+
   line-height: 1.15;
 }
+
+
+/* DA-PRDP */
 
 .navbar-brand-text strong {
   font-size: 19px;
   font-weight: 800;
+
   letter-spacing: -0.3px;
 
-  color: #126b45;
+  color: #008f4c;
+
+  transition: color 0.25s ease;
 }
+
+
+/* PLANNERS' PORTAL */
 
 .navbar-brand-text span {
   margin-top: 4px;
 
   font-size: 11px;
   font-weight: 700;
+
   letter-spacing: 0.65px;
 
   color: #18312a;
+
+  transition: color 0.25s ease;
+}
+
+
+/* =========================================
+   BRAND HOVER
+========================================= */
+
+.navbar-brand:hover .navbar-brand-text strong {
+  color: #244b93;
+}
+
+.navbar-brand:hover .navbar-brand-text span {
+  color: #008b87;
 }
 
 
@@ -113,11 +194,16 @@
   gap: 28px;
 }
 
+
+/* =========================================
+   NAVIGATION BUTTONS
+========================================= */
+
 .navbar-links a,
 .navbar-links button {
   position: relative;
 
-  padding: 8px 0;
+  padding: 9px 0;
 
   border: 0;
   background: transparent;
@@ -128,11 +214,13 @@
 
   font-family: inherit;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
 
   cursor: pointer;
 
-  transition: color 0.2s ease;
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
 }
 
 
@@ -142,7 +230,9 @@
 
 .navbar-links a:hover,
 .navbar-links button:hover {
-  color: #126b45;
+  color: #008f4c;
+
+  transform: translateY(-1px);
 }
 
 
@@ -157,19 +247,66 @@
   position: absolute;
 
   left: 0;
-  bottom: 0;
+  bottom: 1px;
 
   width: 0;
   height: 2px;
 
-  background: #126b45;
+  border-radius: 10px;
 
-  transition: width 0.2s ease;
+  background: linear-gradient(
+    90deg,
+    #008f4c,
+    #008b87,
+    #244b93
+  );
+
+  transition:
+    width 0.28s ease;
 }
+
 
 .navbar-links a:hover::after,
 .navbar-links button:hover::after {
   width: 100%;
+}
+
+
+/* =========================================
+   GOLD MICRO ACCENT
+========================================= */
+
+.navbar-links button:first-child::before {
+  content: "";
+
+  position: absolute;
+
+  left: -8px;
+  top: 50%;
+
+  width: 3px;
+  height: 3px;
+
+  border-radius: 50%;
+
+  background: #f4b400;
+
+  opacity: 0;
+
+  transform: translateY(-50%);
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.navbar-links button:first-child:hover::before {
+  opacity: 1;
+
+  transform:
+    translateY(-50%)
+    scale(1.35);
 }
 
 
@@ -185,8 +322,9 @@
 
   padding: 9px;
 
-  border: 1px solid #dce8e2;
-  border-radius: 8px;
+  border: 1px solid #d8e5df;
+
+  border-radius: 9px;
 
   background: #ffffff;
 
@@ -197,15 +335,48 @@
   justify-content: center;
 
   gap: 5px;
+
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
 }
+
+
+/* =========================================
+   MOBILE MENU HOVER
+========================================= */
+
+.menu-toggle:hover {
+  border-color: #008f4c;
+
+  background: #f4faf7;
+
+  box-shadow:
+    0 4px 12px rgba(0, 143, 76, 0.10);
+}
+
+
+/* =========================================
+   MOBILE MENU LINES
+========================================= */
 
 .menu-toggle span {
   width: 20px;
   height: 2px;
 
-  background: #126b45;
+  background: #008f4c;
 
   border-radius: 2px;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.menu-toggle:hover span {
+  background: #244b93;
 }
 
 
@@ -214,8 +385,9 @@
 ========================================= */
 
 @media (max-width: 1100px) {
+
   .navbar {
-    padding: 14px 40px;
+    padding: 12px 40px;
   }
 
   .navbar-inner {
@@ -251,13 +423,18 @@
 ========================================= */
 
 @media (max-width: 800px) {
+
   .navbar {
     position: sticky;
 
     top: 0;
 
     padding: 12px 24px;
+
+    box-shadow:
+      0 2px 10px rgba(24, 49, 42, 0.06);
   }
+
 
   .navbar-inner {
     flex-wrap: wrap;
@@ -266,7 +443,9 @@
   }
 
 
-  /* BRAND */
+  /* -----------------------------------------
+     BRAND
+  ----------------------------------------- */
 
   .navbar-logo {
     width: 44px;
@@ -283,18 +462,23 @@
 
   .navbar-brand-text span {
     font-size: 10px;
+
     letter-spacing: 0.45px;
   }
 
 
-  /* MENU BUTTON */
+  /* -----------------------------------------
+     MENU BUTTON
+  ----------------------------------------- */
 
   .menu-toggle {
     display: flex;
   }
 
 
-  /* NAVIGATION */
+  /* -----------------------------------------
+     NAVIGATION
+  ----------------------------------------- */
 
   .navbar-links {
     width: 100%;
@@ -304,29 +488,34 @@
     display: none;
 
     flex-direction: column;
+
     align-items: flex-start;
 
     gap: 0;
 
     padding-top: 10px;
 
-    border-top: 1px solid #edf2ef;
+    border-top: 1px solid #e7efeb;
   }
+
 
   .navbar-links.open {
     display: flex;
   }
 
 
-  /* MOBILE NAV LINKS */
+  /* -----------------------------------------
+     MOBILE NAV LINKS
+  ----------------------------------------- */
 
   .navbar-links a,
   .navbar-links button {
     width: 100%;
 
-    padding: 12px 0;
+    padding: 13px 4px;
 
     border: 0;
+
     background: transparent;
 
     font-family: inherit;
@@ -334,13 +523,44 @@
     text-align: left;
 
     font-size: 14px;
+
+    font-weight: 600;
+
+    transform: none;
   }
 
 
-  /* REMOVE UNDERLINE ON MOBILE */
+  .navbar-links a:hover,
+  .navbar-links button:hover {
+    transform: none;
+
+    color: #008f4c;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(0, 143, 76, 0.05),
+        rgba(0, 139, 135, 0.02),
+        transparent
+      );
+  }
+
+
+  /* -----------------------------------------
+     MOBILE UNDERLINE
+  ----------------------------------------- */
 
   .navbar-links a::after,
   .navbar-links button::after {
+    display: none;
+  }
+
+
+  /* -----------------------------------------
+     REMOVE GOLD DOT
+  ----------------------------------------- */
+
+  .navbar-links button:first-child::before {
     display: none;
   }
 }
@@ -351,27 +571,34 @@
 ========================================= */
 
 @media (max-width: 480px) {
+
   .navbar {
     padding: 11px 18px;
   }
+
 
   .navbar-logo {
     width: 40px;
     height: 40px;
   }
 
+
   .navbar-brand-text {
     margin-left: 8px;
   }
+
 
   .navbar-brand-text strong {
     font-size: 16px;
   }
 
+
   .navbar-brand-text span {
     font-size: 9px;
+
     letter-spacing: 0.3px;
   }
+
 
   .menu-toggle {
     width: 40px;

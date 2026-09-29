@@ -1279,7 +1279,7 @@ function RegionalPortfolio() {
               Regional Agriculture and
               <br />
               <span>
-                Fisheries Investment Portfolio
+                Fisheries Investment Portfolio Dashboard
               </span>
             </h1>
 
@@ -1292,7 +1292,7 @@ function RegionalPortfolio() {
 
             <div className="regional-hero-actions">
               <a
-                href="#regional-investment"
+                href="/rafip-library"
                 className="regional-primary-button"
               >
                 Explore RAFIP

@@ -1,4 +1,153 @@
-/* GLOBAL RESET */
+/* =========================================================
+   DA-PRDP PLANNERS' PORTAL
+   GLOBAL DESIGN SYSTEM
+   RAFIP-INSPIRED COLOR PALETTE
+   ========================================================= */
+
+
+/* =========================================================
+   COLOR SYSTEM
+   ========================================================= */
+
+:root {
+  /* -------------------------------------------------------
+     PRIMARY BRAND COLORS
+     ------------------------------------------------------- */
+
+  --prdp-green: #108353;
+  --prdp-green-dark: #086c45;
+  --prdp-green-light: #36a56f;
+
+  --prdp-teal: #196978;
+  --prdp-teal-dark: #145663;
+  --prdp-teal-light: #3b8994;
+
+  --prdp-blue: #1f4880;
+  --prdp-blue-dark: #173965;
+  --prdp-blue-light: #3d69a0;
+
+
+  /* -------------------------------------------------------
+     GOLD / YELLOW ACCENTS
+     ------------------------------------------------------- */
+
+  --prdp-gold: #f4b800;
+  --prdp-gold-dark: #d99f00;
+  --prdp-gold-light: #f8c65a;
+
+
+  /* -------------------------------------------------------
+     TEXT COLORS
+     ------------------------------------------------------- */
+
+  --portal-navy: #19324f;
+  --portal-text: #263f3a;
+  --portal-text-soft: #617067;
+  --portal-text-muted: #7a8983;
+
+
+  /* -------------------------------------------------------
+     BACKGROUNDS
+     ------------------------------------------------------- */
+
+  --portal-bg: #f5f8f7;
+  --portal-bg-soft: #f1f7f4;
+
+  --portal-white: #ffffff;
+
+  --green-soft: #eaf5ef;
+  --teal-soft: #eaf5f5;
+  --blue-soft: #edf2f8;
+  --gold-soft: #fff8df;
+
+
+  /* -------------------------------------------------------
+     BORDERS
+     ------------------------------------------------------- */
+
+  --border-soft: #dfe8e4;
+  --border-green: rgba(16, 131, 83, 0.16);
+  --border-blue: rgba(31, 72, 128, 0.16);
+  --border-gold: rgba(244, 184, 0, 0.28);
+
+
+  /* -------------------------------------------------------
+     GRADIENTS
+     ------------------------------------------------------- */
+
+  --gradient-brand:
+    linear-gradient(
+      135deg,
+      var(--prdp-green) 0%,
+      var(--prdp-teal) 52%,
+      var(--prdp-blue) 100%
+    );
+
+  --gradient-green:
+    linear-gradient(
+      135deg,
+      var(--prdp-green),
+      var(--prdp-green-light)
+    );
+
+  --gradient-blue:
+    linear-gradient(
+      135deg,
+      var(--prdp-teal),
+      var(--prdp-blue)
+    );
+
+  --gradient-gold:
+    linear-gradient(
+      135deg,
+      var(--prdp-gold),
+      var(--prdp-gold-light)
+    );
+
+
+  /* -------------------------------------------------------
+     SHADOWS
+     ------------------------------------------------------- */
+
+  --shadow-sm:
+    0 4px 12px rgba(25, 50, 79, 0.05);
+
+  --shadow-md:
+    0 10px 28px rgba(25, 50, 79, 0.08);
+
+  --shadow-lg:
+    0 18px 45px rgba(25, 50, 79, 0.10);
+
+  --shadow-green:
+    0 10px 25px rgba(16, 131, 83, 0.20);
+
+  --shadow-blue:
+    0 10px 25px rgba(31, 72, 128, 0.18);
+
+
+  /* -------------------------------------------------------
+     RADIUS
+     ------------------------------------------------------- */
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+
+
+  /* -------------------------------------------------------
+     TRANSITIONS
+     ------------------------------------------------------- */
+
+  --transition-fast: 0.18s ease;
+  --transition-normal: 0.25s ease;
+  --transition-slow: 0.35s ease;
+}
+
+
+/* =========================================================
+   GLOBAL RESET
+   ========================================================= */
 
 * {
   box-sizing: border-box;
@@ -15,29 +164,42 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
 
-  background: #f6faf8;
-  color: #18312a;
+  background: var(--portal-bg);
+
+  color: var(--portal-text);
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* REMOVE DEFAULT LINK STYLING */
+
+/* =========================================================
+   LINKS
+   ========================================================= */
 
 a {
   color: inherit;
 }
 
-/* IMAGES */
+
+/* =========================================================
+   IMAGES
+   ========================================================= */
 
 img {
   max-width: 100%;
   display: block;
 }
 
-/* ROOT */
+
+/* =========================================================
+   ROOT
+   ========================================================= */
 
 #root {
   width: 100%;

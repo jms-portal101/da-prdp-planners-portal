@@ -5,7 +5,6 @@ import ScrollToTop from './components/ScrollToTop'
 
 import Home from './pages/Home'
 import RegionalPortfolio from './pages/RegionalPortfolio'
-import RegionalPortfolioDetail from './pages/RegionalPortfolioDetail'
 import Tools from './pages/Tools'
 import Evsa from './pages/tools/Evsa'
 import Crva from './pages/tools/Crva'
@@ -31,6 +30,9 @@ import Institutionalization from './pages/Institutionalization'
 import Mainstreaming from './pages/Mainstreaming'
 import OperationalMonitoring from './pages/OperationalMonitoring'
 import Evaluation from './pages/Evaluation'
+import RafipLibrary from './pages/RafipLibrary'
+import RegionalRafipPage from './pages/RegionalRafipPage'
+
 
 import './App.css'
 
@@ -48,11 +50,6 @@ function App() {
 
         {/* REGIONAL PORTFOLIO */}
         <Route path="/regional-portfolio" element={<RegionalPortfolio />} />
-
-        <Route
-          path="/regional-portfolio/:regionId"
-          element={<RegionalPortfolioDetail />}
-        />
 
         {/* PLANNING TOOLS */}
         <Route path="/tools" element={<Tools />} />
@@ -79,11 +76,21 @@ function App() {
         <Route path="/planning/ivca" element={<Ivca />} />
         <Route path="/planning/pcip" element={<Pcip />} />
         <Route path="/planning/implementation" element={<Implementation />} />
-        <Route path="/planning/institutionalization" element={<Institutionalization />} />
-        <Route path="/planning/mainstreaming" element={<Mainstreaming />}/>
-        <Route path="/planning/monitoring" element={<OperationalMonitoring />}/>
+        <Route
+          path="/planning/institutionalization"
+          element={<Institutionalization />}
+        />
+        <Route path="/planning/mainstreaming" element={<Mainstreaming />} />
+        <Route
+          path="/planning/monitoring"
+          element={<OperationalMonitoring />}
+        />
         <Route path="/planning/evaluation" element={<Evaluation />} />
-
+        <Route path="/rafip-library" element={<RafipLibrary />} />
+        <Route
+          path="/rafip-library/:regionSlug"
+          element={<RegionalRafipPage />}
+        />
       </Routes>
     </BrowserRouter>
   );
