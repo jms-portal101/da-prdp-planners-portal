@@ -1,0 +1,585 @@
+/* =========================================================
+   INVESTMENT SPATIAL MAP
+   ========================================================= */
+
+.investment-map-container {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #dce7e2;
+  border-radius: 24px;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.investment-map-header {
+  margin-bottom: 26px;
+}
+
+.investment-map-header .section-eyebrow {
+  display: block;
+  margin-bottom: 10px;
+  color: #126b4f;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
+.investment-map-header h2 {
+  margin: 0;
+  color: #12332d;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.investment-map-header p {
+  margin: 10px 0 0;
+  color: #61756f;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   MAP AREA
+   ========================================================= */
+
+.investment-map-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 620px;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 42%,
+      rgba(224, 239, 233, 0.7),
+      rgba(244, 248, 246, 0.95) 58%,
+      #eef5f2 100%
+    );
+
+  border: 1px solid #dce8e3;
+  border-radius: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+/* subtle map-grid effect */
+
+.investment-map-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(35, 92, 75, 0.035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(35, 92, 75, 0.035) 1px,
+      transparent 1px
+    );
+
+  background-size: 42px 42px;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   SVG MAP
+   ========================================================= */
+
+.philippines-investment-map {
+  position: relative;
+  z-index: 2;
+
+  display: block;
+
+  width: min(100%, 920px);
+  height: auto;
+
+  overflow: visible;
+}
+
+
+/* =========================================================
+   ACTUAL REGIONAL POLYGONS
+   ========================================================= */
+
+.philippines-region {
+  cursor: pointer;
+
+  stroke: #ffffff;
+  stroke-width: 2;
+
+  opacity: 0.88;
+
+  transition:
+    opacity 0.18s ease,
+    stroke-width 0.18s ease,
+    filter 0.18s ease;
+}
+
+.philippines-region:hover {
+  opacity: 1;
+
+  stroke: #123f34;
+  stroke-width: 3;
+
+  filter:
+    drop-shadow(
+      0 4px 8px rgba(24, 72, 58, 0.22)
+    );
+}
+
+
+/* =========================================================
+   INVESTMENT COLORS
+   ========================================================= */
+
+.investment-red {
+  background: #dc2626;
+  fill: #dc2626;
+}
+
+.investment-orange {
+  background: #f97316;
+  fill: #f97316;
+}
+
+.investment-yellow {
+  background: #eab308;
+  fill: #eab308;
+}
+
+.investment-green {
+  background: #16a34a;
+  fill: #16a34a;
+}
+
+.investment-blue {
+  background: #2563eb;
+  fill: #2563eb;
+}
+
+
+/* =========================================================
+   REGION MARKERS / LABELS
+   ========================================================= */
+
+.region-marker {
+  cursor: pointer;
+
+  transition:
+    transform 0.18s ease,
+    opacity 0.18s ease;
+}
+
+.region-marker:hover {
+  opacity: 1;
+}
+
+.region-marker circle {
+  filter:
+    drop-shadow(
+      0 2px 4px rgba(0, 0, 0, 0.18)
+    );
+}
+
+.region-marker rect {
+  filter:
+    drop-shadow(
+      0 2px 4px rgba(20, 50, 42, 0.08)
+    );
+}
+
+
+/* Region name */
+
+.region-label-text {
+  fill: #173a31;
+
+  font-family:
+    Inter,
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  dominant-baseline: middle;
+
+  pointer-events: none;
+}
+
+
+/* Investment value */
+
+.region-value-text {
+  fill: #59716a;
+
+  font-family:
+    Inter,
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  dominant-baseline: middle;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   COUNTRY LABEL
+   ========================================================= */
+
+.country-label {
+  pointer-events: none;
+}
+
+.country-label-text {
+  fill: #5d7770;
+
+  font-family:
+    Inter,
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   TOOLTIP
+   ========================================================= */
+
+.investment-map-tooltip {
+  position: absolute;
+
+  z-index: 10;
+
+  top: 20px;
+  right: 20px;
+
+  min-width: 190px;
+
+  padding: 14px 16px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  border: 1px solid #d9e6e1;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 12px 30px rgba(30, 70, 58, 0.12);
+
+  backdrop-filter: blur(8px);
+
+  pointer-events: none;
+}
+
+.tooltip-region {
+  color: #173a31;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  margin-bottom: 4px;
+}
+
+.tooltip-value {
+  color: #126b4f;
+
+  font-size: 20px;
+  font-weight: 800;
+
+  line-height: 1.2;
+}
+
+.tooltip-description {
+  margin-top: 4px;
+
+  color: #72837e;
+
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   LEGEND
+   ========================================================= */
+
+.investment-map-legend {
+  margin-top: 24px;
+
+  padding-top: 22px;
+
+  border-top: 1px solid #e0e9e5;
+}
+
+.legend-title {
+  margin-bottom: 14px;
+
+  color: #173a31;
+
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.legend-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  gap: 18px 28px;
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #536963;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.legend-dot {
+  width: 13px;
+  height: 13px;
+
+  border-radius: 50%;
+
+  display: inline-block;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   LOADING STATE
+   ========================================================= */
+
+.investment-map-loading {
+  min-height: 620px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  color: #61756f;
+
+  background: #f3f8f5;
+
+  border: 1px solid #dce8e3;
+
+  border-radius: 22px;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.investment-map-spinner {
+  width: 32px;
+  height: 32px;
+
+  border: 3px solid #d9e7e1;
+  border-top-color: #126b4f;
+
+  border-radius: 50%;
+
+  animation:
+    investment-map-spin 0.8s linear infinite;
+}
+
+@keyframes investment-map-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* =========================================================
+   ERROR STATE
+   ========================================================= */
+
+.investment-map-error {
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  text-align: center;
+
+  background: #f8faf9;
+
+  border: 1px solid #dce8e3;
+
+  border-radius: 22px;
+
+  color: #6c7e78;
+}
+
+.investment-map-error strong {
+  color: #173a31;
+
+  font-size: 16px;
+}
+
+.investment-map-error span {
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .investment-map-container {
+    padding: 24px;
+    border-radius: 20px;
+  }
+
+  .investment-map-header h2 {
+    font-size: 24px;
+  }
+
+  .investment-map-wrapper {
+    min-height: 520px;
+    padding: 14px;
+  }
+
+  .investment-map-tooltip {
+    top: 14px;
+    right: 14px;
+  }
+
+  .legend-items {
+    gap: 14px 20px;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+  .investment-map-container {
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  .investment-map-header {
+    margin-bottom: 18px;
+  }
+
+  .investment-map-header .section-eyebrow {
+    font-size: 11px;
+    letter-spacing: 1.8px;
+  }
+
+  .investment-map-header h2 {
+    font-size: 21px;
+  }
+
+  .investment-map-header p {
+    font-size: 14px;
+  }
+
+  .investment-map-wrapper {
+    min-height: 430px;
+
+    padding: 8px;
+
+    border-radius: 16px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    justify-content: flex-start;
+  }
+
+  .philippines-investment-map {
+    min-width: 700px;
+    width: 700px;
+  }
+
+  .investment-map-tooltip {
+    top: 10px;
+    right: 10px;
+
+    min-width: 155px;
+
+    padding: 10px 12px;
+  }
+
+  .tooltip-value {
+    font-size: 17px;
+  }
+
+  .legend-items {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+  }
+
+  .legend-item {
+    font-size: 12px;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .philippines-region,
+  .region-marker,
+  .investment-map-spinner {
+    transition: none;
+    animation: none;
+  }
+
+}
