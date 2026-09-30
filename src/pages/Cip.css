@@ -1,19 +1,21 @@
 /* =========================================================
    CIP PAGE
    Commodity Identification & Prioritization
+   RAFIP VISUAL SYSTEM
    ========================================================= */
 
 .cip-page {
   width: 100%;
   min-height: 100vh;
   background: #ffffff;
-  color: #18312a;
+  color: #243F87;
 }
 
 .cip-container {
   width: min(1180px, calc(100% - 48px));
   margin: 0 auto;
 }
+
 
 /* =========================================================
    HERO
@@ -22,8 +24,21 @@
 .cip-hero {
   position: relative;
   padding: 34px 0 78px;
-  background: #f6faf8;
-  border-bottom: 1px solid #e3ece7;
+
+  background:
+    radial-gradient(
+      circle at 88% 18%,
+      rgba(255, 176, 0, 0.10),
+      transparent 130px
+    ),
+    linear-gradient(
+      135deg,
+      #f2f7f5 0%,
+      #ffffff 58%,
+      #f3f6fb 100%
+    );
+
+  border-bottom: 1px solid #dfe6e2;
   overflow: hidden;
 }
 
@@ -34,7 +49,7 @@
   right: -150px;
   width: 420px;
   height: 420px;
-  border: 1px solid rgba(18, 107, 69, 0.07);
+  border: 2px solid rgba(255, 176, 0, 0.18);
   border-radius: 50%;
 }
 
@@ -45,18 +60,21 @@
   right: -70px;
   width: 260px;
   height: 260px;
-  border: 1px solid rgba(18, 107, 69, 0.06);
+  border: 1px solid rgba(36, 63, 135, 0.10);
   border-radius: 50%;
 }
 
 .cip-breadcrumb {
   position: relative;
   z-index: 2;
+
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 8px;
+
   margin-bottom: 55px;
+
   color: #89968f;
   font-size: 10px;
   line-height: 1.4;
@@ -66,19 +84,22 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: #126b45;
+
+  color: #008F4C;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
+
   transition: color 0.2s ease;
 }
 
 .cip-breadcrumb a:hover {
-  color: #0d5436;
+  color: #006B3F;
 }
 
 .cip-hero-grid {
   position: relative;
   z-index: 2;
+
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
   gap: 70px;
@@ -92,29 +113,32 @@
 .cip-eyebrow {
   display: inline-block;
   margin-bottom: 17px;
-  color: #126b45;
+
+  color: #008F4C;
   font-size: 9px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.2;
   letter-spacing: 0.15em;
 }
 
 .cip-hero h1 {
   margin: 0;
-  color: #18312a;
+
+  color: #243F87;
   font-size: clamp(38px, 5vw, 62px);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.03;
   letter-spacing: -0.045em;
 }
 
 .cip-hero h1 span {
-  color: #126b45;
+  color: #008F4C;
 }
 
 .cip-hero-description {
   max-width: 610px;
   margin: 22px 0 0;
+
   color: #65746e;
   font-size: 14px;
   line-height: 1.75;
@@ -133,26 +157,50 @@
   align-items: center;
   justify-content: center;
   gap: 9px;
+
   min-height: 42px;
   padding: 0 17px;
+
   color: #ffffff;
-  background: #126b45;
-  border: 1px solid #126b45;
+
+  background:
+    linear-gradient(
+      135deg,
+      #243F87 0%,
+      #2859A6 100%
+    );
+
+  border: 1px solid #243F87;
   border-radius: 6px;
+
   text-decoration: none;
   font-size: 10px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1;
+
   transition:
     background 0.2s ease,
     border-color 0.2s ease,
-    transform 0.2s ease;
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+  box-shadow:
+    0 5px 14px rgba(36, 63, 135, 0.18);
 }
 
 .cip-primary-button:hover {
-  background: #0e593a;
-  border-color: #0e593a;
+  background:
+    linear-gradient(
+      135deg,
+      #1D3475 0%,
+      #243F87 100%
+    );
+
+  border-color: #1D3475;
   transform: translateY(-1px);
+
+  box-shadow:
+    0 8px 20px rgba(36, 63, 135, 0.25);
 }
 
 .cip-primary-button svg {
@@ -163,6 +211,7 @@
   transform: translateX(3px);
 }
 
+
 /* =========================================================
    HERO PANEL
    ========================================================= */
@@ -171,13 +220,24 @@
   position: relative;
   min-height: 355px;
   padding: 31px;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background: #18312a;
-  border-radius: 10px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #008F4C 0%,
+      #008B7A 46%,
+      #243F87 100%
+    );
+
+  border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 18px 40px rgba(24, 49, 42, 0.12);
+
+  box-shadow:
+    0 18px 40px rgba(36, 63, 135, 0.18);
 }
 
 .cip-hero-panel::before {
@@ -185,9 +245,11 @@
   position: absolute;
   top: -90px;
   right: -90px;
+
   width: 240px;
   height: 240px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border: 2px solid rgba(255, 176, 0, 0.75);
   border-radius: 50%;
 }
 
@@ -196,9 +258,11 @@
   position: absolute;
   top: -45px;
   right: -45px;
+
   width: 150px;
   height: 150px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 50%;
 }
 
@@ -206,9 +270,10 @@
   position: absolute;
   top: 25px;
   right: 27px;
-  color: rgba(255, 255, 255, 0.18);
+
+  color: rgba(255, 255, 255, 0.20);
   font-size: 42px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1;
   letter-spacing: -0.04em;
 }
@@ -216,26 +281,32 @@
 .cip-panel-icon {
   position: relative;
   z-index: 2;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   width: 55px;
   height: 55px;
   margin-bottom: auto;
-  color: #9bd1b5;
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.09);
+
+  color: #FFD166;
+
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 9px;
 }
 
 .cip-panel-label {
   position: relative;
   z-index: 2;
+
   display: block;
   margin-bottom: 9px;
-  color: #8fc5aa;
+
+  color: #BDE5D0;
   font-size: 8px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1;
   letter-spacing: 0.15em;
 }
@@ -243,11 +314,13 @@
 .cip-hero-panel h2 {
   position: relative;
   z-index: 2;
+
   max-width: 320px;
   margin: 0;
+
   color: #ffffff;
   font-size: 23px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.25;
   letter-spacing: -0.025em;
 }
@@ -255,21 +328,26 @@
 .cip-panel-line {
   position: relative;
   z-index: 2;
+
   width: 38px;
-  height: 1px;
+  height: 2px;
   margin: 19px 0 15px;
-  background: #78b894;
+
+  background: #FFB000;
 }
 
 .cip-hero-panel p {
   position: relative;
   z-index: 2;
+
   max-width: 340px;
   margin: 0;
-  color: #b7c8c0;
+
+  color: #E4F1EB;
   font-size: 10.5px;
   line-height: 1.65;
 }
+
 
 /* =========================================================
    GENERAL SECTION
@@ -287,18 +365,20 @@
 .cip-section-eyebrow {
   display: block;
   margin-bottom: 10px;
-  color: #126b45;
+
+  color: #008F4C;
   font-size: 9px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.2;
   letter-spacing: 0.15em;
 }
 
 .cip-section-heading h2 {
   margin: 0;
-  color: #18312a;
+
+  color: #243F87;
   font-size: clamp(27px, 3vw, 38px);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.12;
   letter-spacing: -0.03em;
 }
@@ -306,6 +386,7 @@
 .cip-section-heading p {
   max-width: 680px;
   margin: 15px 0 0;
+
   color: #697871;
   font-size: 12.5px;
   line-height: 1.75;
@@ -322,6 +403,7 @@
   margin-left: auto;
 }
 
+
 /* =========================================================
    INTRO
    ========================================================= */
@@ -334,9 +416,12 @@
 }
 
 .cip-intro-card {
-  border: 1px solid #e2ebe6;
-  border-radius: 9px;
+  border: 1px solid #dfe7e3;
+  border-radius: 10px;
   background: #ffffff;
+
+  box-shadow:
+    0 6px 18px rgba(36, 63, 135, 0.035);
 }
 
 .cip-intro-card-main {
@@ -347,26 +432,37 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   width: 42px;
   height: 42px;
   margin-bottom: 20px;
-  color: #126b45;
-  background: #eef7f2;
-  border: 1px solid #dcece4;
+
+  color: #008F4C;
+
+  background:
+    linear-gradient(
+      145deg,
+      #EEF7F2,
+      #EEF4FA
+    );
+
+  border: 1px solid #D8E9E0;
   border-radius: 8px;
 }
 
 .cip-intro-card h3 {
   margin: 0;
-  color: #203a31;
+
+  color: #243F87;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.3;
 }
 
 .cip-intro-card p {
   max-width: 680px;
   margin: 12px 0 0;
+
   color: #718079;
   font-size: 11px;
   line-height: 1.7;
@@ -386,36 +482,48 @@
   display: flex;
   align-items: flex-start;
   gap: 13px;
+
   flex: 1;
   padding: 17px 18px;
-  background: #f6faf8;
-  border: 1px solid #e2ebe6;
+
+  background:
+    linear-gradient(
+      135deg,
+      #F4F9F6 0%,
+      #F5F7FB 100%
+    );
+
+  border: 1px solid #dfe7e3;
   border-radius: 8px;
 }
 
 .cip-mini-card > span {
   flex-shrink: 0;
-  color: #126b45;
+
+  color: #008F4C;
   font-size: 9px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.4;
   letter-spacing: 0.08em;
 }
 
 .cip-mini-card strong {
   display: block;
-  color: #294238;
+
+  color: #243F87;
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 750;
   line-height: 1.3;
 }
 
 .cip-mini-card p {
   margin: 5px 0 0;
+
   color: #75837d;
   font-size: 9.5px;
   line-height: 1.55;
 }
+
 
 /* =========================================================
    PROCESS
@@ -423,9 +531,16 @@
 
 .cip-process {
   padding: 88px 0 94px;
-  background: #f6faf8;
-  border-top: 1px solid #e5eee9;
-  border-bottom: 1px solid #e5eee9;
+
+  background:
+    linear-gradient(
+      135deg,
+      #F3F8F5 0%,
+      #F7F9FC 100%
+    );
+
+  border-top: 1px solid #dfe7e3;
+  border-bottom: 1px solid #dfe7e3;
 }
 
 .cip-process-grid {
@@ -437,12 +552,15 @@
 
 .cip-process-card {
   position: relative;
+
   min-height: 215px;
   padding: 17px;
+
   background: #ffffff;
-  border: 1px solid #e0eae5;
-  border-radius: 8px;
+  border: 1px solid #dfe7e3;
+  border-radius: 9px;
   overflow: hidden;
+
   transition:
     transform 0.2s ease,
     border-color 0.2s ease,
@@ -452,19 +570,32 @@
 .cip-process-card::before {
   content: '';
   position: absolute;
+
   top: 0;
   left: 0;
+
   width: 100%;
-  height: 2px;
-  background: #126b45;
+  height: 3px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #008F4C,
+      #008B7A,
+      #243F87
+    );
+
   opacity: 0;
   transition: opacity 0.2s ease;
 }
 
 .cip-process-card:hover {
   transform: translateY(-3px);
-  border-color: #cbdcd3;
-  box-shadow: 0 10px 24px rgba(24, 49, 42, 0.06);
+
+  border-color: #C8D9D0;
+
+  box-shadow:
+    0 10px 24px rgba(36, 63, 135, 0.08);
 }
 
 .cip-process-card:hover::before {
@@ -480,7 +611,7 @@
 .cip-process-number {
   color: #98a69f;
   font-size: 9px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1;
   letter-spacing: 0.08em;
 }
@@ -489,28 +620,40 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   width: 32px;
   height: 32px;
-  color: #126b45;
-  background: #eef7f2;
-  border: 1px solid #dcece4;
+
+  color: #008F4C;
+
+  background:
+    linear-gradient(
+      145deg,
+      #EEF7F2,
+      #EEF4FA
+    );
+
+  border: 1px solid #D8E9E0;
   border-radius: 7px;
 }
 
 .cip-process-card h3 {
   margin: 28px 0 0;
-  color: #203a31;
+
+  color: #243F87;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.35;
 }
 
 .cip-process-card p {
   margin: 8px 0 0;
+
   color: #74817b;
   font-size: 9.5px;
   line-height: 1.6;
 }
+
 
 /* =========================================================
    METHODOLOGY
@@ -531,6 +674,7 @@
 .cip-methodology-header > p {
   max-width: 470px;
   margin: 0;
+
   color: #6e7c75;
   font-size: 11px;
   line-height: 1.7;
@@ -545,17 +689,25 @@
 
 .cip-methodology-card {
   position: relative;
+
   min-height: 210px;
   padding: 20px;
-  background: #f6faf8;
-  border: 1px solid #e2ebe6;
+
+  background:
+    linear-gradient(
+      145deg,
+      #F5F9F7 0%,
+      #F6F8FC 100%
+    );
+
+  border: 1px solid #dfe7e3;
   border-radius: 8px;
 }
 
 .cip-methodology-number {
   color: #a0ada7;
   font-size: 9px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1;
   letter-spacing: 0.08em;
 }
@@ -564,29 +716,35 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   width: 37px;
   height: 37px;
   margin-top: 26px;
-  color: #126b45;
+
+  color: #008F4C;
   background: #ffffff;
-  border: 1px solid #dce9e3;
+
+  border: 1px solid #D8E9E0;
   border-radius: 7px;
 }
 
 .cip-methodology-card h3 {
   margin: 16px 0 0;
-  color: #203a31;
+
+  color: #243F87;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.3;
 }
 
 .cip-methodology-card p {
   margin: 7px 0 0;
+
   color: #718079;
   font-size: 10px;
   line-height: 1.6;
 }
+
 
 /* =========================================================
    OUTPUT
@@ -598,42 +756,85 @@
 }
 
 .cip-output-box {
+  position: relative;
+  overflow: hidden;
+
   display: flex;
   align-items: center;
   gap: 22px;
+
   padding: 29px 31px;
-  background: #18312a;
-  border-radius: 9px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #008F4C 0%,
+      #008B7A 48%,
+      #243F87 100%
+    );
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 12px 30px rgba(36, 63, 135, 0.18);
+}
+
+.cip-output-box::after {
+  content: '';
+  position: absolute;
+
+  width: 150px;
+  height: 150px;
+
+  right: -65px;
+  top: -65px;
+
+  border: 2px solid rgba(255, 176, 0, 0.70);
+  border-radius: 50%;
 }
 
 .cip-output-icon {
+  position: relative;
+  z-index: 2;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   flex-shrink: 0;
+
   width: 48px;
   height: 48px;
-  color: #9bd1b5;
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.09);
+
+  color: #FFD166;
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.13);
   border-radius: 8px;
+}
+
+.cip-output-content {
+  position: relative;
+  z-index: 2;
 }
 
 .cip-output-content > span {
   display: block;
   margin-bottom: 7px;
-  color: #8fc5aa;
+
+  color: #BDE5D0;
   font-size: 8px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1;
   letter-spacing: 0.14em;
 }
 
 .cip-output-content h2 {
   margin: 0;
+
   color: #ffffff;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.25;
   letter-spacing: -0.015em;
 }
@@ -641,10 +842,12 @@
 .cip-output-content p {
   max-width: 760px;
   margin: 8px 0 0;
-  color: #b8c9c1;
+
+  color: #E4F1EB;
   font-size: 10.5px;
   line-height: 1.65;
 }
+
 
 /* =========================================================
    NAVIGATION
@@ -652,8 +855,9 @@
 
 .cip-navigation {
   padding: 28px 0 34px;
+
   background: #ffffff;
-  border-top: 1px solid #e5eee9;
+  border-top: 1px solid #dfe7e3;
 }
 
 .cip-navigation .cip-container {
@@ -667,15 +871,18 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
+
   color: #65746e;
   text-decoration: none;
+
   font-size: 10px;
-  font-weight: 600;
+  font-weight: 700;
+
   transition: color 0.2s ease;
 }
 
 .cip-nav-back:hover {
-  color: #126b45;
+  color: #008F4C;
 }
 
 .cip-nav-next {
@@ -688,7 +895,7 @@
 .cip-nav-next > span {
   color: #9aa8a2;
   font-size: 8px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1;
   letter-spacing: 0.13em;
 }
@@ -697,15 +904,18 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: #126b45;
+
+  color: #243F87;
   text-decoration: none;
+
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 800;
+
   transition: color 0.2s ease;
 }
 
 .cip-nav-next a:hover {
-  color: #0d5436;
+  color: #008F4C;
 }
 
 .cip-nav-next a svg {
@@ -716,11 +926,13 @@
   transform: translateX(3px);
 }
 
+
 /* =========================================================
    RESPONSIVE
    ========================================================= */
 
 @media (max-width: 1050px) {
+
   .cip-hero-grid {
     gap: 45px;
   }
@@ -734,7 +946,9 @@
   }
 }
 
+
 @media (max-width: 850px) {
+
   .cip-hero {
     padding-bottom: 65px;
   }
@@ -761,7 +975,9 @@
   }
 }
 
+
 @media (max-width: 700px) {
+
   .cip-container {
     width: calc(100% - 30px);
   }
@@ -797,7 +1013,9 @@
   }
 }
 
+
 @media (max-width: 520px) {
+
   .cip-hero-actions {
     width: 100%;
   }

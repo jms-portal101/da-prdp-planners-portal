@@ -1398,7 +1398,7 @@ function Pcip() {
           </Link>
 
           <Link
-            to="/planning"
+            to="/planning/implementation"
             className="pcip-navigation-card right"
           >
             <span>

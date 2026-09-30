@@ -7,7 +7,7 @@
   width: 100%;
   min-height: 100vh;
   background: #ffffff;
-  color: #18312a;
+  color: #162752;
 }
 
 .rma-container {
@@ -22,8 +22,8 @@
 .rma-hero {
   position: relative;
   padding: 34px 0 78px;
-  background: #f6faf8;
-  border-bottom: 1px solid #e3ece7;
+  background: #f4f8f6;
+  border-bottom: 1px solid #dbe8e2;
   overflow: hidden;
 }
 
@@ -34,7 +34,7 @@
   right: -150px;
   width: 420px;
   height: 420px;
-  border: 1px solid rgba(18, 107, 69, 0.07);
+  border: 1px solid rgba(15, 128, 78, 0.1);
   border-radius: 50%;
 }
 
@@ -45,7 +45,7 @@
   right: -70px;
   width: 260px;
   height: 260px;
-  border: 1px solid rgba(18, 107, 69, 0.06);
+  border: 1px solid rgba(245, 166, 35, 0.2);
   border-radius: 50%;
 }
 
@@ -57,7 +57,7 @@
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 55px;
-  color: #89968f;
+  color: #728399;
   font-size: 10px;
   line-height: 1.4;
 }
@@ -66,7 +66,7 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: #126b45;
+  color: #0f804e;
   text-decoration: none;
   font-weight: 600;
 }
@@ -87,7 +87,7 @@
 .rma-eyebrow {
   display: inline-block;
   margin-bottom: 17px;
-  color: #126b45;
+  color: #f5a623;
   font-size: 9px;
   font-weight: 700;
   line-height: 1.2;
@@ -96,7 +96,7 @@
 
 .rma-hero h1 {
   margin: 0;
-  color: #18312a;
+  color: #1d3570;
   font-size: clamp(40px, 5vw, 62px);
   font-weight: 600;
   line-height: 1.03;
@@ -104,13 +104,13 @@
 }
 
 .rma-hero h1 span {
-  color: #126b45;
+  color: #0f804e;
 }
 
 .rma-hero-description {
   max-width: 610px;
   margin: 22px 0 0;
-  color: #65746e;
+  color: #556885;
   font-size: 14px;
   line-height: 1.75;
 }
@@ -130,8 +130,8 @@
   min-height: 42px;
   padding: 0 17px;
   color: #ffffff;
-  background: #126b45;
-  border: 1px solid #126b45;
+  background: #0f804e;
+  border: 1px solid #0f804e;
   border-radius: 6px;
   text-decoration: none;
   font-size: 10px;
@@ -140,8 +140,8 @@
 }
 
 .rma-primary-button:hover {
-  background: #0e593a;
-  border-color: #0e593a;
+  background: #0b633c;
+  border-color: #0b633c;
   transform: translateY(-1px);
 }
 
@@ -164,10 +164,10 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background: #18312a;
+  background: linear-gradient(145deg, #0f804e 0%, #1d3570 100%);
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 18px 40px rgba(24, 49, 42, 0.12);
+  box-shadow: 0 18px 40px rgba(29, 53, 112, 0.2);
 }
 
 .rma-hero-panel::before {
@@ -177,7 +177,7 @@
   right: -90px;
   width: 240px;
   height: 240px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 50%;
 }
 
@@ -185,7 +185,7 @@
   position: absolute;
   top: 25px;
   right: 27px;
-  color: rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.2);
   font-size: 42px;
   font-weight: 600;
   line-height: 1;
@@ -200,9 +200,9 @@
   width: 55px;
   height: 55px;
   margin-bottom: auto;
-  color: #9bd1b5;
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.09);
+  color: #f5a623;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 9px;
 }
 
@@ -211,7 +211,7 @@
   z-index: 2;
   display: block;
   margin-bottom: 9px;
-  color: #8fc5aa;
+  color: #f5a623;
   font-size: 8px;
   font-weight: 700;
   letter-spacing: 0.15em;
@@ -232,9 +232,9 @@
   position: relative;
   z-index: 2;
   width: 38px;
-  height: 1px;
+  height: 2px;
   margin: 19px 0 15px;
-  background: #78b894;
+  background: #f5a623;
 }
 
 .rma-hero-panel p {
@@ -242,7 +242,7 @@
   z-index: 2;
   max-width: 340px;
   margin: 0;
-  color: #b7c8c0;
+  color: #d1ddf0;
   font-size: 10.5px;
   line-height: 1.65;
 }
@@ -262,7 +262,7 @@
 .rma-section-eyebrow {
   display: block;
   margin-bottom: 10px;
-  color: #126b45;
+  color: #f5a623;
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.15em;
@@ -270,7 +270,7 @@
 
 .rma-section-heading h2 {
   margin: 0;
-  color: #18312a;
+  color: #1d3570;
   font-size: clamp(27px, 3vw, 38px);
   font-weight: 600;
   line-height: 1.12;
@@ -280,7 +280,7 @@
 .rma-section-heading p {
   max-width: 680px;
   margin: 15px 0 0;
-  color: #697871;
+  color: #5d6f8a;
   font-size: 12.5px;
   line-height: 1.75;
 }
@@ -308,7 +308,7 @@
 }
 
 .rma-intro-card {
-  border: 1px solid #e2ebe6;
+  border: 1px solid #dae5e0;
   border-radius: 9px;
 }
 
@@ -323,22 +323,22 @@
   width: 42px;
   height: 42px;
   margin-bottom: 20px;
-  color: #126b45;
-  background: #eef7f2;
-  border: 1px solid #dcece4;
+  color: #0f804e;
+  background: #e9f4ee;
+  border: 1px solid #cce5d8;
   border-radius: 8px;
 }
 
 .rma-intro-card h3 {
   margin: 0;
-  color: #203a31;
+  color: #162752;
   font-size: 18px;
   font-weight: 600;
 }
 
 .rma-intro-card p {
   margin: 12px 0 0;
-  color: #718079;
+  color: #5d6f8a;
   font-size: 11px;
   line-height: 1.7;
 }
@@ -358,27 +358,27 @@
   gap: 13px;
   flex: 1;
   padding: 17px 18px;
-  background: #f6faf8;
-  border: 1px solid #e2ebe6;
+  background: #f4f8f6;
+  border: 1px solid #dae5e0;
   border-radius: 8px;
 }
 
 .rma-mini-card > span {
   flex-shrink: 0;
-  color: #126b45;
+  color: #0f804e;
   font-size: 9px;
   font-weight: 700;
 }
 
 .rma-mini-card strong {
   display: block;
-  color: #294238;
+  color: #162752;
   font-size: 11px;
 }
 
 .rma-mini-card p {
   margin: 5px 0 0;
-  color: #75837d;
+  color: #5d6f8a;
   font-size: 9.5px;
   line-height: 1.55;
 }
@@ -389,9 +389,9 @@
 
 .rma-process {
   padding: 88px 0 94px;
-  background: #f6faf8;
-  border-top: 1px solid #e5eee9;
-  border-bottom: 1px solid #e5eee9;
+  background: #f4f8f6;
+  border-top: 1px solid #dbe8e2;
+  border-bottom: 1px solid #dbe8e2;
 }
 
 .rma-process-grid {
@@ -406,15 +406,15 @@
   min-height: 215px;
   padding: 17px;
   background: #ffffff;
-  border: 1px solid #e0eae5;
+  border: 1px solid #dae5e0;
   border-radius: 8px;
   transition: 0.2s ease;
 }
 
 .rma-process-card:hover {
   transform: translateY(-3px);
-  border-color: #cbdcd3;
-  box-shadow: 0 10px 24px rgba(24, 49, 42, 0.06);
+  border-color: #0f804e;
+  box-shadow: 0 10px 24px rgba(29, 53, 112, 0.08);
 }
 
 .rma-process-top {
@@ -424,7 +424,7 @@
 }
 
 .rma-process-number {
-  color: #98a69f;
+  color: #8c9cb3;
   font-size: 9px;
   font-weight: 700;
 }
@@ -435,22 +435,22 @@
   justify-content: center;
   width: 32px;
   height: 32px;
-  color: #126b45;
-  background: #eef7f2;
-  border: 1px solid #dcece4;
+  color: #0f804e;
+  background: #e9f4ee;
+  border: 1px solid #cce5d8;
   border-radius: 7px;
 }
 
 .rma-process-card h3 {
   margin: 28px 0 0;
-  color: #203a31;
+  color: #162752;
   font-size: 13px;
   line-height: 1.35;
 }
 
 .rma-process-card p {
   margin: 8px 0 0;
-  color: #74817b;
+  color: #5d6f8a;
   font-size: 9.5px;
   line-height: 1.6;
 }
@@ -473,7 +473,7 @@
 .rma-assessment-header > p {
   max-width: 470px;
   margin: 0;
-  color: #6e7c75;
+  color: #5d6f8a;
   font-size: 11px;
   line-height: 1.7;
 }
@@ -488,13 +488,13 @@
 .rma-assessment-card {
   min-height: 210px;
   padding: 20px;
-  background: #f6faf8;
-  border: 1px solid #e2ebe6;
+  background: #f4f8f6;
+  border: 1px solid #dae5e0;
   border-radius: 8px;
 }
 
 .rma-assessment-number {
-  color: #a0ada7;
+  color: #8c9cb3;
   font-size: 9px;
   font-weight: 700;
 }
@@ -506,21 +506,21 @@
   width: 37px;
   height: 37px;
   margin-top: 26px;
-  color: #126b45;
+  color: #0f804e;
   background: #ffffff;
-  border: 1px solid #dce9e3;
+  border: 1px solid #cce5d8;
   border-radius: 7px;
 }
 
 .rma-assessment-card h3 {
   margin: 16px 0 0;
-  color: #203a31;
+  color: #162752;
   font-size: 14px;
 }
 
 .rma-assessment-card p {
   margin: 7px 0 0;
-  color: #718079;
+  color: #5d6f8a;
   font-size: 10px;
   line-height: 1.6;
 }
@@ -538,14 +538,14 @@
   grid-template-columns: 0.9fr 1.1fr;
   gap: 55px;
   padding: 36px;
-  background: #18312a;
+  background: #1d3570;
   border-radius: 9px;
 }
 
 .rma-questions-heading > span {
   display: block;
   margin-bottom: 10px;
-  color: #8fc5aa;
+  color: #f5a623;
   font-size: 8px;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -571,7 +571,7 @@
   align-items: center;
   gap: 15px;
   padding: 13px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .rma-question-list > div:last-child {
@@ -579,14 +579,14 @@
 }
 
 .rma-question-list span {
-  color: #78b894;
+  color: #f5a623;
   font-size: 8px;
   font-weight: 700;
 }
 
 .rma-question-list p {
   margin: 0;
-  color: #c2d0ca;
+  color: #d1ddf0;
   font-size: 10.5px;
   line-height: 1.5;
 }
@@ -604,8 +604,8 @@
   align-items: flex-start;
   gap: 22px;
   padding: 30px 31px;
-  background: #f6faf8;
-  border: 1px solid #dfeae4;
+  background: #f4f8f6;
+  border: 1px solid #dae5e0;
   border-radius: 9px;
 }
 
@@ -616,16 +616,16 @@
   flex-shrink: 0;
   width: 48px;
   height: 48px;
-  color: #126b45;
+  color: #0f804e;
   background: #ffffff;
-  border: 1px solid #dce9e3;
+  border: 1px solid #cce5d8;
   border-radius: 8px;
 }
 
 .rma-output-content > span {
   display: block;
   margin-bottom: 7px;
-  color: #126b45;
+  color: #f5a623;
   font-size: 8px;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -633,7 +633,7 @@
 
 .rma-output-content h2 {
   margin: 0;
-  color: #18312a;
+  color: #1d3570;
   font-size: 21px;
   font-weight: 600;
 }
@@ -641,7 +641,7 @@
 .rma-output-content > p {
   max-width: 760px;
   margin: 8px 0 0;
-  color: #718079;
+  color: #5d6f8a;
   font-size: 10.5px;
   line-height: 1.65;
 }
@@ -659,13 +659,13 @@
   display: flex;
   align-items: center;
   gap: 7px;
-  color: #53645c;
+  color: #43546e;
   font-size: 9.5px;
 }
 
 .rma-output-content li svg {
   flex-shrink: 0;
-  color: #126b45;
+  color: #0f804e;
 }
 
 /* =========================================================
@@ -674,7 +674,7 @@
 
 .rma-navigation {
   padding: 28px 0 34px;
-  border-top: 1px solid #e5eee9;
+  border-top: 1px solid #dbe8e2;
 }
 
 .rma-navigation .rma-container {
@@ -688,7 +688,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: #65746e;
+  color: #5d6f8a;
   text-decoration: none;
   font-size: 10px;
   font-weight: 600;
@@ -702,7 +702,7 @@
 }
 
 .rma-nav-next > span {
-  color: #9aa8a2;
+  color: #8c9cb3;
   font-size: 8px;
   font-weight: 700;
   letter-spacing: 0.13em;
@@ -712,7 +712,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: #126b45;
+  color: #0f804e;
   text-decoration: none;
   font-size: 11px;
   font-weight: 700;

@@ -5,21 +5,14 @@
 
 .investment-portfolio {
   position: relative;
-
   width: 100%;
   max-width: 1400px;
-
   margin: 0 auto;
-
-  padding: 88px 40px 96px;
-
+  padding: 64px 40px 72px;
   box-sizing: border-box;
-
   scroll-margin-top: 20px;
-
   overflow: hidden;
 }
-
 
 /* =========================================================
    SUBTLE BACKGROUND GLOW
@@ -27,17 +20,12 @@
 
 .investment-portfolio::before {
   content: "";
-
   position: absolute;
-
   top: 10px;
   right: -180px;
-
   width: 600px;
   height: 600px;
-
   border-radius: 50%;
-
   background:
     radial-gradient(
       circle,
@@ -46,40 +34,29 @@
       rgba(36, 75, 147, 0.025) 52%,
       transparent 72%
     );
-
   pointer-events: none;
-
   z-index: 0;
 }
-
 
 /* Secondary blue glow */
 
 .investment-portfolio::after {
   content: "";
-
   position: absolute;
-
   left: -220px;
   bottom: -300px;
-
   width: 520px;
   height: 520px;
-
   border-radius: 50%;
-
   background:
     radial-gradient(
       circle,
       rgba(36, 75, 147, 0.055),
       transparent 70%
     );
-
   pointer-events: none;
-
   z-index: 0;
 }
-
 
 /* =========================================================
    HEADER
@@ -87,20 +64,13 @@
 
 .investment-header {
   position: relative;
-
   z-index: 1;
-
   display: flex;
-
   align-items: flex-end;
-
   justify-content: space-between;
-
-  gap: 50px;
-
-  margin-bottom: 42px;
+  gap: 40px;
+  margin-bottom: 30px;
 }
-
 
 /* =========================================================
    HEADER LEFT
@@ -110,40 +80,27 @@
   max-width: 900px;
 }
 
-
 /* =========================================================
    EYEBROW
 ========================================================= */
 
 .section-eyebrow {
   display: inline-flex;
-
   align-items: center;
-
   gap: 10px;
-
-  margin-bottom: 14px;
-
+  margin-bottom: 11px;
   color: #008f4c;
-
-  font-size: 14px;
-
+  font-size: 13px;
   font-weight: 800;
-
   letter-spacing: 0.16em;
-
   text-transform: uppercase;
 }
 
-
 .section-eyebrow::before {
   content: "";
-
-  width: 28px;
+  width: 26px;
   height: 2px;
-
   border-radius: 999px;
-
   background:
     linear-gradient(
       90deg,
@@ -152,27 +109,19 @@
     );
 }
 
-
 /* =========================================================
    MAIN RAFIP TITLE
 ========================================================= */
 
 .investment-header h2 {
   margin: 0;
-
   max-width: 900px;
-
   color: #18312a;
-
-  font-size: clamp(38px, 4.3vw, 58px);
-
+  font-size: clamp(34px, 3.8vw, 52px);
   line-height: 1.04;
-
   font-weight: 800;
-
   letter-spacing: -0.04em;
 }
-
 
 /* =========================================================
    RAFIP TITLE ACCENT
@@ -180,16 +129,11 @@
 
 .investment-header h2::after {
   content: "";
-
   display: block;
-
-  width: 82px;
-  height: 4px;
-
-  margin-top: 18px;
-
+  width: 72px;
+  height: 3px;
+  margin-top: 14px;
   border-radius: 999px;
-
   background:
     linear-gradient(
       90deg,
@@ -199,25 +143,18 @@
     );
 }
 
-
 /* =========================================================
    HEADER DESCRIPTION
 ========================================================= */
 
 .investment-header > p {
-  max-width: 420px;
-
+  max-width: 390px;
   margin: 0;
-
   color: #607268;
-
-  font-size: 15px;
-
-  line-height: 1.7;
-
+  font-size: 14px;
+  line-height: 1.6;
   font-weight: 450;
 }
-
 
 /* =========================================================
    MAIN PORTFOLIO PANEL
@@ -225,30 +162,20 @@
 
 .portfolio-panel {
   position: relative;
-
   z-index: 1;
-
   display: grid;
-
   grid-template-columns:
-    minmax(0, 1fr)
-    minmax(480px, 0.95fr);
-
+    minmax(0, 1.05fr)
+    minmax(440px, 0.95fr);
   width: 100%;
-
   overflow: hidden;
-
   border: 1px solid rgba(24, 49, 42, 0.09);
-
-  border-radius: 24px;
-
+  border-radius: 22px;
   background: #ffffff;
-
   box-shadow:
-    0 22px 50px rgba(24, 49, 42, 0.09),
-    0 4px 14px rgba(24, 49, 42, 0.04);
+    0 18px 42px rgba(24, 49, 42, 0.08),
+    0 4px 12px rgba(24, 49, 42, 0.035);
 }
-
 
 /* =========================================================
    LEFT MAIN INVESTMENT AREA
@@ -256,11 +183,8 @@
 
 .portfolio-main {
   position: relative;
-
   min-width: 0;
-
-  padding: 52px 50px 48px;
-
+  padding: 36px 42px 34px;
   background:
     radial-gradient(
       circle at 8% 5%,
@@ -277,10 +201,8 @@
       #f5faf7 0%,
       #ffffff 72%
     );
-
   overflow: hidden;
 }
-
 
 /* =========================================================
    LEFT DECORATIVE CIRCLE
@@ -288,46 +210,32 @@
 
 .portfolio-main::before {
   content: "";
-
   position: absolute;
-
-  width: 360px;
-  height: 360px;
-
-  right: -170px;
-  top: -180px;
-
+  width: 320px;
+  height: 320px;
+  right: -155px;
+  top: -160px;
   border-radius: 50%;
-
   border: 1px solid rgba(0, 139, 135, 0.12);
-
   pointer-events: none;
 }
 
-
 .portfolio-main::after {
   content: "";
-
   position: absolute;
-
-  right: -110px;
-  bottom: -130px;
-
-  width: 310px;
-  height: 310px;
-
+  right: -100px;
+  bottom: -120px;
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
-
   background:
     radial-gradient(
       circle,
       rgba(0, 139, 135, 0.07),
       transparent 70%
     );
-
   pointer-events: none;
 }
-
 
 /* =========================================================
    SECTION LABEL
@@ -335,24 +243,15 @@
 
 .portfolio-label {
   position: relative;
-
   z-index: 1;
-
   display: inline-block;
-
-  margin-bottom: 16px;
-
+  margin-bottom: 12px;
   color: #008f4c;
-
-  font-size: 11px;
-
+  font-size: 10px;
   font-weight: 800;
-
   letter-spacing: 0.12em;
-
   text-transform: uppercase;
 }
-
 
 /* =========================================================
    LABEL ACCENT
@@ -360,21 +259,14 @@
 
 .portfolio-label::before {
   content: "";
-
   display: inline-block;
-
-  width: 20px;
+  width: 18px;
   height: 2px;
-
-  margin-right: 9px;
-
+  margin-right: 8px;
   vertical-align: middle;
-
   border-radius: 999px;
-
   background: #f4b400;
 }
-
 
 /* =========================================================
    MAIN INVESTMENT MESSAGE
@@ -382,21 +274,13 @@
 
 .portfolio-main h3 {
   position: relative;
-
   z-index: 1;
-
-  max-width: 650px;
-
+  max-width: 560px;
   margin: 0;
-
-  font-size: clamp(42px, 5vw, 68px);
-
-  line-height: 0.99;
-
+  font-size: clamp(34px, 4vw, 52px);
+  line-height: 1;
   font-weight: 850;
-
-  letter-spacing: -0.055em;
-
+  letter-spacing: -0.05em;
   background:
     linear-gradient(
       135deg,
@@ -405,15 +289,11 @@
       #008b87 68%,
       #244b93 100%
     );
-
   -webkit-background-clip: text;
   background-clip: text;
-
   -webkit-text-fill-color: transparent;
-
   color: transparent;
 }
-
 
 /* =========================================================
    MAIN DESCRIPTION
@@ -421,22 +301,14 @@
 
 .portfolio-main p {
   position: relative;
-
   z-index: 1;
-
-  max-width: 570px;
-
-  margin: 20px 0 28px;
-
+  max-width: 520px;
+  margin: 16px 0 20px;
   color: #5e6c64;
-
-  font-size: 14px;
-
-  line-height: 1.7;
-
+  font-size: 13px;
+  line-height: 1.6;
   font-weight: 450;
 }
-
 
 /* =========================================================
    CTA BUTTON
@@ -444,43 +316,27 @@
 
 .portfolio-button {
   position: relative;
-
   z-index: 2;
-
   display: inline-flex;
-
   align-items: center;
-
   justify-content: center;
-
-  gap: 10px;
-
-  min-height: 46px;
-
-  padding: 0 20px;
-
+  gap: 9px;
+  min-height: 42px;
+  padding: 0 18px;
   border: 1px solid transparent;
-
-  border-radius: 10px;
-
+  border-radius: 9px;
   background:
     linear-gradient(
       135deg,
       #008f4c,
       #008b87
     );
-
   color: #ffffff;
-
-  font-size: 13px;
-
+  font-size: 12px;
   font-weight: 750;
-
   text-decoration: none;
-
   box-shadow:
-    0 8px 20px rgba(0, 143, 76, 0.20);
-
+    0 7px 17px rgba(0, 143, 76, 0.18);
   transition:
     transform 0.22s ease,
     box-shadow 0.22s ease,
@@ -488,34 +344,27 @@
     border-color 0.22s ease;
 }
 
-
 .portfolio-button:hover {
   transform: translateY(-2px);
-
   background:
     linear-gradient(
       135deg,
       #007640,
       #244b93
     );
-
   border-color: #f4b400;
-
   box-shadow:
-    0 12px 27px rgba(36, 75, 147, 0.23);
+    0 11px 24px rgba(36, 75, 147, 0.21);
 }
-
 
 .portfolio-button svg {
   transition:
     transform 0.22s ease;
 }
 
-
 .portfolio-button:hover svg {
   transform: translate(3px, -2px);
 }
-
 
 /* =========================================================
    RIGHT STATISTICS AREA
@@ -523,16 +372,11 @@
 
 .portfolio-stats {
   position: relative;
-
   display: grid;
-
   grid-template-columns:
     repeat(2, minmax(0, 1fr));
-
-  gap: 16px;
-
-  padding: 30px;
-
+  gap: 11px;
+  padding: 18px;
   background:
     radial-gradient(
       circle at 100% 0%,
@@ -547,43 +391,29 @@
     #f4f8f6;
 }
 
-
 /* =========================================================
    STAT CARD
 ========================================================= */
 
 .portfolio-stat {
   position: relative;
-
   display: flex;
-
   align-items: flex-start;
-
-  gap: 13px;
-
+  gap: 10px;
   min-width: 0;
-
-  min-height: 145px;
-
-  padding: 21px 18px;
-
+  min-height: 112px;
+  padding: 16px 15px;
   border: 1px solid rgba(24, 49, 42, 0.08);
-
-  border-radius: 17px;
-
+  border-radius: 14px;
   background: #ffffff;
-
   box-shadow:
-    0 6px 18px rgba(24, 49, 42, 0.045);
-
+    0 5px 15px rgba(24, 49, 42, 0.04);
   overflow: hidden;
-
   transition:
     transform 0.22s ease,
     box-shadow 0.22s ease,
     border-color 0.22s ease;
 }
-
 
 /* =========================================================
    STAT CARD ACCENT
@@ -591,18 +421,12 @@
 
 .portfolio-stat::before {
   content: "";
-
   position: absolute;
-
   left: 0;
-
-  top: 18px;
-  bottom: 18px;
-
+  top: 14px;
+  bottom: 14px;
   width: 3px;
-
   border-radius: 0 4px 4px 0;
-
   background:
     linear-gradient(
       to bottom,
@@ -610,54 +434,41 @@
       #008b87,
       #244b93
     );
-
   opacity: 0.85;
 }
 
-
 .portfolio-stat:hover {
-  transform: translateY(-4px);
-
+  transform: translateY(-3px);
   border-color:
     rgba(0, 139, 135, 0.20);
-
   box-shadow:
-    0 13px 28px rgba(24, 49, 42, 0.10);
+    0 11px 24px rgba(24, 49, 42, 0.09);
 }
-
 
 /* =========================================================
    STAT ICON
 ========================================================= */
 
 .stat-icon {
-  flex: 0 0 42px;
-
+  flex: 0 0 36px;
   display: flex;
-
   align-items: center;
   justify-content: center;
-
-  width: 42px;
-  height: 42px;
-
-  border-radius: 12px;
-
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
   background:
     linear-gradient(
       135deg,
       #e7f6ed,
       #e7f6f5
     );
-
   color: #008f4c;
-
   transition:
     background 0.22s ease,
     color 0.22s ease,
     transform 0.22s ease;
 }
-
 
 .portfolio-stat:hover .stat-icon {
   background:
@@ -666,12 +477,9 @@
       #008f4c,
       #008b87
     );
-
   color: #ffffff;
-
   transform: scale(1.05);
 }
-
 
 /* =========================================================
    STAT CONTENT
@@ -679,10 +487,8 @@
 
 .stat-content {
   min-width: 0;
-
   flex: 1;
 }
-
 
 /* =========================================================
    STAT LABEL
@@ -690,28 +496,17 @@
 
 .stat-content span {
   display: block;
-
-  margin-bottom: 7px;
-
+  margin-bottom: 5px;
   color: #5f6d65;
-
-  font-size: 10px;
-
-  line-height: 1.45;
-
+  font-size: 9px;
+  line-height: 1.35;
   font-weight: 800;
-
-  letter-spacing: 0.09em;
-
+  letter-spacing: 0.075em;
   text-transform: uppercase;
-
   white-space: normal;
-
   word-break: normal;
-
   overflow-wrap: normal;
 }
-
 
 /* =========================================================
    STAT VALUE
@@ -719,32 +514,22 @@
 
 .stat-content strong {
   display: block;
-
-  margin: 0 0 7px;
-
+  margin: 0 0 5px;
   color: #193b2d;
-
-  font-size: 1.65rem;
-
+  font-size: 1.45rem;
   line-height: 1.05;
-
   font-weight: 800;
-
   letter-spacing: -0.025em;
 }
-
 
 /* =========================================================
    PRIMARY INVESTMENT KPI
 ========================================================= */
 
 .stat-content strong.investment-focus {
-  font-size: 1.9rem;
-
+  font-size: 1.65rem;
   line-height: 1;
-
   font-weight: 850;
-
   background:
     linear-gradient(
       135deg,
@@ -752,15 +537,11 @@
       #008b87,
       #244b93
     );
-
   -webkit-background-clip: text;
   background-clip: text;
-
   -webkit-text-fill-color: transparent;
-
   color: transparent;
 }
-
 
 /* =========================================================
    STAT DESCRIPTION
@@ -768,16 +549,11 @@
 
 .stat-content small {
   display: block;
-
   color: #738079;
-
-  font-size: 11px;
-
-  line-height: 1.55;
-
+  font-size: 10px;
+  line-height: 1.4;
   font-weight: 500;
 }
-
 
 /* =========================================================
    PRIORITY COMMODITIES
@@ -787,28 +563,21 @@
   min-width: 0;
 }
 
-
 .portfolio-stat:nth-child(2) .stat-content strong {
-  font-size: 1.7rem;
-
-  line-height: 1.15;
-
+  font-size: 1.5rem;
+  line-height: 1.1;
   letter-spacing: -0.015em;
 }
-
 
 /* =========================================================
    INVESTMENT FOCUS
 ========================================================= */
 
 .portfolio-stat:nth-child(4) .stat-content strong {
-  font-size: 1.35rem;
-
-  line-height: 1.2;
-
+  font-size: 1.15rem;
+  line-height: 1.15;
   letter-spacing: -0.015em;
 }
-
 
 /* =========================================================
    TABLET — LARGE
@@ -818,41 +587,32 @@
 
   .investment-portfolio {
     max-width: 100%;
-
     padding:
-      75px 32px 80px;
+      60px 32px 70px;
   }
-
 
   .investment-header {
     flex-direction: column;
-
     align-items: flex-start;
-
-    gap: 18px;
+    gap: 15px;
   }
-
 
   .investment-header > p {
     max-width: 700px;
   }
 
-
   .portfolio-panel {
     grid-template-columns: 1fr;
   }
 
-
   .portfolio-main {
-    padding: 46px 42px;
+    padding: 38px 40px;
   }
-
 
   .portfolio-stats {
-    padding: 26px;
+    padding: 20px;
   }
 }
-
 
 /* =========================================================
    TABLET
@@ -862,56 +622,44 @@
 
   .investment-portfolio {
     padding:
-      65px 24px 70px;
+      55px 24px 65px;
   }
-
 
   .investment-header {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
   }
-
 
   .investment-header h2 {
-    font-size: 2.8rem;
-
+    font-size: 2.6rem;
     line-height: 1.05;
   }
-
 
   .investment-header > p {
     font-size: 14px;
   }
 
-
   .portfolio-main {
-    padding: 38px 30px;
+    padding: 34px 28px;
   }
-
 
   .portfolio-main h3 {
-    font-size: 3.3rem;
+    font-size: 3rem;
   }
-
 
   .portfolio-stats {
-    grid-template-columns: 1fr;
-
-    padding: 20px;
-
-    gap: 14px;
+    grid-template-columns: 1fr 1fr;
+    padding: 16px;
+    gap: 10px;
   }
-
 
   .portfolio-stat {
-    min-height: auto;
+    min-height: 108px;
   }
-
 
   .portfolio-stat:nth-child(2) .stat-content strong {
-    font-size: 1.6rem;
+    font-size: 1.45rem;
   }
 }
-
 
 /* =========================================================
    MOBILE
@@ -921,94 +669,76 @@
 
   .investment-portfolio {
     padding:
-      55px 16px 60px;
+      48px 16px 55px;
   }
-
 
   .investment-header h2 {
-    font-size: 2.15rem;
+    font-size: 2.1rem;
   }
-
 
   .investment-header h2::after {
-    width: 65px;
-
+    width: 62px;
     height: 3px;
-
-    margin-top: 14px;
+    margin-top: 12px;
   }
-
 
   .investment-header > p {
-    font-size: 13.5px;
-
-    line-height: 1.65;
+    font-size: 13px;
+    line-height: 1.6;
   }
-
 
   .portfolio-panel {
     border-radius: 18px;
   }
 
-
   .portfolio-main {
-    padding: 32px 22px;
+    padding: 30px 21px;
   }
 
-
   .portfolio-main h3 {
-    font-size: 2.75rem;
-
+    font-size: 2.6rem;
     line-height: 1;
   }
 
-
   .portfolio-main p {
-    font-size: 13.5px;
+    font-size: 13px;
+    margin: 14px 0 18px;
   }
-
 
   .portfolio-button {
     width: 100%;
   }
 
-
   .portfolio-stats {
-    padding: 16px;
+    grid-template-columns: 1fr;
+    padding: 14px;
   }
-
 
   .portfolio-stat {
-    padding: 19px 17px;
-
-    gap: 12px;
+    min-height: auto;
+    padding: 17px 15px;
+    gap: 11px;
   }
-
 
   .stat-icon {
-    flex: 0 0 38px;
-
-    width: 38px;
-    height: 38px;
+    flex: 0 0 36px;
+    width: 36px;
+    height: 36px;
   }
-
 
   .stat-content strong {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
-
 
   .stat-content strong.investment-focus {
-    font-size: 2rem;
+    font-size: 1.85rem;
   }
-
 
   .portfolio-stat:nth-child(2) .stat-content strong {
     font-size: 1.4rem;
   }
 
-
   .portfolio-stat:nth-child(4) .stat-content strong {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
 }

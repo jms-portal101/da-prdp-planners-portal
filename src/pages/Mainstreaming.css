@@ -1,12 +1,14 @@
 .mainstreaming-page {
-  --mainstreaming-green: #126b45;
-  --mainstreaming-dark: #18312a;
-  --mainstreaming-deep: #10261f;
-  --mainstreaming-green-soft: #eaf5ef;
-  --mainstreaming-pale: #f6faf8;
-  --mainstreaming-border: #dce8e2;
-  --mainstreaming-text: #263832;
-  --mainstreaming-muted: #71827b;
+  /* Updated palette based on image */
+  --mainstreaming-green: #008751;        /* Vibrant DA/PRDP Green */
+  --mainstreaming-dark: #1b365d;         /* Deep RAFIP Navy Blue */
+  --mainstreaming-deep: #0e2038;         /* Darker Blue-Dark shade */
+  --mainstreaming-gold: #f5a623;         /* PRDP Scale-Up Gold/Orange */
+  --mainstreaming-green-soft: #e3f2fd;   /* Soft Ice Light Blue Tint */
+  --mainstreaming-pale: #f8fafc;         /* Light Off-white canvas */
+  --mainstreaming-border: #cbd5e1;       /* Neutral soft border */
+  --mainstreaming-text: #1e293b;         /* Dark slate readable text */
+  --mainstreaming-muted: #64748b;        /* Muted secondary text */
   --mainstreaming-white: #ffffff;
 
   background: var(--mainstreaming-white);
@@ -30,17 +32,18 @@
 ========================= */
 
 .mainstreaming-hero {
+  /* Custom gradient reflecting the green-to-navy curve from the graphic */
   background:
     radial-gradient(
       circle at 80% 20%,
-      rgba(37, 126, 88, 0.18),
+      rgba(245, 166, 35, 0.18),
       transparent 28%
     ),
     linear-gradient(
       135deg,
-      #10261f 0%,
-      #18312a 55%,
-      #1e4435 100%
+      #008751 0%,
+      #0f5a43 40%,
+      #1b365d 100%
     );
 
   color: white;
@@ -54,11 +57,11 @@
   gap: 9px;
   margin-bottom: 58px;
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.62);
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .mainstreaming-breadcrumb a {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.85);
   text-decoration: none;
 }
 
@@ -76,8 +79,9 @@
 .mainstreaming-stage {
   display: inline-flex;
   align-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid var(--mainstreaming-gold);
+  background: rgba(245, 166, 35, 0.15);
+  color: #ffffff;
   padding: 7px 12px;
   border-radius: 999px;
   font-size: 10px;
@@ -96,7 +100,7 @@
 .mainstreaming-hero-lead {
   max-width: 650px;
   margin: 0;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.85);
   font-size: 16px;
   line-height: 1.75;
 }
@@ -123,21 +127,22 @@
 
 .mainstreaming-btn.primary {
   color: var(--mainstreaming-dark);
-  background: white;
+  background: var(--mainstreaming-gold);
 }
 
 .mainstreaming-btn.primary:hover {
   transform: translateY(-2px);
+  filter: brightness(1.05);
 }
 
 .mainstreaming-btn.secondary {
   color: white;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .mainstreaming-btn.secondary:hover {
-  background: rgba(255, 255, 255, 0.11);
+  background: rgba(255, 255, 255, 0.16);
 }
 
 /* HERO ORBIT */
@@ -160,7 +165,7 @@
 
 .mainstreaming-orbit-ring {
   position: absolute;
-  border: 1px solid rgba(255, 255, 255, 0.13);
+  border: 1px solid rgba(245, 166, 35, 0.35);
   border-radius: 50%;
 }
 
@@ -178,8 +183,8 @@
   width: 138px;
   height: 138px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -190,14 +195,14 @@
 }
 
 .mainstreaming-orbit-center svg {
-  color: #9ed8bb;
+  color: var(--mainstreaming-gold);
 }
 
 .mainstreaming-orbit-center span {
   font-size: 9px;
   letter-spacing: 0.13em;
   font-weight: 800;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .mainstreaming-orbit-node {
@@ -208,15 +213,15 @@
   gap: 7px;
   padding: 9px 12px;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.09);
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(27, 54, 93, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.22);
   backdrop-filter: blur(8px);
   font-size: 10px;
   font-weight: 700;
 }
 
 .mainstreaming-orbit-node svg {
-  color: #a9dfc2;
+  color: var(--mainstreaming-gold);
 }
 
 .node-one {
@@ -300,7 +305,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--mainstreaming-green-soft);
+  background: rgba(0, 135, 81, 0.1);
   color: var(--mainstreaming-green);
   border-radius: 8px;
   margin-bottom: 8px;
@@ -387,7 +392,7 @@
 }
 
 .mainstreaming-step-button:hover {
-  border-color: #b9d7c8;
+  border-color: var(--mainstreaming-green);
   transform: translateX(2px);
 }
 
@@ -410,12 +415,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--mainstreaming-green-soft);
+  background: rgba(0, 135, 81, 0.1);
   color: var(--mainstreaming-green);
 }
 
 .mainstreaming-step-button.active .step-button-icon {
-  background: rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.18);
   color: white;
 }
 
@@ -471,7 +476,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--mainstreaming-green-soft);
+  background: rgba(0, 135, 81, 0.1);
   color: var(--mainstreaming-green);
 }
 
@@ -502,7 +507,7 @@
   display: flex;
   gap: 12px;
   padding: 15px;
-  border-radius: 9px;
+  border-radius: 99px;
   background: var(--mainstreaming-pale);
   border: 1px solid var(--mainstreaming-border);
   margin-bottom: 20px;
@@ -594,11 +599,11 @@
 }
 
 .mainstreaming-output-card {
-  background: var(--mainstreaming-green-soft);
+  background: rgba(0, 135, 81, 0.08);
 }
 
 .mainstreaming-question-card {
-  background: #f8f8f6;
+  background: #f8fafc;
   border: 1px solid var(--mainstreaming-border);
 }
 
@@ -714,7 +719,7 @@
 .progress-track {
   height: 4px;
   border-radius: 99px;
-  background: #e7eee9;
+  background: #e2e8f0;
   overflow: hidden;
 }
 
@@ -752,7 +757,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--mainstreaming-green-soft);
+  background: rgba(0, 135, 81, 0.1);
   color: var(--mainstreaming-green);
 }
 
@@ -802,7 +807,7 @@
 }
 
 .mainstreaming-accordion.open {
-  border-color: #bdd9ca;
+  border-color: var(--mainstreaming-green);
 }
 
 .mainstreaming-accordion-trigger {
@@ -833,7 +838,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--mainstreaming-green-soft);
+  background: rgba(0, 135, 81, 0.1);
   color: var(--mainstreaming-green);
 }
 
@@ -888,13 +893,13 @@
 
 .pipeline-copy p {
   margin: 0;
-  color: rgba(255, 255, 255, 0.67);
+  color: rgba(255, 255, 255, 0.75);
   font-size: 13px;
   line-height: 1.75;
 }
 
 .pipeline-copy .mainstreaming-eyebrow {
-  color: #91c9aa;
+  color: var(--mainstreaming-gold);
 }
 
 .pipeline-list {
@@ -909,13 +914,13 @@
   align-items: center;
   gap: 12px;
   padding: 12px 14px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .pipeline-item > span {
-  color: #8dc6a8;
+  color: var(--mainstreaming-gold);
   font-size: 9px;
   font-weight: 800;
 }
@@ -928,7 +933,7 @@
 .pipeline-item small {
   display: block;
   margin-top: 2px;
-  color: rgba(255, 255, 255, 0.53);
+  color: rgba(255, 255, 255, 0.65);
   font-size: 9px;
 }
 
@@ -965,7 +970,7 @@
 }
 
 .mainstreaming-connection-card:hover {
-  border-color: #afd2c0;
+  border-color: var(--mainstreaming-green);
   transform: translateY(-2px);
 }
 
@@ -980,7 +985,7 @@
   width: 40px;
   height: 40px;
   border-radius: 8px;
-  background: var(--mainstreaming-green-soft);
+  background: rgba(0, 135, 81, 0.1);
   color: var(--mainstreaming-green);
   display: flex;
   align-items: center;
@@ -1036,7 +1041,7 @@
   width: 52px;
   height: 52px;
   border-radius: 10px;
-  background: var(--mainstreaming-green-soft);
+  background: rgba(0, 135, 81, 0.1);
   color: var(--mainstreaming-green);
   display: flex;
   align-items: center;

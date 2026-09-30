@@ -1,7 +1,7 @@
 .evsa-page {
   min-height: 100vh;
   background: #ffffff;
-  color: #18312a;
+  color: #1a2e26;
 }
 
 /* =========================================
@@ -16,14 +16,14 @@
   background:
     radial-gradient(
       circle at 82% 40%,
-      rgba(71, 157, 111, 0.16),
+      rgba(0, 135, 81, 0.12),
       transparent 34%
     ),
     linear-gradient(
       135deg,
-      #f5faf7 0%,
+      #f4f9f6 0%,
       #ffffff 58%,
-      #eef7f2 100%
+      #edf5f1 100%
     );
 }
 
@@ -35,7 +35,7 @@
   width: 500px;
   height: 500px;
 
-  border: 1px solid rgba(18, 107, 69, 0.08);
+  border: 1px solid rgba(0, 135, 81, 0.12);
   border-radius: 50%;
 }
 
@@ -47,7 +47,7 @@
   width: 500px;
   height: 500px;
 
-  border: 1px solid rgba(18, 107, 69, 0.07);
+  border: 1px solid rgba(234, 179, 8, 0.25);
   border-radius: 50%;
 }
 
@@ -66,7 +66,7 @@
 
   margin-bottom: 24px;
 
-  color: #54836b;
+  color: #008751;
   font-size: 12px;
   font-weight: 600;
 
@@ -78,7 +78,7 @@
 }
 
 .evsa-back:hover {
-  color: #126b45;
+  color: #1f3a8a;
   transform: translateX(-3px);
 }
 
@@ -96,11 +96,11 @@
   align-items: center;
   justify-content: center;
 
-  border: 1px solid #cfe5d8;
+  border: 1px solid #cce7d8;
   border-radius: 14px;
 
-  background: #e8f5ed;
-  color: #237b50;
+  background: #e6f4ed;
+  color: #008751;
 }
 
 .evsa-eyebrow {
@@ -111,7 +111,7 @@
   font-weight: 700;
   letter-spacing: 1.6px;
 
-  color: #54836b;
+  color: #d97706;
 }
 
 .evsa-hero h1 {
@@ -122,11 +122,11 @@
   letter-spacing: -3px;
   font-weight: 600;
 
-  color: #18312a;
+  color: #1f3a8a;
 }
 
 .evsa-hero h1 span {
-  color: #126b45;
+  color: #008751;
 }
 
 .evsa-hero-content > p {
@@ -136,7 +136,7 @@
   font-size: 13px;
   line-height: 1.75;
 
-  color: #657970;
+  color: #4b6358;
 }
 
 .evsa-actions {
@@ -170,29 +170,29 @@
 }
 
 .evsa-primary {
-  background: #126b45;
+  background: linear-gradient(135deg, #008751 0%, #1f3a8a 100%);
   color: #ffffff;
 
   box-shadow:
-    0 8px 20px rgba(18, 107, 69, 0.16);
+    0 8px 20px rgba(31, 58, 138, 0.20);
 }
 
 .evsa-primary:hover {
   transform: translateY(-2px);
 
   box-shadow:
-    0 11px 25px rgba(18, 107, 69, 0.21);
+    0 11px 25px rgba(31, 58, 138, 0.30);
 }
 
 .evsa-secondary {
-  border: 1px solid #d7e4dd;
+  border: 1px solid #d0e2d8;
   background: #ffffff;
-  color: #365047;
+  color: #1f3a8a;
 }
 
 .evsa-secondary:hover {
   transform: translateY(-2px);
-  background: #f6faf8;
+  background: #f4f9f6;
 }
 
 .evsa-access-note {
@@ -202,12 +202,12 @@
 
   margin-top: 17px;
 
-  color: #799087;
+  color: #6b8277;
   font-size: 8px;
 }
 
 .evsa-access-note svg {
-  color: #2f8f62;
+  color: #008751;
   flex-shrink: 0;
 }
 
@@ -231,13 +231,13 @@
 
   padding: 15px;
 
-  border: 1px solid rgba(195, 218, 205, 0.9);
+  border: 1px solid rgba(200, 226, 212, 0.9);
   border-radius: 15px;
 
-  background: rgba(255, 255, 255, 0.82);
+  background: rgba(255, 255, 255, 0.88);
 
   box-shadow:
-    0 25px 60px rgba(18, 107, 69, 0.10);
+    0 25px 60px rgba(31, 58, 138, 0.12);
 
   backdrop-filter: blur(12px);
 }
@@ -253,11 +253,11 @@
   font-weight: 700;
   letter-spacing: 1.2px;
 
-  color: #7a9186;
+  color: #6b8277;
 }
 
 .evsa-active {
-  color: #2f8f62;
+  color: #008751;
 }
 
 .evsa-map-visual {
@@ -266,14 +266,14 @@
   height: 270px;
   overflow: hidden;
 
-  border: 1px solid #dbe9e2;
+  border: 1px solid #d4e6dc;
   border-radius: 10px;
 
   background:
     linear-gradient(
       135deg,
       #f0f7f3 0%,
-      #e5f1eb 100%
+      #e3f0e9 100%
     );
 }
 
@@ -285,12 +285,12 @@
 
   background-image:
     linear-gradient(
-      rgba(78, 139, 106, 0.09) 1px,
+      rgba(0, 135, 81, 0.08) 1px,
       transparent 1px
     ),
     linear-gradient(
       90deg,
-      rgba(78, 139, 106, 0.09) 1px,
+      rgba(0, 135, 81, 0.08) 1px,
       transparent 1px
     );
 
@@ -300,8 +300,8 @@
 .map-shape {
   position: absolute;
 
-  border: 1px solid rgba(47, 143, 98, 0.28);
-  background: rgba(75, 157, 110, 0.13);
+  border: 1px solid rgba(0, 135, 81, 0.3);
+  background: rgba(0, 135, 81, 0.12);
 }
 
 .map-shape-one {
@@ -331,8 +331,8 @@
 
   transform: rotate(14deg);
 
-  background: rgba(72, 130, 178, 0.10);
-  border-color: rgba(72, 130, 178, 0.23);
+  background: rgba(31, 58, 138, 0.10);
+  border-color: rgba(31, 58, 138, 0.25);
 }
 
 .map-shape-three {
@@ -346,8 +346,8 @@
     57% 43% 51% 49%
     / 43% 56% 44% 57%;
 
-  background: rgba(192, 150, 70, 0.10);
-  border-color: rgba(192, 150, 70, 0.25);
+  background: rgba(234, 179, 8, 0.15);
+  border-color: rgba(217, 119, 6, 0.3);
 }
 
 .map-point {
@@ -359,10 +359,10 @@
   border: 2px solid #ffffff;
   border-radius: 50%;
 
-  background: #2f8f62;
+  background: #008751;
 
   box-shadow:
-    0 0 0 5px rgba(47, 143, 98, 0.12);
+    0 0 0 5px rgba(0, 135, 81, 0.18);
 }
 
 .point-one {
@@ -374,20 +374,20 @@
   right: 26%;
   top: 51%;
 
-  background: #397bb5;
+  background: #1f3a8a;
 
   box-shadow:
-    0 0 0 5px rgba(57, 123, 181, 0.12);
+    0 0 0 5px rgba(31, 58, 138, 0.18);
 }
 
 .point-three {
   left: 51%;
   bottom: 21%;
 
-  background: #b88728;
+  background: #d97706;
 
   box-shadow:
-    0 0 0 5px rgba(184, 135, 40, 0.12);
+    0 0 0 5px rgba(217, 119, 6, 0.18);
 }
 
 .evsa-map-label {
@@ -398,13 +398,13 @@
   border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 5px;
 
-  background: rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0.85);
 
   font-size: 6px;
   font-weight: 700;
   letter-spacing: 0.8px;
 
-  color: #49675a;
+  color: #1f3a8a;
 
   backdrop-filter: blur(5px);
 }
@@ -435,7 +435,7 @@
 .evsa-visual-footer > div {
   padding: 11px 12px;
 
-  border: 1px solid #e2ece7;
+  border: 1px solid #e1ede6;
   border-radius: 8px;
 
   background: #ffffff;
@@ -450,14 +450,14 @@
   font-weight: 700;
   letter-spacing: 1px;
 
-  color: #91a39b;
+  color: #83988e;
 }
 
 .evsa-visual-footer strong {
   font-size: 8px;
   font-weight: 700;
 
-  color: #36584a;
+  color: #1f3a8a;
 }
 
 /* =========================================
@@ -496,7 +496,7 @@
   font-weight: 700;
   letter-spacing: 1.5px;
 
-  color: #126b45;
+  color: #d97706;
 }
 
 .evsa-section-header h2,
@@ -510,7 +510,7 @@
   line-height: 1.05;
   letter-spacing: -1.8px;
 
-  color: #18312a;
+  color: #1f3a8a;
 }
 
 .evsa-section-header > p,
@@ -522,7 +522,7 @@
   font-size: 11px;
   line-height: 1.7;
 
-  color: #71827b;
+  color: #556e62;
 }
 
 .evsa-feature-grid {
@@ -540,7 +540,7 @@
 
   overflow: hidden;
 
-  border: 1px solid #dfe8e3;
+  border: 1px solid #dce8e1;
   border-radius: 12px;
 
   background: #ffffff;
@@ -573,7 +573,7 @@
   font-weight: 700;
   letter-spacing: 1px;
 
-  color: #a0b1a9;
+  color: #93a89e;
 }
 
 .evsa-feature-icon {
@@ -602,7 +602,7 @@
   line-height: 1.1;
   letter-spacing: -0.5px;
 
-  color: #18312a;
+  color: #1f3a8a;
 }
 
 .evsa-feature-card p {
@@ -616,25 +616,25 @@
   font-size: 9.5px;
   line-height: 1.6;
 
-  color: #71827b;
+  color: #556e62;
 }
 
 .evsa-green {
-  --feature-color: #2f8f62;
-  --feature-bg: #eaf6ef;
-  --feature-circle: #d9efdf;
+  --feature-color: #008751;
+  --feature-bg: #e6f4ed;
+  --feature-circle: #cce7d8;
 }
 
 .evsa-blue {
-  --feature-color: #397bb5;
-  --feature-bg: #eaf3fa;
-  --feature-circle: #dcecf7;
+  --feature-color: #1f3a8a;
+  --feature-bg: #ebf0f9;
+  --feature-circle: #d4e0f5;
 }
 
 .evsa-purple {
-  --feature-color: #7659a8;
-  --feature-bg: #f1ecf8;
-  --feature-circle: #e5dbf1;
+  --feature-color: #d97706;
+  --feature-bg: #fef3c7;
+  --feature-circle: #fde68a;
 }
 
 /* =========================================
@@ -647,8 +647,8 @@
   background:
     linear-gradient(
       180deg,
-      #f6faf8 0%,
-      #eef7f2 100%
+      #f4f9f6 0%,
+      #edf5f1 100%
     );
 }
 
@@ -679,13 +679,13 @@
   min-height: 235px;
   padding: 22px;
 
-  border: 1px solid #d8e6df;
+  border: 1px solid #d4e4db;
   border-radius: 12px;
 
   background: #ffffff;
 
   box-shadow:
-    0 10px 30px rgba(18, 107, 69, 0.04);
+    0 10px 30px rgba(31, 58, 138, 0.04);
 }
 
 .evsa-step-number {
@@ -698,7 +698,7 @@
   font-weight: 700;
   letter-spacing: 1px;
 
-  color: #9aacA3;
+  color: #8fa398;
 }
 
 .evsa-step-icon {
@@ -713,8 +713,8 @@
 
   border-radius: 10px;
 
-  background: #eaf6ef;
-  color: #2f8f62;
+  background: #e6f4ed;
+  color: #008751;
 }
 
 .evsa-workflow-step h3 {
@@ -723,7 +723,7 @@
   font-size: 18px;
   letter-spacing: -0.4px;
 
-  color: #18312a;
+  color: #1f3a8a;
 }
 
 .evsa-workflow-step p {
@@ -732,12 +732,12 @@
   font-size: 9.5px;
   line-height: 1.65;
 
-  color: #71827b;
+  color: #556e62;
 }
 
 .evsa-workflow-line {
   height: 1px;
-  background: #c8dbd1;
+  background: #c3d8cd;
 }
 
 /* =========================================
@@ -762,7 +762,7 @@
   font-size: 11px;
   line-height: 1.7;
 
-  color: #71827b;
+  color: #556e62;
 }
 
 .evsa-access-grid {
@@ -779,7 +779,7 @@
 
   overflow: hidden;
 
-  border: 1px solid #dce8e2;
+  border: 1px solid #d9e6df;
   border-radius: 14px;
 
   background: #ffffff;
@@ -802,11 +802,11 @@
 }
 
 .evsa-online::after {
-  background: #e8f5ed;
+  background: #e6f4ed;
 }
 
 .evsa-offline::after {
-  background: #eaf3fa;
+  background: #ebf0f9;
 }
 
 .evsa-access-card-top {
@@ -828,13 +828,13 @@
 
   border-radius: 11px;
 
-  background: #eaf6ef;
-  color: #2f8f62;
+  background: #e6f4ed;
+  color: #008751;
 }
 
 .evsa-offline .evsa-access-icon {
-  background: #eaf3fa;
-  color: #397bb5;
+  background: #ebf0f9;
+  color: #1f3a8a;
 }
 
 .evsa-access-status {
@@ -842,7 +842,7 @@
   font-weight: 700;
   letter-spacing: 1.2px;
 
-  color: #799087;
+  color: #6b8277;
 }
 
 .evsa-access-card h3 {
@@ -854,7 +854,7 @@
   font-size: 26px;
   letter-spacing: -0.8px;
 
-  color: #18312a;
+  color: #1f3a8a;
 }
 
 .evsa-access-card > p {
@@ -868,7 +868,7 @@
   font-size: 10px;
   line-height: 1.65;
 
-  color: #71827b;
+  color: #556e62;
 }
 
 .evsa-access-list {
@@ -889,15 +889,15 @@
   gap: 9px;
 
   font-size: 9px;
-  color: #526d61;
+  color: #3b5448;
 }
 
 .evsa-access-list svg {
-  color: #2f8f62;
+  color: #008751;
 }
 
 .evsa-offline .evsa-access-list svg {
-  color: #397bb5;
+  color: #1f3a8a;
 }
 
 .evsa-access-button {
@@ -914,7 +914,7 @@
 
   border-radius: 7px;
 
-  background: #126b45;
+  background: #008751;
   color: #ffffff;
 
   font-size: 9px;
@@ -928,14 +928,14 @@
 }
 
 .evsa-offline .evsa-access-button {
-  background: #397bb5;
+  background: #1f3a8a;
 }
 
 .evsa-access-button:hover {
   transform: translateY(-2px);
 
   box-shadow:
-    0 8px 18px rgba(18, 107, 69, 0.15);
+    0 8px 18px rgba(31, 58, 138, 0.20);
 }
 
 .evsa-guide {
@@ -947,10 +947,10 @@
   margin-top: 14px;
   padding: 20px 22px;
 
-  border: 1px solid #dce8e2;
+  border: 1px solid #d9e6df;
   border-radius: 12px;
 
-  background: #f6faf8;
+  background: #f4f9f6;
 }
 
 .evsa-guide-icon {
@@ -965,8 +965,8 @@
 
   border-radius: 9px;
 
-  background: #e8f5ed;
-  color: #2f8f62;
+  background: #e6f4ed;
+  color: #008751;
 }
 
 .evsa-guide-content {
@@ -982,7 +982,7 @@
   font-weight: 700;
   letter-spacing: 1.2px;
 
-  color: #799087;
+  color: #6b8277;
 }
 
 .evsa-guide-content h3 {
@@ -990,7 +990,7 @@
 
   font-size: 15px;
 
-  color: #18312a;
+  color: #1f3a8a;
 }
 
 .evsa-guide-content p {
@@ -999,7 +999,7 @@
   font-size: 9px;
   line-height: 1.5;
 
-  color: #71827b;
+  color: #556e62;
 }
 
 .evsa-guide-button {
@@ -1011,11 +1011,11 @@
   min-height: 37px;
   padding: 0 13px;
 
-  border: 1px solid #cfe0d6;
+  border: 1px solid #c9dec1;
   border-radius: 7px;
 
   background: #ffffff;
-  color: #365047;
+  color: #1f3a8a;
 
   font-size: 8px;
   font-weight: 600;
@@ -1025,8 +1025,8 @@
 }
 
 .evsa-guide-button:hover {
-  background: #eef7f2;
-  color: #126b45;
+  background: #e6f4ed;
+  color: #008751;
 }
 
 /* =========================================
@@ -1046,7 +1046,7 @@
 .evsa-intelligence-header h2 {
   margin: 12px 0 16px;
 
-  color: #18312a;
+  color: #1f3a8a;
 
   font-size: clamp(32px, 4vw, 48px);
   line-height: 1.08;
@@ -1059,7 +1059,7 @@
 
   margin: 0;
 
-  color: #687b73;
+  color: #556e62;
 
   font-size: 15px;
   line-height: 1.8;
@@ -1089,7 +1089,7 @@
 
   margin-bottom: 8px;
 
-  color: #126b45;
+  color: #008751;
 
   font-size: 10px;
   font-weight: 700;
@@ -1099,7 +1099,7 @@
 .evsa-resource-heading h3 {
   margin: 0 0 10px;
 
-  color: #18312a;
+  color: #1f3a8a;
 
   font-size: 27px;
   line-height: 1.2;
@@ -1111,7 +1111,7 @@
 
   margin: 0;
 
-  color: #687b73;
+  color: #556e62;
 
   font-size: 13px;
   line-height: 1.7;
@@ -1127,11 +1127,11 @@
 
   padding: 11px 16px;
 
-  border: 1px solid #d6e5dd;
+  border: 1px solid #cee0d7;
   border-radius: 9px;
 
   background: #ffffff;
-  color: #126b45;
+  color: #008751;
 
   text-decoration: none;
 
@@ -1144,8 +1144,8 @@
 .evsa-resource-button:hover {
   transform: translateY(-2px);
 
-  border-color: #126b45;
-  background: #f3f8f5;
+  border-color: #008751;
+  background: #e6f4ed;
 }
 
 /* =========================================
@@ -1157,13 +1157,13 @@
 
   overflow: hidden;
 
-  border: 1px solid #dfe9e4;
+  border: 1px solid #d9e6df;
   border-radius: 18px;
 
-  background: #f7faf8;
+  background: #f4f9f6;
 
   box-shadow:
-    0 18px 45px rgba(18, 107, 69, 0.08);
+    0 18px 45px rgba(31, 58, 138, 0.08);
 }
 
 .evsa-dashboard-frame iframe {
@@ -1189,13 +1189,13 @@
   display: flex;
   justify-content: center;
 
-  border: 1px solid #dfe9e4;
+  border: 1px solid #d9e6df;
   border-radius: 18px;
 
-  background: #f7faf8;
+  background: #f4f9f6;
 
   box-shadow:
-    0 18px 45px rgba(18, 107, 69, 0.08);
+    0 18px 45px rgba(31, 58, 138, 0.08);
 }
 
 .evsa-presentation-frame iframe {
@@ -1219,8 +1219,8 @@
   background:
     linear-gradient(
       180deg,
-      #f6faf8 0%,
-      #eef7f2 100%
+      #f4f9f6 0%,
+      #edf5f1 100%
     );
 }
 
@@ -1243,7 +1243,7 @@
   line-height: 1.05;
   letter-spacing: -1.8px;
 
-  color: #18312a;
+  color: #1f3a8a;
 }
 
 .evsa-information-grid > div:first-child > p {
@@ -1254,7 +1254,7 @@
   font-size: 11px;
   line-height: 1.75;
 
-  color: #71827b;
+  color: #556e62;
 }
 
 .evsa-info-list {
@@ -1274,11 +1274,11 @@
 
   font-size: 10px;
 
-  color: #426052;
+  color: #3b5448;
 }
 
 .evsa-info-list svg {
-  color: #2f8f62;
+  color: #008751;
 }
 
 .evsa-info-panel {
@@ -1288,13 +1288,13 @@
 
   overflow: hidden;
 
-  border: 1px solid #cfe2d7;
+  border: 1px solid #c9dec1;
   border-radius: 14px;
 
   background: #ffffff;
 
   box-shadow:
-    0 20px 45px rgba(18, 107, 69, 0.08);
+    0 20px 45px rgba(31, 58, 138, 0.08);
 }
 
 .evsa-info-panel::after {
@@ -1310,7 +1310,7 @@
 
   border-radius: 50%;
 
-  background: #eaf6ef;
+  background: #e6f4ed;
 }
 
 .evsa-info-panel-icon {
@@ -1328,8 +1328,8 @@
 
   border-radius: 10px;
 
-  background: #eaf6ef;
-  color: #2f8f62;
+  background: #e6f4ed;
+  color: #008751;
 }
 
 .evsa-info-panel > span {
@@ -1344,7 +1344,7 @@
   font-weight: 700;
   letter-spacing: 1.3px;
 
-  color: #799087;
+  color: #6b8277;
 }
 
 .evsa-info-panel h3 {
@@ -1356,7 +1356,7 @@
   font-size: 25px;
   letter-spacing: -0.7px;
 
-  color: #18312a;
+  color: #1f3a8a;
 }
 
 .evsa-info-panel p {
@@ -1370,7 +1370,7 @@
   font-size: 10px;
   line-height: 1.6;
 
-  color: #71827b;
+  color: #556e62;
 }
 
 .evsa-panel-button {
@@ -1388,7 +1388,7 @@
   border: 0;
   border-radius: 7px;
 
-  background: #126b45;
+  background: linear-gradient(135deg, #008751 0%, #1f3a8a 100%);
   color: #ffffff;
 
   font-size: 9px;
@@ -1406,7 +1406,7 @@
   transform: translateY(-2px);
 
   box-shadow:
-    0 8px 18px rgba(18, 107, 69, 0.17);
+    0 8px 18px rgba(31, 58, 138, 0.22);
 }
 
 /* =========================================
@@ -1416,9 +1416,9 @@
 .evsa-source {
   padding: 22px 60px;
 
-  border-top: 1px solid #dce8e2;
+  border-top: 1px solid #d9e6df;
 
-  background: #f7faf8;
+  background: #f4f9f6;
 }
 
 .evsa-source-inner {
@@ -1430,13 +1430,13 @@
   max-width: 1400px;
   margin: 0 auto;
 
-  color: #82928b;
+  color: #71887e;
 }
 
 .evsa-source-inner svg {
   flex-shrink: 0;
 
-  color: #54836b;
+  color: #008751;
 }
 
 .evsa-source-inner p {
@@ -1464,9 +1464,9 @@
 
   box-sizing: border-box;
 
-  background: #f7faf8;
+  background: #f4f9f6;
 
-  border: 1px solid #dce9e1;
+  border: 1px solid #d9e6df;
   border-radius: 14px;
 }
 
@@ -1482,8 +1482,8 @@
 
   border-radius: 10px;
 
-  background: #e8f3ed;
-  color: #126b45;
+  background: #e6f4ed;
+  color: #008751;
 }
 
 .evsa-browser-content {
@@ -1501,7 +1501,7 @@
 }
 
 .evsa-browser-title strong {
-  color: #18312a;
+  color: #1f3a8a;
 
   font-size: 14px;
   font-weight: 700;
@@ -1512,8 +1512,8 @@
 
   border-radius: 999px;
 
-  background: #e8f3ed;
-  color: #126b45;
+  background: #e6f4ed;
+  color: #008751;
 
   font-size: 9px;
   font-weight: 700;
@@ -1525,7 +1525,7 @@
 
   margin: 0;
 
-  color: #687b73;
+  color: #556e62;
 
   font-size: 12px;
   line-height: 1.7;
@@ -1553,25 +1553,25 @@
 
   background: #ffffff;
 
-  border: 1px solid #e5ece8;
+  border: 1px solid #d9e6df;
 
   font-size: 11px;
 }
 
 .evsa-browser-supported {
-  color: #126b45;
+  color: #008751;
 }
 
 .evsa-browser-supported svg {
-  color: #2d9565;
+  color: #008751;
 }
 
 .evsa-browser-info {
-  color: #6d7773;
+  color: #556e62;
 }
 
 .evsa-browser-info svg {
-  color: #8c9994;
+  color: #71887e;
 }
 
 .evsa-browser-status span {
@@ -1580,7 +1580,7 @@
 
 .evsa-browser-status strong {
   font-weight: 500;
-  color: #7c8883;
+  color: #6b8277;
 }
 
 /* =========================================

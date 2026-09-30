@@ -4,14 +4,15 @@
    ========================================================= */
 
 .implementation-page {
-  --impl-green: #126b45;
-  --impl-dark: #18312a;
-  --impl-deep: #10261f;
-  --impl-green-soft: #eaf5ef;
+  --impl-green: #008751;
+  --impl-dark: #1b365d;
+  --impl-deep: #11233e;
+  --impl-yellow: #f5a623;
+  --impl-green-soft: #e8f5ed;
   --impl-pale: #f6faf8;
-  --impl-border: #dce8e2;
-  --impl-text: #263832;
-  --impl-muted: #71827b;
+  --impl-border: #d4e3dc;
+  --impl-text: #1f2e3d;
+  --impl-muted: #5e6e82;
   --impl-white: #ffffff;
 
   min-height: 100vh;
@@ -38,10 +39,10 @@
   background:
     radial-gradient(
       circle at 85% 20%,
-      rgba(50, 125, 91, 0.28),
-      transparent 30%
+      rgba(245, 166, 35, 0.22),
+      transparent 35%
     ),
-    linear-gradient(135deg, #10261f 0%, #18382d 48%, #214f3d 100%);
+    linear-gradient(135deg, #11233e 0%, #1b4282 50%, #008751 100%);
   color: #ffffff;
 }
 
@@ -63,7 +64,7 @@
   height: 320px;
   right: 30px;
   bottom: -200px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(245, 166, 35, 0.25);
   border-radius: 50%;
 }
 
@@ -101,13 +102,13 @@
   font-size: 10px;
   font-weight: 800;
   letter-spacing: 0.18em;
-  color: rgba(255, 255, 255, 0.66);
+  color: #f5a623;
 }
 
 .implementation-stage-line {
   width: 35px;
   height: 1px;
-  background: rgba(255, 255, 255, 0.3);
+  background: #f5a623;
 }
 
 .implementation-hero-grid {
@@ -128,7 +129,7 @@
 
 .implementation-hero-copy h1 span {
   display: block;
-  color: #8dd4ae;
+  color: #5cdb95;
 }
 
 .implementation-hero-copy p {
@@ -136,7 +137,7 @@
   margin: 25px 0 0;
   font-size: 16px;
   line-height: 1.75;
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255, 255, 255, 0.82);
 }
 
 .implementation-hero-actions {
@@ -166,30 +167,31 @@
 }
 
 .implementation-primary-btn {
-  background: #ffffff;
+  background: var(--impl-yellow);
   color: var(--impl-dark);
 }
 
 .implementation-primary-btn:hover {
   transform: translateY(-2px);
+  background: #e29a1e;
 }
 
 .implementation-secondary-btn {
-  color: rgba(255, 255, 255, 0.84);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .implementation-secondary-btn:hover {
-  border-color: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 .implementation-hero-panel {
   padding: 26px;
-  border: 1px solid rgba(255, 255, 255, 0.13);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.065);
+  background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(8px);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
 }
 
 .implementation-panel-label {
@@ -197,7 +199,7 @@
   font-size: 9px;
   font-weight: 800;
   letter-spacing: 0.17em;
-  color: rgba(255, 255, 255, 0.52);
+  color: #f5a623;
 }
 
 .implementation-flow {
@@ -222,23 +224,23 @@
   width: 42px;
   height: 42px;
   border-radius: 11px;
-  background: rgba(255, 255, 255, 0.09);
-  color: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .implementation-flow-item.active .implementation-flow-icon {
-  background: rgba(141, 212, 174, 0.18);
-  color: #9de1b9;
+  background: rgba(245, 166, 35, 0.25);
+  color: #f5a623;
 }
 
 .implementation-flow-item span {
   font-size: 9px;
   line-height: 1.35;
-  color: rgba(255, 255, 255, 0.67);
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .implementation-flow-arrow {
-  color: rgba(255, 255, 255, 0.28);
+  color: rgba(255, 255, 255, 0.35);
 }
 
 .implementation-panel-footer {
@@ -249,7 +251,7 @@
   padding-top: 17px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 10px;
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(255, 255, 255, 0.65);
 }
 
 /* =========================================================
@@ -270,7 +272,7 @@
 
 .implementation-eyebrow {
   margin-bottom: 13px;
-  color: var(--impl-green);
+  color: var(--impl-yellow);
   font-size: 10px;
   font-weight: 850;
   letter-spacing: 0.17em;
@@ -299,7 +301,7 @@
   margin: 0 0 15px;
   font-size: 14px;
   line-height: 1.85;
-  color: #65756f;
+  color: var(--impl-muted);
 }
 
 .implementation-highlight-grid {
@@ -351,8 +353,8 @@
 .implementation-process-section {
   padding: 88px 0;
   background: var(--impl-pale);
-  border-top: 1px solid #edf3ef;
-  border-bottom: 1px solid #edf3ef;
+  border-top: 1px solid var(--impl-border);
+  border-bottom: 1px solid var(--impl-border);
 }
 
 .implementation-section-heading {
@@ -414,15 +416,14 @@
 
 .implementation-step-tab.active {
   background: #ffffff;
-  border-color: #cfe1d8;
-  box-shadow: 0 8px 25px rgba(24, 49, 42, 0.06);
+  border-color: var(--impl-green);
+  box-shadow: 0 8px 25px rgba(27, 54, 93, 0.08);
 }
 
 .implementation-step-number {
   font-size: 10px;
   font-weight: 800;
-  color: #9aaa a3;
-  color: #91a099;
+  color: var(--impl-muted);
 }
 
 .implementation-step-tab.active .implementation-step-number {
@@ -437,13 +438,13 @@
   border-radius: 9px;
   background: #ffffff;
   border: 1px solid var(--impl-border);
-  color: #71847c;
+  color: var(--impl-muted);
 }
 
 .implementation-step-tab.active .implementation-step-tab-icon {
   background: var(--impl-green-soft);
   color: var(--impl-green);
-  border-color: #cfe5d8;
+  border-color: var(--impl-green);
 }
 
 .implementation-step-tab-text {
@@ -464,11 +465,11 @@
   display: block;
   margin-top: 3px;
   font-size: 9px;
-  color: #96a39e;
+  color: var(--impl-muted);
 }
 
 .implementation-step-tab-arrow {
-  color: #a0aea8;
+  color: var(--impl-muted);
 }
 
 .implementation-step-tab.active .implementation-step-tab-arrow {
@@ -484,7 +485,7 @@
   border: 1px solid var(--impl-border);
   border-radius: 15px;
   background: #ffffff;
-  box-shadow: 0 12px 35px rgba(25, 55, 43, 0.055);
+  box-shadow: 0 12px 35px rgba(27, 54, 93, 0.06);
   scroll-margin-top: 25px;
 }
 
@@ -511,7 +512,7 @@
   font-size: 9px;
   font-weight: 850;
   letter-spacing: 0.15em;
-  color: var(--impl-green);
+  color: var(--impl-yellow);
 }
 
 .implementation-detail-top h3 {
@@ -541,7 +542,7 @@
   display: flex;
   gap: 11px;
   padding: 15px;
-  border: 1px solid #e5ede9;
+  border: 1px solid var(--impl-border);
   border-radius: 10px;
   background: #fbfdfc;
 }
@@ -567,13 +568,13 @@
   font-size: 9px;
   font-weight: 850;
   letter-spacing: 0.1em;
-  color: #85958e;
+  color: var(--impl-muted);
   text-transform: uppercase;
 }
 
 .implementation-meta-card p {
   margin: 0;
-  color: #66766f;
+  color: var(--impl-text);
   font-size: 10.5px;
   line-height: 1.65;
 }
@@ -585,7 +586,7 @@
 
 .implementation-meta-card li {
   margin-bottom: 4px;
-  color: #66766f;
+  color: var(--impl-text);
   font-size: 10px;
   line-height: 1.5;
 }
@@ -610,7 +611,7 @@
 
 .implementation-question-card {
   background: #f7faf8;
-  border: 1px solid #e2ebe6;
+  border: 1px solid var(--impl-border);
 }
 
 .implementation-card-heading {
@@ -626,11 +627,11 @@
   width: 32px;
   height: 32px;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.18);
 }
 
 .implementation-question-card .implementation-card-heading-icon {
-  background: #eaf5ef;
+  background: var(--impl-green-soft);
   color: var(--impl-green);
 }
 
@@ -640,7 +641,7 @@
   font-size: 8px;
   font-weight: 850;
   letter-spacing: 0.14em;
-  opacity: 0.65;
+  opacity: 0.75;
 }
 
 .implementation-card-heading h4 {
@@ -663,7 +664,7 @@
   margin-bottom: 8px;
   font-size: 10px;
   line-height: 1.55;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .implementation-output-card li svg {
@@ -675,7 +676,7 @@
   position: relative;
   margin-bottom: 9px;
   padding-left: 15px;
-  color: #66766f;
+  color: var(--impl-text);
   font-size: 10px;
   line-height: 1.55;
 }
@@ -734,7 +735,7 @@
   height: 4px;
   overflow: hidden;
   border-radius: 20px;
-  background: #e3ece7;
+  background: var(--impl-border);
 }
 
 .implementation-progress-fill {
@@ -747,7 +748,7 @@
 .implementation-progress span {
   font-size: 9px;
   font-weight: 750;
-  color: #84928c;
+  color: var(--impl-muted);
 }
 
 /* =========================================================
@@ -793,7 +794,7 @@
   border-radius: 9px;
   background: var(--impl-pale);
   color: var(--impl-green);
-  border: 1px solid #e2ebe6;
+  border: 1px solid var(--impl-border);
 }
 
 .implementation-accordion-left > div:last-child span {
@@ -801,7 +802,7 @@
   margin-bottom: 4px;
   font-size: 8px;
   font-weight: 850;
-  color: #99a7a1;
+  color: var(--impl-muted);
   letter-spacing: 0.13em;
 }
 
@@ -812,7 +813,7 @@
 }
 
 .implementation-chevron {
-  color: #899790;
+  color: var(--impl-muted);
   transition: transform 0.2s ease;
 }
 
@@ -827,7 +828,7 @@
 
 .implementation-accordion-content p {
   margin: 0 0 9px;
-  color: #66766f;
+  color: var(--impl-text);
   font-size: 11px;
   line-height: 1.75;
 }
@@ -857,7 +858,7 @@
 }
 
 .implementation-pipeline-header .implementation-eyebrow {
-  color: #8bd0a9;
+  color: var(--impl-yellow);
 }
 
 .implementation-pipeline-header h2 {
@@ -867,7 +868,7 @@
 }
 
 .implementation-pipeline-header h2 span {
-  color: #8bd0a9;
+  color: #5cdb95;
 }
 
 .implementation-pipeline-icon {
@@ -875,9 +876,9 @@
   place-items: center;
   width: 48px;
   height: 48px;
-  border: 1px solid rgba(255, 255, 255, 0.13);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 11px;
-  color: #8bd0a9;
+  color: var(--impl-yellow);
   background: rgba(255, 255, 255, 0.05);
 }
 
@@ -892,9 +893,9 @@
 .implementation-pipeline-node {
   min-height: 130px;
   padding: 17px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 11px;
-  background: rgba(255, 255, 255, 0.045);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .implementation-pipeline-node-icon {
@@ -904,8 +905,8 @@
   height: 34px;
   margin-bottom: 14px;
   border-radius: 8px;
-  background: rgba(139, 208, 169, 0.11);
-  color: #8bd0a9;
+  background: rgba(0, 135, 81, 0.25);
+  color: #5cdb95;
 }
 
 .implementation-pipeline-node strong {
@@ -916,13 +917,13 @@
 
 .implementation-pipeline-node span {
   display: block;
-  color: rgba(255, 255, 255, 0.52);
+  color: rgba(255, 255, 255, 0.65);
   font-size: 9px;
   line-height: 1.45;
 }
 
 .implementation-pipeline-connector {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.35);
 }
 
 /* =========================================================
@@ -932,7 +933,7 @@
 .implementation-connection-section {
   padding: 88px 0;
   background: var(--impl-pale);
-  border-top: 1px solid #e9f0ec;
+  border-top: 1px solid var(--impl-border);
 }
 
 .implementation-connection-heading {
@@ -970,8 +971,8 @@
 
 .implementation-cycle-card:hover {
   transform: translateY(-3px);
-  border-color: #c8ddd3;
-  box-shadow: 0 12px 30px rgba(24, 49, 42, 0.07);
+  border-color: var(--impl-green);
+  box-shadow: 0 12px 30px rgba(27, 54, 93, 0.08);
 }
 
 .implementation-cycle-card-top {
@@ -1021,7 +1022,7 @@
   min-height: 220px;
   padding: 20px;
   border-radius: 12px;
-  background: var(--impl-green);
+  background: var(--impl-dark);
   color: #ffffff;
   text-align: center;
 }
@@ -1033,7 +1034,8 @@
   height: 47px;
   margin-bottom: 17px;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.11);
+  background: rgba(245, 166, 35, 0.2);
+  color: var(--impl-yellow);
 }
 
 .implementation-cycle-center span {
@@ -1041,7 +1043,7 @@
   font-size: 8px;
   font-weight: 850;
   letter-spacing: 0.15em;
-  color: rgba(255, 255, 255, 0.58);
+  color: var(--impl-yellow);
 }
 
 .implementation-cycle-center strong {
@@ -1050,7 +1052,7 @@
 
 .implementation-cycle-center small {
   margin-top: 7px;
-  color: rgba(255, 255, 255, 0.62);
+  color: rgba(255, 255, 255, 0.7);
   font-size: 9px;
 }
 
@@ -1088,7 +1090,7 @@
   flex: 0 0 auto;
   border-radius: 12px;
   background: var(--impl-dark);
-  color: #ffffff;
+  color: var(--impl-yellow);
   font-size: 12px;
   font-weight: 850;
 }
@@ -1132,12 +1134,12 @@
 }
 
 .implementation-next-btn:hover {
-  background: #0f5b3b;
+  background: #006e42;
 }
 
 /* =========================================================
    FOOTER NAVIGATION
-========================================================= */
+   ========================================================= */
 
 .implementation-footer-nav {
   padding: 28px 0 42px;
@@ -1233,10 +1235,9 @@
   color: var(--impl-green);
 }
 
-
 /* =========================================================
    RESPONSIVE
-========================================================= */
+   ========================================================= */
 
 @media (max-width: 700px) {
   .implementation-footer-nav .implementation-container {
