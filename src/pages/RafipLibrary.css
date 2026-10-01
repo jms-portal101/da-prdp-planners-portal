@@ -232,40 +232,53 @@
   font-size: 13px;
 }
 
-/* GRID */
+/* =========================================================
+   RAFIP LIBRARY GRID
+   ========================================================= */
 
 .rafip-library-grid {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 52px 34px;
+  column-gap: 34px;
+  row-gap: 52px;
+  align-items: start;
 }
 
 .rafip-library-card {
   min-width: 0;
+  height: auto;
+  align-self: start;
+  overflow: visible;
 }
+
 
 .rafip-library-cover-wrap {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 0.93 / 1;
-  background: #fff;
-  box-shadow: 0 9px 24px rgba(28,55,73,.12);
-  transition: transform .22s ease, box-shadow .22s ease;
-
+  width: 100%;
+  aspect-ratio: 0.6/ 1;
+  background: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0 9px 24px rgba(28, 55, 73, 0.12);
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease;
   text-decoration: none;
   color: inherit;
 }
 
 .rafip-library-card:hover .rafip-library-cover-wrap {
   transform: translateY(-5px);
-  box-shadow: 0 18px 35px rgba(37,65,129,.18);
+  box-shadow: 0 18px 35px rgba(37, 65, 129, 0.18);
 }
 
 .rafip-library-cover {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
+  background: #ffffff;
 }
 
 .rafip-library-cover-overlay {
@@ -298,37 +311,66 @@
   box-shadow: 0 8px 22px rgba(0,0,0,.15);
 }
 
-.rafip-library-card-body {
-  padding-top: 13px;
+/* =========================================================
+   RAFIP CARD INFORMATION
+   ========================================================= */
+
+.rafip-library-card h3 {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  max-height: none;
+
+  margin: 0 0 12px;
+
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 850;
+  line-height: 1.4;
+
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  overflow-wrap: break-word;
+  word-break: normal;
 }
 
 .rafip-library-card-meta {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  gap: 8px;
-  margin-bottom: 6px;
+  gap: 6px;
+  margin-bottom: 7px;
+  min-width: 0;
 }
 
 .rafip-library-card-meta span {
   color: var(--green);
   font-size: 10px;
   font-weight: 900;
+  line-height: 1.2;
+  flex-shrink: 0;
 }
 
 .rafip-library-card-meta strong {
   color: #758297;
   font-size: 8px;
   letter-spacing: .06em;
+  line-height: 1.2;
+  text-align: right;
+  white-space: normal;
 }
 
 .rafip-library-card h3 {
-  min-height: 34px;
+  min-height: 0;
   margin: 0 0 12px;
   color: var(--blue);
   font-size: 13px;
   font-weight: 850;
-  line-height: 1.25;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+  word-break: normal;
 }
 
 .rafip-library-button {
@@ -449,14 +491,28 @@
   }
 
   .rafip-library-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 30px 16px;
-  }
+  align-items: start;
+  row-gap: 38px;
+}
 
-  .rafip-library-card h3 {
-    min-height: auto;
-    font-size: 12px;
-  }
+.rafip-library-card {
+  height: auto;
+  min-height: 0;
+}
+
+.rafip-library-card-body {
+  height: auto;
+  min-height: 0;
+  padding-top: 10px;
+}
+
+.rafip-library-card h3 {
+  height: auto;
+  min-height: 0;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 1.4;
+}
 
   .rafip-library-button {
     min-height: 40px;
@@ -471,9 +527,18 @@
 @media (max-width: 360px) {
   .rafip-library-grid {
     grid-template-columns: 1fr;
+    row-gap: 32px;
+  }
+
+  .rafip-library-card {
+    width: 100%;
+  }
+
+  .rafip-library-card h3 {
+    font-size: 13px;
+    line-height: 1.4;
   }
 }
-
 /* =========================================================
    HERO NAVIGATION
    ========================================================= */
