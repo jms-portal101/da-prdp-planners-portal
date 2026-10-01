@@ -274,7 +274,13 @@ export default function RafipLibrary() {
           <div className="rafip-library-grid">
             {filteredRegions.map((region) => (
               <article className="rafip-library-card" key={region.code}>
-                <div className="rafip-library-cover-wrap">
+                <a
+                  href={`/rafip-library/${region.slug}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rafip-library-cover-wrap"
+                  aria-label={`Open ${region.name} RAFIP`}
+                >
                   <img
                     src={region.cover}
                     alt={`${region.name} RAFIP front cover`}
@@ -283,17 +289,12 @@ export default function RafipLibrary() {
                   />
 
                   <div className="rafip-library-cover-overlay">
-                    <a
-                      href={`/rafip-library/${region.slug}`}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="rafip-library-cover-link"
-                    >
+                    <span className="rafip-library-cover-link">
                       <BookOpen size={18} />
                       View RAFIP
-                    </a>
+                    </span>
                   </div>
-                </div>
+                </a>
 
                 <div className="rafip-library-card-body">
                   <div className="rafip-library-card-meta">
@@ -302,7 +303,6 @@ export default function RafipLibrary() {
                   </div>
 
                   <h3>{region.name}</h3>
-
                 </div>
               </article>
             ))}

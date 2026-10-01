@@ -1313,31 +1313,6 @@ function RegionalPortfolio() {
 
           </div>
 
-          <div className="regional-hero-collage">
-            <div className="collage-tile collage-tile-large">
-              🌾
-            </div>
-
-            <div className="collage-tile">
-              🌽
-            </div>
-
-            <div className="collage-tile">
-              🐟
-            </div>
-
-            <div className="collage-tile">
-              🥥
-            </div>
-
-            <div className="collage-tile">
-              🍌
-            </div>
-
-            <div className="collage-tile">
-              🥬
-            </div>
-          </div>
         </div>
       </section>
 

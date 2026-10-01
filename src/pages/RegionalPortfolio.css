@@ -47,35 +47,35 @@
 }
 
 /* =========================================================
-   HERO
+   HERO — FULL-WIDTH RAFIP COVER IMAGE
 ========================================================= */
 
 .regional-portfolio-hero {
   position: relative;
   min-height: 560px;
   overflow: hidden;
-  background:
-    radial-gradient(
-      circle at 75% 25%,
-      rgba(41, 133, 91, 0.16),
-      transparent 34%
-    ),
-    linear-gradient(
-      135deg,
-      #0b3f2b 0%,
-      #126b45 55%,
-      #1b7b52 100%
-    );
+  background-image: url('/images/rafip.jpeg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .regional-portfolio-hero-overlay {
   position: absolute;
   inset: 0;
+  z-index: 1;
   background:
     linear-gradient(
       90deg,
-      rgba(4, 36, 24, 0.7),
-      rgba(10, 73, 47, 0.15)
+      rgba(3, 24, 16, 0.88) 0%,
+      rgba(4, 34, 22, 0.72) 28%,
+      rgba(5, 42, 27, 0.38) 58%,
+      rgba(5, 35, 24, 0.12) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.10) 0%,
+      rgba(0, 0, 0, 0.18) 100%
     );
 }
 
@@ -85,41 +85,42 @@
   max-width: 1400px;
   min-height: 560px;
   margin: 0 auto;
-  padding: 82px 60px 70px;
-  display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
+  padding: 86px 60px 78px;
+  display: flex;
   align-items: center;
-  gap: 70px;
 }
 
 .regional-portfolio-hero-content {
-  max-width: 700px;
+  max-width: 760px;
 }
 
 .hero-eyebrow {
-  color: #b8e4ca;
+  display: inline-block;
   margin-bottom: 18px;
+  color: #d8f3e2;
 }
 
 .regional-portfolio-hero h1 {
-  margin-bottom: 22px;
+  margin: 0 0 22px;
   color: #ffffff;
-  font-size: clamp(42px, 5vw, 68px);
-  font-weight: 700;
-  letter-spacing: -0.04em;
-  line-height: 1.04;
+  font-size: clamp(48px, 5.3vw, 76px);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 0.98;
+  text-shadow: 0 3px 24px rgba(0, 0, 0, 0.20);
 }
 
 .regional-portfolio-hero h1 span {
-  color: #bfe7ce;
+  color: #ffffff;
 }
 
 .regional-portfolio-hero-description {
   max-width: 650px;
-  margin-bottom: 30px;
-  color: rgba(255, 255, 255, 0.82);
+  margin: 0 0 30px;
+  color: rgba(255, 255, 255, 0.90);
   font-size: 16px;
-  line-height: 1.75;
+  line-height: 1.7;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
 }
 
 .regional-hero-actions {
@@ -131,94 +132,49 @@
 
 .regional-primary-button,
 .regional-video-button {
-  min-height: 45px;
-  border-radius: 999px;
-  padding: 0 18px;
+  min-height: 48px;
+  border-radius: 9px;
+  padding: 0 20px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 9px;
   font-size: 13px;
-  font-weight: 750;
+  font-weight: 800;
   text-decoration: none;
   cursor: pointer;
   transition:
     transform 0.2s ease,
     background 0.2s ease,
-    border-color 0.2s ease;
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .regional-primary-button {
-  background: #ffffff;
-  color: #126b45;
-  border: 1px solid #ffffff;
+  background: #08a95f;
+  color: #ffffff;
+  border: 1px solid #08a95f;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
 }
 
 .regional-primary-button:hover {
   transform: translateY(-2px);
-  background: #eff8f3;
+  background: #079a57;
+  border-color: #079a57;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
 }
 
 .regional-video-button {
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  background: rgba(27, 45, 34, 0.42);
   color: #ffffff;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(7px);
 }
 
 .regional-video-button:hover {
   transform: translateY(-2px);
-  background: rgba(255, 255, 255, 0.15);
-}
-
-/* =========================================================
-   HERO COLLAGE
-========================================================= */
-
-.regional-hero-collage {
-  max-width: 500px;
-  margin-left: auto;
-  display: grid;
-  grid-template-columns: 1.25fr 0.8fr 0.8fr;
-  grid-template-rows: 145px 145px 145px;
-  gap: 12px;
-  transform: rotate(-2deg);
-}
-
-.collage-tile {
-  min-height: 120px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background:
-    linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.16),
-      rgba(255, 255, 255, 0.05)
-    );
-  box-shadow:
-    0 18px 50px rgba(0, 0, 0, 0.12);
-  font-size: 54px;
-  backdrop-filter: blur(8px);
-}
-
-.collage-tile-large {
-  grid-row: span 2;
-  font-size: 92px;
-}
-
-.collage-tile:nth-child(4) {
-  grid-column: 2;
-}
-
-.collage-tile:nth-child(5) {
-  grid-column: 3;
-}
-
-.collage-tile:nth-child(6) {
-  grid-column: 2 / span 2;
+  background: rgba(27, 45, 34, 0.62);
+  border-color: rgba(255, 255, 255, 0.60);
 }
 
 /* =========================================================
@@ -1520,10 +1476,6 @@
   .regional-portfolio-hero-inner {
     padding-left: 40px;
     padding-right: 40px;
-    grid-template-columns:
-      minmax(0, 1fr)
-      minmax(300px, 0.8fr);
-    gap: 40px;
   }
 
   .regional-stat-strip {
@@ -1563,15 +1515,9 @@
   }
 
   .regional-portfolio-hero-inner {
-    min-height: auto;
+    min-height: 560px;
     padding-top: 75px;
     padding-bottom: 90px;
-    grid-template-columns: 1fr;
-  }
-
-  .regional-hero-collage {
-    width: min(520px, 100%);
-    margin: 0;
   }
 
   .regional-portfolio-hero h1 {
@@ -1622,36 +1568,6 @@
   .regional-primary-button,
   .regional-video-button {
     width: 100%;
-  }
-
-  .regional-hero-collage {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:
-      115px
-      115px
-      115px;
-  }
-
-  .collage-tile {
-    min-height: 100px;
-    font-size: 42px;
-  }
-
-  .collage-tile-large {
-    font-size: 65px;
-    grid-row: span 2;
-  }
-
-  .collage-tile:nth-child(4) {
-    grid-column: auto;
-  }
-
-  .collage-tile:nth-child(5) {
-    grid-column: auto;
-  }
-
-  .collage-tile:nth-child(6) {
-    grid-column: 1 / -1;
   }
 
   .regional-stat-strip {
@@ -2175,124 +2091,113 @@
 }
 
 /* =========================================================
-   HERO — WHITE EDITORIAL LAYOUT + GRADIENT SHAPE
+   HERO — FINAL COVER IMAGE TREATMENT
 ========================================================= */
 
 .regional-portfolio-hero {
   position: relative;
   min-height: 560px;
   overflow: hidden;
-  background: #ffffff;
+  background-image: url('/images/rafip.jpeg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
-.regional-portfolio-hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -7%;
-  width: 58%;
-  height: 100%;
-  min-height: 560px;
-  border-radius: 180px 0 0 180px;
-  background: linear-gradient(
-    135deg,
-    var(--rafip-green) 0%,
-    var(--rafip-teal) 48%,
-    var(--rafip-blue) 100%
-  );
-}
-
+.regional-portfolio-hero::before,
 .regional-portfolio-hero::after {
-  content: "";
-  position: absolute;
-  top: 32px;
-  right: 44px;
-  width: 36px;
-  height: 36px;
-  border: 4px solid var(--rafip-orange);
-  border-radius: 50%;
-  background: transparent;
-  z-index: 3;
+  display: none;
+  content: none;
 }
 
 .regional-portfolio-hero-overlay {
-  display: none;
+  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(3, 24, 16, 0.88) 0%,
+      rgba(4, 34, 22, 0.72) 28%,
+      rgba(5, 42, 27, 0.38) 58%,
+      rgba(5, 35, 24, 0.12) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.10) 0%,
+      rgba(0, 0, 0, 0.18) 100%
+    );
 }
 
 .regional-portfolio-hero-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1400px;
   min-height: 560px;
-  padding: 72px 60px 70px;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.9fr);
-  gap: 45px;
+  margin: 0 auto;
+  padding: 86px 60px 78px;
+  display: flex;
+  align-items: center;
 }
 
 .regional-portfolio-hero-content {
   position: relative;
-  z-index: 4;
-  max-width: 680px;
+  z-index: 3;
+  max-width: 760px;
 }
 
 .hero-eyebrow {
-  color: var(--rafip-green);
-  margin-bottom: 14px;
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #d8f3e2;
 }
 
 .regional-portfolio-hero h1 {
-  color: var(--rafip-blue);
-  font-size: clamp(42px, 5vw, 66px);
+  margin: 0 0 22px;
+  color: #ffffff;
+  font-size: clamp(48px, 5.3vw, 76px);
   font-weight: 800;
   letter-spacing: -0.045em;
+  line-height: 0.98;
+  text-shadow: 0 3px 24px rgba(0, 0, 0, 0.20);
 }
 
 .regional-portfolio-hero h1 span {
-  color: var(--rafip-green);
+  color: #ffffff;
 }
 
 .regional-portfolio-hero-description {
-  color: #5f6d82;
-  max-width: 600px;
+  max-width: 650px;
+  margin: 0 0 30px;
+  color: rgba(255, 255, 255, 0.90);
+  font-size: 16px;
+  line-height: 1.7;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
 }
 
 .regional-primary-button {
-  background: var(--rafip-green);
+  background: #08a95f;
   color: #ffffff;
-  border-color: var(--rafip-green);
-  box-shadow: 0 8px 20px rgba(7, 135, 80, 0.18);
+  border-color: #08a95f;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
 }
 
 .regional-primary-button:hover {
-  background: var(--rafip-green-dark);
-  border-color: var(--rafip-green-dark);
+  background: #079a57;
+  border-color: #079a57;
 }
 
 .regional-video-button {
-  border-color: var(--rafip-orange);
-  background: #ffffff;
-  color: var(--rafip-blue);
-  backdrop-filter: none;
+  border-color: rgba(255, 255, 255, 0.42);
+  background: rgba(27, 45, 34, 0.42);
+  color: #ffffff;
+  backdrop-filter: blur(7px);
 }
 
 .regional-video-button:hover {
-  background: var(--rafip-orange-soft);
-  border-color: var(--rafip-orange);
-}
-
-/* Decorative collage becomes cleaner and more aligned with the cover */
-.regional-hero-collage {
-  position: relative;
-  z-index: 4;
-  max-width: 500px;
-}
-
-.collage-tile {
-  border-color: rgba(255, 255, 255, 0.24);
-  border-radius: 20px;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.18),
-    rgba(255, 255, 255, 0.04)
-  );
-  box-shadow: 0 18px 50px rgba(20, 42, 83, 0.14);
+  background: rgba(27, 45, 34, 0.62);
+  border-color: rgba(255, 255, 255, 0.60);
 }
 
 /* =========================================================
@@ -2733,66 +2638,65 @@
 ========================================================= */
 
 @media (max-width: 900px) {
-  .regional-portfolio-hero::before {
-    top: auto;
-    right: -12%;
-    bottom: -90px;
-    width: 125%;
-    height: 54%;
-    min-height: 330px;
-    border-radius: 150px 0 0 0;
-  }
-
-  .regional-portfolio-hero::after {
-    right: 24px;
-    top: 24px;
+  .regional-portfolio-hero {
+    min-height: 560px;
+    background-position: center center;
   }
 
   .regional-portfolio-hero-inner {
-    padding-top: 65px;
-    padding-bottom: 120px;
+    min-height: 560px;
+    padding: 72px 40px 88px;
   }
 
   .regional-portfolio-hero-content {
     max-width: 720px;
   }
-
-  .regional-hero-collage {
-    margin-left: 0;
-  }
 }
 
 @media (max-width: 680px) {
   .regional-portfolio-hero {
-    min-height: 700px;
+    min-height: 650px;
+    background-position: 62% center;
   }
 
-  .regional-portfolio-hero::before {
-    right: -35%;
-    bottom: -45px;
-    width: 145%;
-    height: 46%;
-    min-height: 300px;
-    border-radius: 120px 0 0 0;
-  }
-
-  .regional-portfolio-hero::after {
-    width: 27px;
-    height: 27px;
-    border-width: 3px;
-    right: 18px;
-    top: 18px;
+  .regional-portfolio-hero-overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(3, 24, 16, 0.90) 0%,
+        rgba(4, 34, 22, 0.72) 62%,
+        rgba(5, 42, 27, 0.36) 100%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.12) 0%,
+        rgba(0, 0, 0, 0.24) 100%
+      );
   }
 
   .regional-portfolio-hero-inner {
-    padding: 55px 22px 115px;
+    min-height: 650px;
+    padding: 58px 22px 90px;
   }
 
   .regional-portfolio-hero h1 {
-    font-size: 38px;
+    font-size: 42px;
+    line-height: 0.99;
   }
 
   .regional-portfolio-hero-description {
-    color: #5f6d82;
+    max-width: 100%;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.90);
+  }
+
+  .regional-hero-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .regional-primary-button,
+  .regional-video-button {
+    width: 100%;
   }
 }

@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "date": "2026-09-30",
+    "category": "iPLAN",
+    "title": "DA-PRDP iPLAN Planning and Investment Updates",
+    "excerpt": "Latest updates and activities related to investment planning, value chain development, and agricultural planning under the PRDP iPLAN Component.",
+    "image": "/data/iplan/iplan-placeholder.jpg",
+    "facebookUrl": "https://www.facebook.com/PRDPNPCO"
+  },
+  {
+    "id": 2,
+    "date": "2026-09-25",
+    "category": "Planning",
+    "title": "Regional Planning and Investment Planning Activities",
+    "excerpt": "Updates on regional planning activities and initiatives supporting agriculture and fisheries investment planning.",
+    "image": "/data/iplan/iplan-placeholder.jpg",
+    "facebookUrl": "https://www.facebook.com/PRDPNPCO"
+  },
+  {
+    "id": 3,
+    "date": "2026-09-20",
+    "category": "PCIP",
+    "title": "Provincial Commodity Investment Planning Updates",
+    "excerpt": "Updates related to commodity investment planning, value chain development, and the preparation of investment portfolios.",
+    "image": "/data/iplan/iplan-placeholder.jpg",
+    "facebookUrl": "https://www.facebook.com/PRDPNPCO"
+  }
+]

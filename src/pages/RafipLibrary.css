@@ -251,6 +251,9 @@
   background: #fff;
   box-shadow: 0 9px 24px rgba(28,55,73,.12);
   transition: transform .22s ease, box-shadow .22s ease;
+
+  text-decoration: none;
+  color: inherit;
 }
 
 .rafip-library-card:hover .rafip-library-cover-wrap {

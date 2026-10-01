@@ -240,30 +240,6 @@ function Resources() {
         })}
       </div>
 
-      {/* =========================================
-          QUICK RESOURCE BAR (BOTTOM)
-          ========================================= */}
-      <div className="resources-bottom">
-        <div className="resources-bottom-icon">
-          <Download size={20} strokeWidth={2} />
-        </div>
-
-        <div className="resources-bottom-content">
-          <strong>Looking for a specific document?</strong>
-          <span>
-            More planning references and official resources
-            can be added to the portal as they are organized.
-          </span>
-        </div>
-
-        <a
-          href="#resource-categories"
-          className="resources-bottom-button"
-        >
-          <span>Browse Categories</span>
-          <ArrowUpRight size={15} strokeWidth={2.2} />
-        </a>
-      </div>
     </section>
   );
 }
