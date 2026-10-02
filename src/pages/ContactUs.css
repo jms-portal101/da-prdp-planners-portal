@@ -1,0 +1,960 @@
+/* =========================================================
+   CONTACT US PAGE
+   DA-PRDP PLANNERS' PORTAL
+   ========================================================= */
+
+.contact-page {
+  min-height: 100vh;
+  background: #f8faf9;
+  color: #173c33;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.contact-hero {
+  position: relative;
+  min-height: 390px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      135deg,
+      #173c33 0%,
+      #186073 55%,
+      #254181 100%
+    );
+}
+
+.contact-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(255, 255, 255, 0.08),
+      transparent 32%
+    );
+}
+
+.contact-hero-content {
+  position: relative;
+  z-index: 2;
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.contact-eyebrow {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 7px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.contact-hero h1 {
+  margin: 0 0 18px;
+  color: #ffffff;
+  font-size: clamp(42px, 6vw, 68px);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.contact-hero p {
+  max-width: 680px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   MAIN
+   ========================================================= */
+
+.contact-network {
+  padding: 80px 0 90px;
+}
+
+.contact-container {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.contact-heading {
+  max-width: 760px;
+  margin-bottom: 42px;
+}
+
+.contact-section-label {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #0f6938;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.contact-heading h2 {
+  margin: 0 0 14px;
+  color: #173c33;
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.contact-heading p {
+  margin: 0;
+  color: #65736e;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   LEVEL NAVIGATION
+   ========================================================= */
+
+.contact-level-navigation {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 48px;
+}
+
+.contact-level-button {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 82px;
+  padding: 18px 20px;
+  border: 1px solid #dde5e2;
+  border-radius: 16px;
+  background: #ffffff;
+  color: #285342;
+  cursor: pointer;
+  text-align: left;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.contact-level-button:hover {
+  transform: translateY(-2px);
+  border-color: #79a993;
+  box-shadow:
+    0 10px 25px rgba(23, 60, 51, 0.08);
+}
+
+.contact-level-button.active {
+  border-color: #0f6938;
+  background: #0f6938;
+  color: #ffffff;
+  box-shadow:
+    0 12px 28px rgba(15, 105, 56, 0.18);
+}
+
+.contact-level-button > svg {
+  flex-shrink: 0;
+}
+
+.contact-level-button span {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.contact-level-button small {
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.68;
+}
+
+/* =========================================================
+   LEVEL SECTION
+   ========================================================= */
+
+.contact-level-section {
+  scroll-margin-top: 100px;
+}
+
+.contact-level-header {
+  margin-bottom: 28px;
+}
+
+.contact-level-header h3 {
+  margin: 0 0 10px;
+  color: #173c33;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.contact-level-header p {
+  max-width: 700px;
+  margin: 0;
+  color: #65736e;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+/* =========================================================
+   GENERAL CARD
+   ========================================================= */
+
+.contact-main-card {
+  display: flex;
+  gap: 22px;
+  margin-bottom: 24px;
+  padding: 30px;
+  border: 1px solid #dde5e2;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow:
+    0 10px 30px rgba(23, 60, 51, 0.06);
+}
+
+.contact-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  background: #eaf5f1;
+  color: #0f6938;
+}
+
+.contact-card-content {
+  min-width: 0;
+}
+
+.contact-card-label {
+  display: block;
+  margin-bottom: 7px;
+  color: #65736e;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.contact-card-content h4,
+.contact-component-card h4,
+.contact-pso-card h4,
+.contact-rpco-card h4 {
+  margin: 0;
+  color: #173c33;
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+/* =========================================================
+   CONTACT DETAILS
+   ========================================================= */
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  margin-top: 20px;
+}
+
+.contact-details > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #50615c;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.contact-details svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #0f6938;
+}
+
+/* =========================================================
+   INFO ROW
+   ========================================================= */
+
+.contact-info-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-top: 9px;
+  color: #50615c;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.contact-info-row svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #0f6938;
+}
+
+/* =========================================================
+   NPCO COMPONENTS
+   ========================================================= */
+
+.contact-component-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.contact-component-card {
+  padding: 24px;
+  border: 1px solid #dde5e2;
+  border-radius: 18px;
+  background: #ffffff;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.contact-component-card:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 12px 30px rgba(23, 60, 51, 0.07);
+}
+
+/* =========================================================
+   PSO GRID
+   ========================================================= */
+
+.contact-pso-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.contact-pso-card {
+  padding: 26px;
+  border: 1px solid #dde5e2;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow:
+    0 8px 25px rgba(23, 60, 51, 0.05);
+}
+
+.contact-pso-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.contact-pso-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 13px;
+  background: #eaf5f1;
+  color: #0f6938;
+}
+
+/* =========================================================
+   PSO GENERAL CONTACT
+   ========================================================= */
+
+.contact-pso-general {
+  padding: 17px 0 19px;
+  border-top: 1px solid #e8eeeb;
+  border-bottom: 1px solid #e8eeeb;
+  margin-bottom: 20px;
+}
+
+.contact-pso-label {
+  margin-bottom: 11px;
+  color: #65736e;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.contact-pso-general .contact-info-row {
+  margin-top: 8px;
+}
+
+/* =========================================================
+   PSO COMPONENTS
+   ========================================================= */
+
+.contact-pso-components {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e8eeeb;
+}
+
+.contact-pso-component-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.contact-pso-component {
+  padding: 13px 14px;
+  border: 1px solid #e1e9e4;
+  border-radius: 11px;
+  background: #f8faf9;
+}
+
+.contact-pso-component-name {
+  margin-bottom: 6px;
+  color: #285342;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.contact-pso-component .contact-info-row {
+  margin-top: 6px;
+  font-size: 12px;
+}
+
+.contact-pso-no-components {
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: #f8faf9;
+  color: #89958f;
+  font-size: 12px;
+  font-style: italic;
+}
+
+/* =========================================================
+   PSO REGIONAL OFFICES
+   ========================================================= */
+
+.contact-pso-regions {
+  padding-top: 20px;
+}
+
+.contact-pso-region-list {
+  display: grid;
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.contact-pso-region-button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+  padding: 12px 13px;
+  border: 1px solid #dde5e2;
+  border-radius: 12px;
+  background: #f8faf9;
+  color: #285342;
+  cursor: pointer;
+  text-align: left;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.contact-pso-region-button:hover {
+  transform: translateY(-2px);
+  border-color: #79a993;
+  background: #eaf5f1;
+  box-shadow:
+    0 7px 18px rgba(23, 60, 51, 0.07);
+}
+
+.contact-pso-region-button > span {
+  display: block;
+  min-width: 0;
+  color: #285342;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.contact-pso-region-button small {
+  display: none;
+}
+
+.contact-pso-region-button svg {
+  margin-left: auto;
+  flex-shrink: 0;
+  color: #0f6938;
+}
+
+/* =========================================================
+   RPCO SEARCH
+   ========================================================= */
+
+.contact-search-panel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.contact-search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 520px;
+  padding: 13px 16px;
+  border: 1px solid #dde5e2;
+  border-radius: 13px;
+  background: #ffffff;
+  color: #65736e;
+}
+
+.contact-search-box:focus-within {
+  border-color: #0f6938;
+  box-shadow:
+    0 0 0 4px rgba(15, 105, 56, 0.1);
+}
+
+.contact-search-box input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #173c33;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.contact-search-box input::placeholder {
+  color: #9aa7a1;
+}
+
+.contact-clear-button {
+  padding: 11px 16px;
+  border: 1px solid #dde5e2;
+  border-radius: 11px;
+  background: #ffffff;
+  color: #285342;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.contact-clear-button:hover {
+  border-color: #79a993;
+  background: #eaf5f1;
+}
+
+/* =========================================================
+   SELECTED REGION
+   ========================================================= */
+
+.contact-selected-region {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 20px;
+  padding: 12px 15px;
+  border: 1px solid #c8d6d1;
+  border-radius: 12px;
+  background: #eaf5f1;
+  color: #50615c;
+  font-size: 13px;
+}
+
+.contact-selected-region strong {
+  color: #0f6938;
+}
+
+/* =========================================================
+   RPCO GRID
+   ========================================================= */
+
+.contact-rpco-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.contact-rpco-card {
+  overflow: hidden;
+  border: 1px solid #dde5e2;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow:
+    0 8px 26px rgba(23, 60, 51, 0.05);
+}
+
+.contact-rpco-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 25px;
+  border-bottom: 1px solid #e8eeeb;
+  background:
+    linear-gradient(
+      135deg,
+      #f8faf9 0%,
+      #ffffff 100%
+    );
+}
+
+.contact-region-code {
+  display: inline-block;
+  margin-bottom: 7px;
+  color: #0f6938;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.contact-rpco-header h4 {
+  font-size: 21px;
+}
+
+.contact-region-cluster {
+  display: inline-block;
+  margin-top: 8px;
+  color: #65736e;
+  font-size: 12px;
+}
+
+.contact-region-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 13px;
+  background: #eaf5f1;
+  color: #0f6938;
+}
+
+.contact-rpco-contacts {
+  padding: 8px 25px 20px;
+}
+
+.contact-rpco-contact {
+  padding: 18px 0;
+  border-bottom: 1px solid #e8eeeb;
+}
+
+.contact-rpco-contact:last-child {
+  border-bottom: 0;
+}
+
+/* =========================================================
+   EMPTY
+   ========================================================= */
+
+.contact-empty-state {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 260px;
+  padding: 40px;
+  border: 1px dashed #c8d6d1;
+  border-radius: 18px;
+  background: #ffffff;
+  text-align: center;
+  color: #65736e;
+}
+
+.contact-empty-state svg {
+  margin-bottom: 15px;
+  color: #0f6938;
+}
+
+.contact-empty-state h4 {
+  margin: 0 0 7px;
+  color: #285342;
+  font-size: 18px;
+}
+
+.contact-empty-state p {
+  margin: 0 0 18px;
+  font-size: 14px;
+}
+
+.contact-empty-state button {
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 10px;
+  background: #0f6938;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   GRM
+   ========================================================= */
+
+.contact-grm-section {
+  padding: 0 0 90px;
+}
+
+.contact-grm-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  padding: 38px 42px;
+  border-radius: 22px;
+  background:
+    linear-gradient(
+      135deg,
+      #173c33 0%,
+      #186073 100%
+    );
+  box-shadow:
+    0 18px 45px rgba(15, 105, 56, 0.18);
+}
+
+.contact-grm-content {
+  max-width: 700px;
+}
+
+.contact-grm-content .contact-section-label {
+  color: #a9d0bd;
+}
+
+.contact-grm-content h2 {
+  margin: 0 0 10px;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.contact-grm-content p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.contact-grm-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  flex-shrink: 0;
+  padding: 13px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 11px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.contact-grm-button:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* =========================================================
+   RETRY
+   ========================================================= */
+
+.contact-reset-button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #0f6938;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .contact-level-navigation {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-component-grid,
+  .contact-pso-grid,
+  .contact-rpco-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grm-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+  .contact-container,
+  .contact-hero-content {
+    width: calc(100% - 30px);
+  }
+
+  .contact-hero {
+    min-height: 340px;
+  }
+
+  .contact-hero-content {
+    padding: 65px 0;
+  }
+
+  .contact-hero h1 {
+    font-size: 43px;
+  }
+
+  .contact-hero p {
+    font-size: 15px;
+  }
+
+  .contact-network {
+    padding: 55px 0 65px;
+  }
+
+  .contact-heading {
+    margin-bottom: 30px;
+  }
+
+  .contact-heading h2 {
+    font-size: 31px;
+  }
+
+  .contact-level-navigation {
+    gap: 10px;
+    margin-bottom: 35px;
+  }
+
+  .contact-level-button {
+    min-height: 72px;
+  }
+
+  .contact-level-header h3 {
+    font-size: 25px;
+  }
+
+  .contact-main-card {
+    flex-direction: column;
+    padding: 23px;
+  }
+
+  .contact-component-card {
+    padding: 20px;
+  }
+
+  .contact-pso-grid {
+    gap: 15px;
+  }
+
+  .contact-pso-card {
+    padding: 21px;
+  }
+
+  .contact-pso-region-list {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-pso-region-button {
+    min-height: 50px;
+  }
+
+  .contact-search-panel {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .contact-search-box {
+    max-width: none;
+  }
+
+  .contact-clear-button {
+    align-self: flex-start;
+  }
+
+  .contact-rpco-grid {
+    gap: 15px;
+  }
+
+  .contact-rpco-header {
+    padding: 21px;
+  }
+
+  .contact-rpco-contacts {
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+
+  .contact-grm-section {
+    padding-bottom: 55px;
+  }
+
+  .contact-grm-card {
+    padding: 28px 23px;
+  }
+
+  .contact-grm-content h2 {
+    font-size: 25px;
+  }
+
+  .contact-grm-button {
+    width: 100%;
+  }
+
+}
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+  .contact-hero h1 {
+    font-size: 38px;
+  }
+
+  .contact-level-button {
+    padding: 15px;
+  }
+
+  .contact-rpco-header h4 {
+    font-size: 18px;
+  }
+
+  .contact-region-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+}

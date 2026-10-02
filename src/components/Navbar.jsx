@@ -49,6 +49,11 @@ function Navbar() {
     })
   }
 
+  const goToContact = () => {
+    closeMenu()
+    navigate('/contact')
+  }
+
   return (
     <header className="navbar">
       <nav className="navbar-inner">
@@ -128,6 +133,13 @@ function Navbar() {
             }
           >
             Resources
+          </button>
+
+          <button
+            onClick={goToContact}
+            className={location.pathname === '/contact' ? 'active' : ''}
+          >
+            Contact Us
           </button>
         </div>
       </nav>

@@ -32,6 +32,7 @@ import OperationalMonitoring from './pages/OperationalMonitoring'
 import Evaluation from './pages/Evaluation'
 import RafipLibrary from './pages/RafipLibrary'
 import RegionalRafipPage from './pages/RegionalRafipPage'
+import ContactUs from './pages/ContactUs'
 
 
 import './App.css'
@@ -89,8 +90,8 @@ function App() {
         <Route path="/rafip-library" element={<RafipLibrary />} />
         <Route
           path="/rafip-library/:regionSlug"
-          element={<RegionalRafipPage />}
-        />
+          element={<RegionalRafipPage />}/>
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
     </BrowserRouter>
   );
