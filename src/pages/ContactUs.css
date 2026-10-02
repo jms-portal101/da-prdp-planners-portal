@@ -19,13 +19,19 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  background:
+
+  background-image:
     linear-gradient(
-      135deg,
-      #173c33 0%,
-      #186073 55%,
-      #254181 100%
-    );
+      90deg,
+      rgba(23, 60, 51, 0.88) 0%,
+      rgba(23, 60, 51, 0.68) 45%,
+      rgba(23, 60, 51, 0.35) 100%
+    ),
+    url('/images/contactUs.jpeg');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .contact-hero-overlay {
