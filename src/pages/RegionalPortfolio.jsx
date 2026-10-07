@@ -133,9 +133,6 @@ function normalizeText(value) {
 
 /* =========================================================
    REGIONAL RAFIP FLIPBOOKS
-
-   NCR intentionally has no entry because no NCR
-   flipbook URL was provided.
 ========================================================= */
 
 const regionalFlipbooks = {
@@ -987,11 +984,6 @@ function RegionalPortfolio() {
 
     setDashboardRegion(code)
 
-    /*
-      Keep the selected commodity so Region +
-      Cluster + Commodity can work together.
-    */
-
     if (regionObject) {
       setSelectedRegion(
         regionObject
@@ -1312,7 +1304,6 @@ function RegionalPortfolio() {
             </div>
 
           </div>
-
         </div>
       </section>
 
@@ -1430,503 +1421,507 @@ function RegionalPortfolio() {
           </div>
         )}
 
+        {/* ===================================================
+            THREE-COLUMN DASHBOARD
+        =================================================== */}
+
         <div className="investment-dashboard-grid">
 
           {/* =================================================
-              TOTAL INVESTMENT
+              COLUMN 1 — INVESTMENT BY REGION
           ================================================= */}
 
-          <div className="investment-panel region-investment-panel">
+          <div className="investment-dashboard-column">
 
-            <div className="investment-panel-header">
-              <div>
-                <h3>
-                  Total Investment Requirement
-                </h3>
+            <div className="investment-panel region-investment-panel">
 
-                <p>
-                  By Region
-                </p>
+              <div className="investment-panel-header">
+                <div>
+                  <h3>
+                    Total Investment Requirement
+                  </h3>
+
+                  <p>
+                    By Region
+                  </p>
+                </div>
+
+                <MapPinned size={20} />
               </div>
 
-              <MapPinned size={20} />
-            </div>
+              <div className="investment-inline-filters">
 
-            {/* =================================================
-                FILTERS
-            ================================================= */}
+                <label>
+                  <span>
+                    Cluster
+                  </span>
 
-            <div className="investment-inline-filters">
-
-              {/* CLUSTER */}
-
-              <label>
-                <span>
-                  Cluster
-                </span>
-
-                <select
-                  value={selectedCluster}
-                  onChange={event =>
-                    setSelectedCluster(
-                      event.target.value
-                    )
-                  }
-                >
-                  <option value="ALL">
-                    All Clusters
-                  </option>
-
-                  {clusterOptions.map(
-                    cluster => (
-                      <option
-                        key={cluster}
-                        value={cluster}
-                      >
-                        {cluster}
-                      </option>
-                    )
-                  )}
-                </select>
-              </label>
-
-              {/* REGION */}
-
-              <label>
-                <span>
-                  Region
-                </span>
-
-                <select
-                  value={dashboardRegion}
-                  onChange={event =>
-                    selectRegion(
-                      event.target.value
-                    )
-                  }
-                >
-                  <option value="ALL">
-                    All Regions
-                  </option>
-
-                  {regions.map(region => {
-                    const code =
-                      getRegionCode(
-                        region.name
+                  <select
+                    value={selectedCluster}
+                    onChange={event =>
+                      setSelectedCluster(
+                        event.target.value
                       )
+                    }
+                  >
+                    <option value="ALL">
+                      All Clusters
+                    </option>
 
-                    return (
-                      <option
-                        key={region.id}
-                        value={code}
-                      >
-                        {region.name}
-                      </option>
-                    )
-                  })}
-                </select>
-              </label>
-
-              {/* COMMODITY */}
-
-              <label>
-                <span>
-                  Commodity
-                </span>
-
-                <select
-                  value={selectedCommodity}
-                  onChange={event =>
-                    setSelectedCommodity(
-                      event.target.value
-                    )
-                  }
-                >
-                  <option value="ALL">
-                    All Commodities
-                  </option>
-
-                  {commodityOptions.map(
-                    commodity => (
-                      <option
-                        key={commodity}
-                        value={commodity}
-                      >
-                        {commodity}
-                      </option>
-                    )
-                  )}
-                </select>
-              </label>
-
-              {/* RESET */}
-
-              {(selectedCluster !== 'ALL' ||
-                dashboardRegion !== 'ALL' ||
-                selectedCommodity !== 'ALL') && (
-                <button
-                  type="button"
-                  className="investment-reset-button"
-                  onClick={
-                    resetDashboard
-                  }
-                  title="Reset filters"
-                >
-                  <RotateCcw size={14} />
-                  <span>Reset</span>
-                </button>
-              )}
-
-            </div>
-
-            {/* =================================================
-                FILTERED TOTAL
-            ================================================= */}
-
-            <div className="investment-total">
-              <span>
-                {dashboardTitle}
-              </span>
-
-              <strong>
-                {dataLoading
-                  ? 'Loading...'
-                  : formatMoney(
-                      filteredInvestment
+                    {clusterOptions.map(
+                      cluster => (
+                        <option
+                          key={cluster}
+                          value={cluster}
+                        >
+                          {cluster}
+                        </option>
+                      )
                     )}
-              </strong>
-            </div>
+                  </select>
+                </label>
 
-            {/* =================================================
-                REGIONAL BARS
-            ================================================= */}
+                <label>
+                  <span>
+                    Region
+                  </span>
 
-            <div className="regional-bar-list">
+                  <select
+                    value={dashboardRegion}
+                    onChange={event =>
+                      selectRegion(
+                        event.target.value
+                      )
+                    }
+                  >
+                    <option value="ALL">
+                      All Regions
+                    </option>
 
-              {regionalSummary
-                .slice(
-                  0,
-                  showMoreRegions
-                    ? regionalSummary.length
-                    : 5
-                )
-                .map(item => {
-
-                  const width =
-                    (item.investment /
-                      maxRegionalInvestment) *
-                    100
-
-                  const isActive =
-                    dashboardRegion !==
-                      'ALL' &&
-                    getRegionCode(
-                      dashboardRegion
-                    ) === item.code
-
-                  return (
-                    <button
-                      type="button"
-                      className={`regional-bar-row ${
-                        isActive
-                          ? 'active'
-                          : ''
-                      }`}
-                      key={item.code}
-                      onClick={() =>
-                        selectRegion(
-                          item.code
+                    {regions.map(region => {
+                      const code =
+                        getRegionCode(
+                          region.name
                         )
-                      }
-                    >
-                      <div className="regional-bar-label">
-                        <span>
-                          {item.code}
-                        </span>
 
-                        <strong>
-                          {formatBillions(
-                            item.investment /
-                              1_000_000_000
-                          )}
-                        </strong>
-                      </div>
+                      return (
+                        <option
+                          key={region.id}
+                          value={code}
+                        >
+                          {region.name}
+                        </option>
+                      )
+                    })}
+                  </select>
+                </label>
 
-                      <div className="regional-bar-track">
-                        <div
-                          className="regional-bar-fill"
-                          style={{
-                            width: `${Math.max(
-                              width,
-                              3
-                            )}%`,
-                          }}
-                        />
-                      </div>
-                    </button>
-                  )
-                })}
+                <label>
+                  <span>
+                    Commodity
+                  </span>
 
-              {!dataLoading &&
-                regionalSummary.length >
-                  5 && (
-                <button
-                  type="button"
-                  className="dashboard-see-more-button"
-                  onClick={() =>
-                    setShowMoreRegions(
-                      previous =>
-                        !previous
-                    )
-                  }
-                >
-                  {showMoreRegions
-                    ? 'Show Less'
-                    : `See More (${
-                        regionalSummary.length -
-                        5
-                      })`}
-                </button>
-              )}
+                  <select
+                    value={selectedCommodity}
+                    onChange={event =>
+                      setSelectedCommodity(
+                        event.target.value
+                      )
+                    }
+                  >
+                    <option value="ALL">
+                      All Commodities
+                    </option>
 
-              {!dataLoading &&
-                regionalSummary.length ===
-                  0 && (
-                <div className="empty-dashboard-state">
-                  No regional investment
-                  data found for the
-                  selected filters.
-                </div>
-              )}
+                    {commodityOptions.map(
+                      commodity => (
+                        <option
+                          key={commodity}
+                          value={commodity}
+                        >
+                          {commodity}
+                        </option>
+                      )
+                    )}
+                  </select>
+                </label>
 
-            </div>
-          </div>
-
-          {/* =================================================
-              COMMODITY
-          ================================================= */}
-
-          <div className="investment-panel commodity-panel">
-
-            <div className="investment-panel-header">
-              <div>
-                <h3>
-                  By Commodity
-                </h3>
-
-                <p>
-                  Investment requirement
-                  distribution
-                </p>
-              </div>
-
-              <Leaf size={20} />
-            </div>
-
-            <div className="commodity-dashboard">
-
-              <div className="commodity-donut-wrapper">
-
-                <div
-                  className="commodity-donut"
-                  style={{
-                    background:
-                      donutGradient,
-                  }}
-                >
-                  <div className="commodity-donut-hole">
-
-                    <div className="commodity-donut-center">
-
-                      <strong>
-                        {dataLoading
-                          ? '—'
-                          : formatMoney(
-                              filteredInvestment
-                            )}
-                      </strong>
-
-                      <span>
-                        {dashboardRegion ===
-                        'ALL'
-                          ? 'Total'
-                          : dashboardRegion}
-                      </span>
-
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-              <div className="commodity-legend">
-
-                {displayedCommodities.map(
-                  (item, index) => {
-
-                    const share =
-                      filteredInvestment >
-                      0
-                        ? (item.investment /
-                            filteredInvestment) *
-                          100
-                        : 0
-
-                    return (
-                      <div
-                        className="commodity-legend-item"
-                        key={
-                          item.commodity
-                        }
-                      >
-
-                        <span
-                          className="commodity-dot"
-                          style={{
-                            background:
-                              donutColors[
-                                index %
-                                  donutColors.length
-                              ],
-                          }}
-                        />
-
-                        <span className="commodity-icon">
-                          {getCommodityIcon(
-                            item.commodity
-                          )}
-                        </span>
-
-                        <span className="commodity-name">
-                          {item.commodity}
-                        </span>
-
-                        <strong>
-                          {formatMoney(
-                            item.investment
-                          )}
-                        </strong>
-
-                        <span className="commodity-percentage">
-                          {share.toFixed(0)}%
-                        </span>
-
-                      </div>
-                    )
-                  }
+                {(selectedCluster !== 'ALL' ||
+                  dashboardRegion !== 'ALL' ||
+                  selectedCommodity !== 'ALL') && (
+                  <button
+                    type="button"
+                    className="investment-reset-button"
+                    onClick={
+                      resetDashboard
+                    }
+                    title="Reset filters"
+                  >
+                    <RotateCcw size={14} />
+                    <span>
+                      Reset
+                    </span>
+                  </button>
                 )}
 
+              </div>
+
+              <div className="investment-total">
+                <span>
+                  {dashboardTitle}
+                </span>
+
+                <strong>
+                  {dataLoading
+                    ? 'Loading...'
+                    : formatMoney(
+                        filteredInvestment
+                      )}
+                </strong>
+              </div>
+
+              <div className="regional-bar-list">
+
+                {regionalSummary
+                  .slice(
+                    0,
+                    showMoreRegions
+                      ? regionalSummary.length
+                      : 5
+                  )
+                  .map(item => {
+
+                    const width =
+                      (item.investment /
+                        maxRegionalInvestment) *
+                      100
+
+                    const isActive =
+                      dashboardRegion !==
+                        'ALL' &&
+                      getRegionCode(
+                        dashboardRegion
+                      ) === item.code
+
+                    return (
+                      <button
+                        type="button"
+                        className={`regional-bar-row ${
+                          isActive
+                            ? 'active'
+                            : ''
+                        }`}
+                        key={item.code}
+                        onClick={() =>
+                          selectRegion(
+                            item.code
+                          )
+                        }
+                      >
+                        <div className="regional-bar-label">
+                          <span>
+                            {item.code}
+                          </span>
+
+                          <strong>
+                            {formatBillions(
+                              item.investment /
+                                1_000_000_000
+                            )}
+                          </strong>
+                        </div>
+
+                        <div className="regional-bar-track">
+                          <div
+                            className="regional-bar-fill"
+                            style={{
+                              width: `${Math.max(
+                                width,
+                                3
+                              )}%`,
+                            }}
+                          />
+                        </div>
+                      </button>
+                    )
+                  })}
+
                 {!dataLoading &&
-                  commoditySummary.length >
-                    10 && (
+                  regionalSummary.length >
+                    5 && (
                   <button
                     type="button"
                     className="dashboard-see-more-button"
                     onClick={() =>
-                      setShowMoreCommodities(
+                      setShowMoreRegions(
                         previous =>
                           !previous
                       )
                     }
                   >
-                    {showMoreCommodities
+                    {showMoreRegions
                       ? 'Show Less'
                       : `See More (${
-                          commoditySummary.length -
-                          10
+                          regionalSummary.length -
+                          5
                         })`}
                   </button>
                 )}
 
                 {!dataLoading &&
-                  commoditySummary.length ===
+                  regionalSummary.length ===
                     0 && (
                   <div className="empty-dashboard-state">
-                    No commodity data found.
+                    No regional investment
+                    data found for the
+                    selected filters.
                   </div>
                 )}
 
               </div>
+
             </div>
+
           </div>
 
           {/* =================================================
-              INTERVENTION
+              COLUMN 2 — COMMODITY
           ================================================= */}
 
-          <div className="investment-panel intervention-panel">
+          <div className="investment-dashboard-column">
 
-            <div className="investment-panel-header">
-              <div>
-                <h3>
-                  By Intervention Type
-                </h3>
+            <div className="investment-panel commodity-panel">
 
-                <p>
-                  Priority investment
-                  categories
-                </p>
+              <div className="investment-panel-header">
+                <div>
+                  <h3>
+                    By Commodity
+                  </h3>
+
+                  <p>
+                    Investment requirement
+                    distribution
+                  </p>
+                </div>
+
+                <Leaf size={20} />
               </div>
 
-              <BarChart3 size={20} />
-            </div>
+              <div className="commodity-dashboard">
 
-            <div className="intervention-list">
+                <div className="commodity-donut-wrapper">
 
-              {interventionSummary.map(
-                item => {
+                  <div
+                    className="commodity-donut"
+                    style={{
+                      background:
+                        donutGradient,
+                    }}
+                  >
+                    <div className="commodity-donut-hole">
 
-                  const width =
-                    (item.investment /
-                      maxInterventionInvestment) *
-                    100
-
-                  return (
-                    <div
-                      className="intervention-row"
-                      key={item.type}
-                    >
-
-                      <div className="intervention-row-top">
-                        <span>
-                          {item.type}
-                        </span>
+                      <div className="commodity-donut-center">
 
                         <strong>
-                          {formatMoney(
-                            item.investment
-                          )}
+                          {dataLoading
+                            ? '—'
+                            : formatMoney(
+                                filteredInvestment
+                              )}
                         </strong>
-                      </div>
 
-                      <div className="intervention-track">
-
-                        <div
-                          className="intervention-fill"
-                          style={{
-                            width: `${Math.max(
-                              width,
-                              3
-                            )}%`,
-                          }}
-                        />
+                        <span>
+                          {dashboardRegion ===
+                          'ALL'
+                            ? 'Total'
+                            : dashboardRegion}
+                        </span>
 
                       </div>
+
                     </div>
-                  )
-                }
-              )}
+                  </div>
 
-              {!dataLoading &&
-                interventionSummary.length ===
-                  0 && (
-                <div className="empty-dashboard-state">
-                  No intervention data
-                  found.
                 </div>
-              )}
+
+                <div className="commodity-legend">
+
+                  {displayedCommodities.map(
+                    (item, index) => {
+
+                      const share =
+                        filteredInvestment >
+                        0
+                          ? (item.investment /
+                              filteredInvestment) *
+                            100
+                          : 0
+
+                      return (
+                        <div
+                          className="commodity-legend-item"
+                          key={
+                            item.commodity
+                          }
+                        >
+
+                          <span
+                            className="commodity-dot"
+                            style={{
+                              background:
+                                donutColors[
+                                  index %
+                                    donutColors.length
+                                ],
+                            }}
+                          />
+
+                          <span className="commodity-icon">
+                            {getCommodityIcon(
+                              item.commodity
+                            )}
+                          </span>
+
+                          <span className="commodity-name">
+                            {item.commodity}
+                          </span>
+
+                          <strong>
+                            {formatMoney(
+                              item.investment
+                            )}
+                          </strong>
+
+                          <span className="commodity-percentage">
+                            {share.toFixed(0)}%
+                          </span>
+
+                        </div>
+                      )
+                    }
+                  )}
+
+                  {!dataLoading &&
+                    commoditySummary.length >
+                      10 && (
+                    <button
+                      type="button"
+                      className="dashboard-see-more-button"
+                      onClick={() =>
+                        setShowMoreCommodities(
+                          previous =>
+                            !previous
+                        )
+                      }
+                    >
+                      {showMoreCommodities
+                        ? 'Show Less'
+                        : `See More (${
+                            commoditySummary.length -
+                            10
+                          })`}
+                    </button>
+                  )}
+
+                  {!dataLoading &&
+                    commoditySummary.length ===
+                      0 && (
+                    <div className="empty-dashboard-state">
+                      No commodity data found.
+                    </div>
+                  )}
+
+                </div>
+
+              </div>
 
             </div>
+
+          </div>
+
+          {/* =================================================
+              COLUMN 3 — INTERVENTION TYPE
+          ================================================= */}
+
+          <div className="investment-dashboard-column">
+
+            <div className="investment-panel intervention-panel">
+
+              <div className="investment-panel-header">
+                <div>
+                  <h3>
+                    By Intervention Type
+                  </h3>
+
+                  <p>
+                    Priority investment
+                    categories
+                  </p>
+                </div>
+
+                <BarChart3 size={20} />
+              </div>
+
+              <div className="intervention-list">
+
+                {interventionSummary.map(
+                  item => {
+
+                    const width =
+                      (item.investment /
+                        maxInterventionInvestment) *
+                      100
+
+                    return (
+                      <div
+                        className="intervention-row"
+                        key={item.type}
+                      >
+
+                        <div className="intervention-row-top">
+                          <span>
+                            {item.type}
+                          </span>
+
+                          <strong>
+                            {formatMoney(
+                              item.investment
+                            )}
+                          </strong>
+                        </div>
+
+                        <div className="intervention-track">
+
+                          <div
+                            className="intervention-fill"
+                            style={{
+                              width: `${Math.max(
+                                width,
+                                3
+                              )}%`,
+                            }}
+                          />
+
+                        </div>
+
+                      </div>
+                    )
+                  }
+                )}
+
+                {!dataLoading &&
+                  interventionSummary.length ===
+                    0 && (
+                  <div className="empty-dashboard-state">
+                    No intervention data
+                    found.
+                  </div>
+                )}
+
+              </div>
+
+            </div>
+
           </div>
 
         </div>
@@ -1970,10 +1965,6 @@ function RegionalPortfolio() {
 
             </div>
 
-            {/* =================================================
-                REGIONAL STATS
-            ================================================= */}
-
             <div className="regional-details-stats">
 
               <div>
@@ -2015,10 +2006,6 @@ function RegionalPortfolio() {
             </div>
 
             <div className="regional-details-body">
-
-              {/* =================================================
-                  PRIORITY COMMODITIES
-              ================================================= */}
 
               <div>
 
@@ -2083,10 +2070,6 @@ function RegionalPortfolio() {
 
                 </div>
               </div>
-
-              {/* =================================================
-                  INVESTMENT PACKAGES
-              ================================================= */}
 
               <div>
 
@@ -2157,9 +2140,11 @@ function RegionalPortfolio() {
                   )}
 
                 </div>
+
               </div>
 
             </div>
+
           </section>
         )}
 
@@ -2250,8 +2235,6 @@ function RegionalPortfolio() {
 
           </div>
 
-          {/* FLIPBOOK AVAILABLE */}
-
           {selectedFlipbook ? (
             <div className="regional-rafip-flipbook-frame">
 
@@ -2267,8 +2250,6 @@ function RegionalPortfolio() {
             </div>
 
           ) : selectedFlipbookRegion ? (
-
-            /* REGION SELECTED BUT NO FLIPBOOK */
 
             <div className="regional-rafip-flipbook-empty">
 
@@ -2291,8 +2272,6 @@ function RegionalPortfolio() {
             </div>
 
           ) : (
-
-            /* NO REGION SELECTED */
 
             <div className="regional-rafip-flipbook-empty">
 
@@ -2376,14 +2355,18 @@ function RegionalPortfolio() {
       {showVideoMessage && (
         <div
           className="regional-video-overlay"
-          onClick={() => setShowVideoMessage(false)}
+          onClick={() =>
+            setShowVideoMessage(false)
+          }
         >
+
           <div
             className="regional-video-modal"
-            onClick={event => event.stopPropagation()}
+            onClick={event =>
+              event.stopPropagation()
+            }
           >
 
-            {/* VIDEO HEADER */}
             <div className="regional-video-header">
 
               <div>
@@ -2399,7 +2382,9 @@ function RegionalPortfolio() {
               <button
                 type="button"
                 className="regional-video-close"
-                onClick={() => setShowVideoMessage(false)}
+                onClick={() =>
+                  setShowVideoMessage(false)
+                }
                 aria-label="Close video"
               >
                 <X size={20} />
@@ -2407,8 +2392,6 @@ function RegionalPortfolio() {
 
             </div>
 
-
-            {/* VIDEO */}
             <div className="regional-video-player-wrapper">
 
               <video
@@ -2418,18 +2401,19 @@ function RegionalPortfolio() {
                 playsInline
                 preload="metadata"
               >
+
                 <source
                   src="/video/Interim-RAFIP%20Promotional%20AVP.mp4"
                   type="video/mp4"
                 />
 
-                Your browser does not support the video tag.
+                Your browser does not support
+                the video tag.
+
               </video>
 
             </div>
 
-
-            {/* VIDEO FOOTER */}
             <div className="regional-video-footer">
 
               <div className="regional-video-footer-text">
@@ -2448,7 +2432,9 @@ function RegionalPortfolio() {
               <button
                 type="button"
                 className="regional-video-close-button"
-                onClick={() => setShowVideoMessage(false)}
+                onClick={() =>
+                  setShowVideoMessage(false)
+                }
               >
                 Close
               </button>
