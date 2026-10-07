@@ -2375,52 +2375,85 @@ function RegionalPortfolio() {
 
       {showVideoMessage && (
         <div
-          className="regional-video-modal-backdrop"
-          onClick={() =>
-            setShowVideoMessage(false)
-          }
+          className="regional-video-overlay"
+          onClick={() => setShowVideoMessage(false)}
         >
-
           <div
             className="regional-video-modal"
-            onClick={event =>
-              event.stopPropagation()
-            }
+            onClick={event => event.stopPropagation()}
           >
 
-            <button
-              type="button"
-              className="regional-video-close"
-              onClick={() =>
-                setShowVideoMessage(false)
-              }
-            >
-              <X size={19} />
-            </button>
+            {/* VIDEO HEADER */}
+            <div className="regional-video-header">
 
-            <div className="regional-video-icon">
-              <PlayCircle size={42} />
+              <div>
+                <span className="regional-video-eyebrow">
+                  RAFIP
+                </span>
+
+                <h3>
+                  RAFIP Investment Portfolio
+                </h3>
+              </div>
+
+              <button
+                type="button"
+                className="regional-video-close"
+                onClick={() => setShowVideoMessage(false)}
+                aria-label="Close video"
+              >
+                <X size={20} />
+              </button>
+
             </div>
 
-            <h3>
-              RAFIP Investment Portfolio
-              Video
-            </h3>
 
-            <p>
-              The presentation video will
-              be available here soon.
-            </p>
+            {/* VIDEO */}
+            <div className="regional-video-player-wrapper">
 
-            <button
-              type="button"
-              className="regional-video-ok"
-              onClick={() =>
-                setShowVideoMessage(false)
-              }
-            >
-              Continue Exploring
-            </button>
+              <video
+                className="regional-video-player"
+                controls
+                autoPlay
+                playsInline
+                preload="metadata"
+              >
+                <source
+                  src="/video/Interim-RAFIP%20Promotional%20AVP.mp4"
+                  type="video/mp4"
+                />
+
+                Your browser does not support the video tag.
+              </video>
+
+            </div>
+
+
+            {/* VIDEO FOOTER */}
+            <div className="regional-video-footer">
+
+              <div className="regional-video-footer-text">
+
+                <strong>
+                  Regional Agriculture and Fisheries
+                  Investment Portfolio
+                </strong>
+
+                <span>
+                  RAFIP Promotional AVP
+                </span>
+
+              </div>
+
+              <button
+                type="button"
+                className="regional-video-close-button"
+                onClick={() => setShowVideoMessage(false)}
+              >
+                Close
+              </button>
+
+            </div>
 
           </div>
         </div>
