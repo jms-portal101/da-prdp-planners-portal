@@ -2388,11 +2388,11 @@ function RegionalPortfolio() {
 
               <div>
                 <span className="regional-video-eyebrow">
-                  RAFIP
+                  FEATURED VIDEO
                 </span>
 
                 <h3>
-                  RAFIP Investment Portfolio
+                  Discover the RAFIP
                 </h3>
               </div>
 
